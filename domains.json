@@ -1,0 +1,17 @@
+{
+  "domains": [
+    {
+      "name": "juststeve.com",
+      "active_years": "1997-present",
+      "priority": "high",
+      "notes": "Personal site, few updates expected"
+    },
+    {
+      "name": "ttstrain.com",
+      "active_years": "1997-2019",
+      "priority": "high",
+      "notes": "Commercial site, no longer active"
+    }
+  ],
+  "notes": "Add additional domains as needed. Each domain will be analyzed separately."
+}

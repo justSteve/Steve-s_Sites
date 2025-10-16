@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Downloaded archive files
+archived_pages/
+
+# Progress and state files
+*.db
+*.db-*
+*.sqlite
+crawler_state.json
+
+# Beads database (source of truth is JSONL)
+.beads/*.db
+.beads/*.db-*
+
+# Logs
+*.log
+logs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
