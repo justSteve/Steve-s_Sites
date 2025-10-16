@@ -1,4 +1,8 @@
-# Python
+# Compiled TypeScript output
+/dist
+/node_modules
+
+# Python (legacy)
 __pycache__/
 *.py[cod]
 *$py.class
@@ -25,6 +29,10 @@ crawler_state.json
 *.log
 logs/
 
+# Test coverage
+/coverage
+/.nyc_output
+
 # IDE
 .vscode/
 .idea/
@@ -34,3 +42,11 @@ logs/
 # OS
 .DS_Store
 Thumbs.db
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Reports
+reports/
