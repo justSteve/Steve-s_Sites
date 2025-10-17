@@ -12,9 +12,9 @@
     "lint": "eslint src/**/*.ts",
     "format": "prettier --write src/**/*.ts",
     "cdx-analyzer": "node dist/cli/cdx-analyzer.js",
-    "generate-timeline": "node dist/cli/generate-timeline.js",
-    "select-snapshots": "node dist/cli/select-snapshots.js",
-    "wayback-crawler": "node dist/cli/wayback-crawler.js"
+    "crawler": "node dist/cli/crawler.js",
+    "selector": "node dist/cli/selector.js",
+    "generator": "node dist/cli/generator.js"
   },
   "keywords": [
     "wayback",
@@ -26,6 +26,7 @@
   "license": "MIT",
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.8",
+    "@types/cheerio": "^0.22.35",
     "@types/jest": "^29.5.11",
     "@types/node": "^20.10.6",
     "@typescript-eslint/eslint-plugin": "^6.17.0",
