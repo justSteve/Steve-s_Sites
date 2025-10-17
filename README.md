@@ -2,13 +2,13 @@
 
 A comprehensive TypeScript/Python hybrid toolkit for archiving multiple domains across decades from the Wayback Machine. Patient, polite, and designed for long-term collection with intelligent snapshot selection.
 
-**Now with Beads integration** for persistent development task tracking across sessions!
+**Agent-first design**: Uses Beads for persistent memory of content discoveries, patterns, and archival state across sessions.
 
 ## Overview
 
 This project provides tools to analyze, select, and archive historical snapshots of multiple domains from the Internet Archive's Wayback Machine. Rather than blindly downloading everything, it helps you identify significant changes over time and prioritize which snapshots to preserve.
 
-The project uses **Beads** (`bd`) for issue tracking, giving you and your AI assistants persistent memory of development tasks, what's in progress, and what's blocked.
+The project uses **Beads** (`bd`) as an agent-first memory system, allowing AI assistants to maintain persistent knowledge about content discoveries, archival patterns, and gaps in coverage across multiple sessions.
 
 ## Architecture
 
@@ -27,7 +27,7 @@ This project uses a **hybrid architecture** combining the best of both languages
 **Python** (Utilities):
 - Specialized data processing scripts
 - Quick prototyping and analysis
-- Beads integration helpers
+- Beads API wrapper for agent memory
 - Legacy compatibility
 
 **Future**: Vue.js frontend for interactive timeline visualization
@@ -75,9 +75,9 @@ npm run build
 pip install -r requirements.txt
 ```
 
-### Beads (Development Task Tracker)
+### Beads (Agent Memory System)
 
-Beads tracks **development tasks** (features, bugs, refactoring), not archive content.
+Beads provides persistent memory for AI agents working with archival content.
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/steveyegge/beads/main/install.sh | bash
@@ -89,12 +89,12 @@ Or with Go:
 go install github.com/steveyegge/beads/cmd/bd@latest
 ```
 
-Check current development work:
+Example usage:
 
 ```bash
-bd ready     # Show what's ready to work on
-bd list      # Show all development issues
-bd show <id> # Show issue details
+bd list --labels juststeve.com  # What patterns have been discovered?
+bd create "Content gap 2015-2017" -p 2 -t gap
+bd show <id>                     # Get details on specific finding
 ```
 
 ## Quick Start
@@ -187,9 +187,24 @@ The crawler will:
 4. Discover and download linked pages
 5. Track progress in `crawler_state.db`
 
+**Understanding Crawler Progress:**
+
+The crawler tracks **individual pages**, not snapshots. When you start with one snapshot, the crawler:
+- Fetches the snapshot URL
+- Discovers all internal links on that page
+- Adds each discovered link to the queue
+- One snapshot can expand to hundreds of pages
+
+**Status meanings:**
+- **Completed**: Individual page has been fetched, saved to disk, and had its links extracted
+- **Pending**: Individual page is queued but not yet crawled
+- **Failed**: Individual page could not be fetched (404, network error, etc.)
+
+Example output: `Stats: {"pending":47,"completed":3}` means 3 pages have been fully processed and 47 pages are waiting to be crawled.
+
 **Deduplication & Resume:**
 
-The crawler tracks all processed snapshots in `crawler_state.db` to prevent duplicate crawling:
+The crawler tracks all processed pages in `crawler_state.db` to prevent duplicate crawling:
 - Each URL+timestamp combination has a unique primary key
 - Status tracking: `pending` → `completed` or `failed`
 - Only pending URLs are crawled
@@ -298,64 +313,74 @@ justSteve/
 └── README.md                   # This file
 ```
 
-## Development with Beads
+## Agent Memory with Beads
 
-### Check Development Tasks
+Beads is an **agent-first memory system** that allows AI assistants to maintain persistent knowledge about archival operations across sessions. Unlike traditional issue trackers, Beads focuses on **content discovery and archival state**, not development tasks.
 
+### Archival Memory Use Cases
+
+**Content Discovery Tracking:**
 ```bash
-bd ready              # What development tasks can I work on now?
-bd list --status open # What features/bugs are still pending?
-bd show wayback-11    # Get details on specific task
+# Record significant content patterns found
+bd create "juststeve.com 2003-2005: Photography portfolio emerged" \
+  -p 1 -t observation \
+  --context "Digest changes show image-heavy content, check for external image hosts"
+
+# Track incomplete snapshots that need retry
+bd create "juststeve.com/blog/2010: 15 broken image links" \
+  -p 0 -t incomplete \
+  --context "404s on img subdomain, may need separate CDX query"
 ```
 
-### Working on a Task
-
+**Cross-Snapshot Patterns:**
 ```bash
-# Mark task as in progress
-bd update wayback-11 --status in_progress
+# Note content migrations
+bd create "Domain migration detected: 2008-06 → 2008-09" \
+  -p 1 -t migration \
+  --context "URL structure changed from /content/ to /posts/, rewrite rules needed"
 
-# Complete task
-bd close wayback-11 --reason "Completed in commit abc123"
+# Track missing periods
+bd create "Gap in snapshots: 2015-2017" \
+  -p 2 -t gap \
+  --context "Only 3 snapshots across 2 years, high priority for manual archive.org search"
 ```
 
-### Creating New Development Tasks
-
-```bash
-# File a new feature
-bd create "Add retry logic to crawler" -p 1 -t feature
-
-# File a bug
-bd create "Fix timestamp parsing in selector" -p 0 -t bug
-
-# Add dependencies
-bd dep add wayback-20 wayback-11  # wayback-11 blocks wayback-20
-```
-
-### For AI Assistants
-
-Beads provides a programmatic interface:
-
+**Agent-to-Agent Knowledge Transfer:**
 ```python
 from beads_integration import *
 
-# Get ready development work
-ready = get_ready_work(limit=5)
-for issue in ready:
-    print(f"{issue['id']}: {issue['title']}")
+# Query archival state for a domain
+issues = list_issues(labels=["juststeve.com", "observation"])
+for obs in issues:
+    print(f"Previous finding: {obs['title']}")
+    print(f"Context: {obs.get('context', 'N/A')}\n")
 
-# Create development tasks
-new_id = create_issue(
-    title="Add unit tests for WaybackCrawler",
-    description="Coverage for all public methods",
+# Record new findings for future sessions
+create_issue(
+    title="SSL cert change correlates with content redesign",
+    description="2012-03 snapshots show HTTPS switch + new CSS framework",
     priority=1,
-    issue_type="task"
+    issue_type="pattern",
+    labels=["juststeve.com", "2012"]
 )
-
-# Update status as you work
-update_issue(new_id, status="in_progress")
 ```
 
-See `python/beads_integration.py` for the full API.
+### Why Agent-First?
+
+Traditional tools track **what humans need to do**. Beads tracks **what agents have learned**:
+- Content patterns across time
+- Failed fetches that need investigation
+- Domain migrations and URL rewrites
+- Gaps in coverage
+- Relationships between snapshots
+
+This persistent memory allows agents to:
+1. Resume complex archival operations across sessions
+2. Share discoveries between multiple agents working in parallel
+3. Build cumulative knowledge about domain history
+4. Prioritize which snapshots to fetch based on past findings
+
+See `python/beads_integration.py` for the programmatic API.
 
 ## TypeScript Migration
 
@@ -391,19 +416,16 @@ npm run format        # Format code with Prettier
 
 ## Tips
 
-- **Check development tasks**: Use `bd ready` to see what features/bugs are ready to work on
+- **Review past discoveries**: Use `bd list` to see what content patterns have been found previously
 - **Start with analysis**: Run CDX analyzer first to understand what's available
 - **Review timelines**: Check HTML timelines in `reports/` before downloading
 - **Be selective**: Use selection strategies to focus on meaningful changes
-- **Track new features**: When you identify needed functionality, create Beads issues with `bd create`
+- **Record findings**: When you discover content patterns, gaps, or migrations, record them with `bd create`
 - **Monitor progress**: Check log files and database for crawling status
 - **Long-term project**: Archival is designed to run over days/weeks, be patient
 - **Scheduler flexibility**: Use `--no-scheduler` when you need immediate results
+- **Agent memory**: Beads persists knowledge across sessions - agents can learn from past archival work
 
 ## License
 
 MIT
-
-## Contributing
-
-Development tasks are tracked in Beads. Run `bd ready` to see what needs work!
