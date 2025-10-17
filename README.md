@@ -1,14 +1,36 @@
-# Multi-Domain Wayback Archive Project
+# Multi-Domain Wayback Archive Toolkit
 
-A comprehensive toolkit for archiving multiple domains across decades from the Wayback Machine. Patient, polite, and designed for long-term collection with intelligent snapshot selection.
+A comprehensive TypeScript/Python hybrid toolkit for archiving multiple domains across decades from the Wayback Machine. Patient, polite, and designed for long-term collection with intelligent snapshot selection.
 
-**Now with Beads integration** for persistent task tracking across sessions!
+**Now with Beads integration** for persistent development task tracking across sessions!
 
 ## Overview
 
 This project provides tools to analyze, select, and archive historical snapshots of multiple domains from the Internet Archive's Wayback Machine. Rather than blindly downloading everything, it helps you identify significant changes over time and prioritize which snapshots to preserve.
 
-The project uses **Beads** (`bd`) for issue tracking, giving you and your AI assistants persistent memory of what work needs to be done, what's in progress, and what's blocked.
+The project uses **Beads** (`bd`) for issue tracking, giving you and your AI assistants persistent memory of development tasks, what's in progress, and what's blocked.
+
+## Architecture
+
+### Hybrid TypeScript/Python Design
+
+This project uses a **hybrid architecture** combining the best of both languages:
+
+**TypeScript** (Primary):
+- Core services (CDX analysis, crawler, selector, timeline generator)
+- Full MVC pattern with type safety
+- CLI tools with Commander
+- Database operations via better-sqlite3
+- Centralized logging with Winston
+- Built for production use
+
+**Python** (Utilities):
+- Specialized data processing scripts
+- Quick prototyping and analysis
+- Beads integration helpers
+- Legacy compatibility
+
+**Future**: Vue.js frontend for interactive timeline visualization
 
 ## Features
 
@@ -21,72 +43,74 @@ The project uses **Beads** (`bd`) for issue tracking, giving you and your AI ass
 ### Crawler Features
 - **Multi-Domain Support**: Configure and track multiple domains simultaneously
 - **Multi-Timestamp Support**: Download snapshots from different time periods
-- **Off-Peak Scheduling**: Only runs during configured off-peak hours (default: 10 PM - 6 AM)
-- **Polite Rate Limiting**: 30-120 second random delays between requests
+- **Optional Off-Peak Scheduling**: Scheduler can be disabled for immediate crawling
+- **Configurable Scheduling**: Customize off-peak hours (default: 10 PM - 6 AM)
+- **Polite Rate Limiting**: Configurable 30-120 second random delays between requests
 - **Persistent State**: SQLite databases track progress, allowing resume after interruption
 - **Automatic Link Discovery**: Crawls all internal links found on pages
 - **Organized Storage**: Files saved by domain/timestamp/path structure
 
 ## Installation
 
-### Python Dependencies
+### Prerequisites
+
+- Node.js 20+ and npm
+- Python 3.12+ (for utilities)
+- Go 1.23+ (for Beads)
+
+### TypeScript Setup
 
 ```bash
+# Install dependencies
+npm install
+
+# Build TypeScript code
+npm run build
+```
+
+### Python Dependencies (Optional)
+
+```bash
+# For Python utilities
 pip install -r requirements.txt
 ```
 
-### Beads (Issue Tracker)
+### Beads (Development Task Tracker)
 
-Beads is used to track work across sessions. Install with:
+Beads tracks **development tasks** (features, bugs, refactoring), not archive content.
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/steveyegge/beads/main/install.sh | bash
 ```
 
-Or if you have Go 1.23+:
+Or with Go:
 
 ```bash
 go install github.com/steveyegge/beads/cmd/bd@latest
 ```
 
-Beads is already initialized in this project. To see current work:
+Check current development work:
 
 ```bash
 bd ready     # Show what's ready to work on
-bd list      # Show all issues
+bd list      # Show all development issues
 bd show <id> # Show issue details
 ```
 
-## Workflow
-
-### 0. Check What's Ready (New!)
-
-At any time, check what work is ready using Beads:
-
-```bash
-bd ready
-```
-
-This shows you unblocked tasks you can work on next. Perfect for resuming after a break!
+## Quick Start
 
 ### 1. Configure Your Domains
 
-Edit `domains.json` to add your domains:
+Edit `domains.json`:
 
 ```json
 {
   "domains": [
     {
       "name": "juststeve.com",
-      "active_years": "1997-present",
+      "activeYears": "1997-present",
       "priority": "high",
       "notes": "Personal site"
-    },
-    {
-      "name": "ttstrain.com",
-      "active_years": "1997-2019",
-      "priority": "high",
-      "notes": "Commercial site, no longer active"
     }
   ]
 }
@@ -94,24 +118,19 @@ Edit `domains.json` to add your domains:
 
 ### 2. Analyze Available Snapshots
 
-Run the CDX analyzer to discover all snapshots and identify changes:
-
 ```bash
-python cdx_analyzer.py
+npm run cdx-analyzer
 ```
 
-This queries the Wayback Machine CDX API and stores:
+This queries the Wayback Machine CDX API and stores results in `cdx_analysis.db`:
 - All unique content versions (by digest hash)
 - Change scores between versions
 - Year-by-year statistics
-- Results saved to `cdx_analysis.db`
 
 ### 3. Generate Timeline Reports
 
-Visualize the history of changes:
-
 ```bash
-python generate_timeline.py
+npm run generator
 ```
 
 Creates reports in `reports/`:
@@ -121,44 +140,219 @@ Creates reports in `reports/`:
 
 ### 4. Select Snapshots to Download
 
-Choose which snapshots to archive using various strategies:
+Choose which snapshots to archive:
 
 ```bash
-# Get all unique versions
-python select_snapshots.py juststeve.com --strategy all --export snapshots_to_download.txt
+# All unique versions
+npm run selector -- juststeve.com --strategy all --export snapshots.txt
 
 # Only significant changes (score > 50)
-python select_snapshots.py juststeve.com --strategy significant --threshold 50 --export snapshots_to_download.txt
+npm run selector -- juststeve.com --strategy significant --threshold 50 --export snapshots.txt
 
 # One representative snapshot per year
-python select_snapshots.py juststeve.com --strategy yearly --export snapshots_to_download.txt
+npm run selector -- juststeve.com --strategy yearly --export snapshots.txt
 
 # Top 10 most significant changes
-python select_snapshots.py juststeve.com --strategy top --top-n 10 --export snapshots_to_download.txt
+npm run selector -- juststeve.com --strategy top --top-n 10 --export snapshots.txt
 
 # Specific years
-python select_snapshots.py juststeve.com --strategy years --years 1999 2005 2010 --export snapshots_to_download.txt
+npm run selector -- juststeve.com --strategy years --years 1999 2005 2010 --export snapshots.txt
 
 # Date range
-python select_snapshots.py juststeve.com --strategy daterange --start 19990101 --end 19991231 --export snapshots_to_download.txt
+npm run selector -- juststeve.com --strategy daterange --start 19990101 --end 19991231 --export snapshots.txt
 ```
 
 ### 5. Download Selected Snapshots
 
-Run the crawler with your selection file:
+Run the crawler:
 
 ```bash
-python wayback_crawler.py --snapshots snapshots_to_download.txt
+# With off-peak scheduler (default: 10 PM - 6 AM)
+npm run crawler -- --snapshots snapshots.txt
+
+# Without scheduler (runs immediately)
+npm run crawler -- --snapshots snapshots.txt --no-scheduler
+
+# Custom off-peak hours
+npm run crawler -- --snapshots snapshots.txt --off-peak-start 23:00 --off-peak-end 07:00
+
+# Custom delays between requests
+npm run crawler -- --snapshots snapshots.txt --min-delay 60 --max-delay 300
 ```
 
 The crawler will:
-1. Wait until off-peak hours
+1. Wait until off-peak hours (if scheduler enabled)
 2. Fetch each snapshot with polite delays
 3. Save to `archived_pages/domain/timestamp/`
 4. Discover and download linked pages
 5. Track progress in `crawler_state.db`
 
-Stop anytime with `Ctrl+C` and resume later by running the same command.
+Stop anytime with `Ctrl+C` and resume later.
+
+## CLI Reference
+
+### CDX Analyzer
+```bash
+npm run cdx-analyzer -- [options]
+```
+
+Analyzes snapshot history for all domains in `domains.json`.
+
+### Snapshot Selector
+```bash
+npm run selector -- <domain> [options]
+
+Options:
+  --strategy <strategy>  Selection strategy (default: all)
+                        all, significant, yearly, top, years, daterange
+  --threshold <number>   Change score threshold for "significant" (default: 50.0)
+  --top-n <number>       Number of snapshots for "top" (default: 10)
+  --years <years...>     Specific years for "years" strategy
+  --start <date>         Start date for "daterange" (YYYYMMDD)
+  --end <date>           End date for "daterange" (YYYYMMDD)
+  --export <file>        Export selection to file
+  --db <path>            Database path (default: cdx_analysis.db)
+```
+
+### Timeline Generator
+```bash
+npm run generator -- [options]
+
+Options:
+  --domain <domain>  Generate reports for specific domain only
+  --db <path>        Database path (default: cdx_analysis.db)
+  --output <dir>     Output directory (default: reports)
+  --html             Generate HTML timeline only
+  --text             Generate text report only
+  --json             Generate JSON export only
+```
+
+### Wayback Crawler
+```bash
+npm run crawler -- [options]
+
+Options:
+  --snapshots <file>       Path to snapshot selection file
+  --no-scheduler           Disable off-peak scheduler (run continuously)
+  --off-peak-start <time>  Off-peak start time HH:MM (default: 22:00)
+  --off-peak-end <time>    Off-peak end time HH:MM (default: 06:00)
+  --min-delay <seconds>    Min delay between requests (default: 30)
+  --max-delay <seconds>    Max delay between requests (default: 120)
+  --output <dir>           Output directory (default: archived_pages)
+```
+
+## Project Structure
+
+```
+justSteve/
+├── src/                          # TypeScript source
+│   ├── models/                   # Type definitions
+│   │   └── types.ts
+│   ├── services/                 # Core business logic
+│   │   ├── CDXAnalyzerController.ts
+│   │   ├── DatabaseService.ts
+│   │   ├── LoggingService.ts
+│   │   ├── WaybackAPIService.ts
+│   │   ├── WaybackCrawler.ts
+│   │   ├── SnapshotSelector.ts
+│   │   ├── TimelineGenerator.ts
+│   │   └── PythonBridge.ts
+│   ├── utils/                    # Utilities
+│   │   ├── ConfigLoader.ts
+│   │   └── DateFormatter.ts
+│   └── cli/                      # CLI entry points
+│       ├── cdx-analyzer.ts
+│       ├── crawler.ts
+│       ├── selector.ts
+│       └── generator.ts
+├── dist/                         # Compiled TypeScript (created by build)
+├── python/                       # Python utilities
+│   └── beads_integration.py     # Beads API wrapper
+├── domains.json                  # Domain configuration
+├── cdx_analysis.db              # Analysis results (created)
+├── crawler_state.db             # Crawler progress (created)
+├── archived_pages/              # Downloaded files (created)
+│   └── domain/
+│       └── timestamp/
+│           └── path/
+├── reports/                     # Timeline reports (created)
+├── logs/                        # Log files (created)
+├── .beads/                      # Beads database
+│   └── issues.jsonl            # Git-tracked issue sync
+├── package.json                 # Node dependencies & scripts
+├── tsconfig.json               # TypeScript configuration
+└── README.md                   # This file
+```
+
+## Development with Beads
+
+### Check Development Tasks
+
+```bash
+bd ready              # What development tasks can I work on now?
+bd list --status open # What features/bugs are still pending?
+bd show wayback-11    # Get details on specific task
+```
+
+### Working on a Task
+
+```bash
+# Mark task as in progress
+bd update wayback-11 --status in_progress
+
+# Complete task
+bd close wayback-11 --reason "Completed in commit abc123"
+```
+
+### Creating New Development Tasks
+
+```bash
+# File a new feature
+bd create "Add retry logic to crawler" -p 1 -t feature
+
+# File a bug
+bd create "Fix timestamp parsing in selector" -p 0 -t bug
+
+# Add dependencies
+bd dep add wayback-20 wayback-11  # wayback-11 blocks wayback-20
+```
+
+### For AI Assistants
+
+Beads provides a programmatic interface:
+
+```python
+from beads_integration import *
+
+# Get ready development work
+ready = get_ready_work(limit=5)
+for issue in ready:
+    print(f"{issue['id']}: {issue['title']}")
+
+# Create development tasks
+new_id = create_issue(
+    title="Add unit tests for WaybackCrawler",
+    description="Coverage for all public methods",
+    priority=1,
+    issue_type="task"
+)
+
+# Update status as you work
+update_issue(new_id, status="in_progress")
+```
+
+See `python/beads_integration.py` for the full API.
+
+## TypeScript Migration
+
+The project has been migrated from Python to TypeScript for:
+- **Type Safety**: Compile-time error checking
+- **Better IDE Support**: IntelliSense and refactoring
+- **Modern Async/Await**: Cleaner asynchronous code
+- **Performance**: Direct database access without ORM overhead
+- **Unified Codebase**: Consistent with future Vue.js frontend
+
+See [TYPESCRIPT_MIGRATION.md](./TYPESCRIPT_MIGRATION.md) for detailed migration notes and comparison with Python versions.
 
 ## Available Collapse Options
 
@@ -170,110 +364,32 @@ The CDX API's `collapse` parameter can deduplicate results:
 - `collapse=timestamp:10` - One per day (YYYYMMDDHH → YYYYMMDD**)
 - `collapse=urlkey` - First capture of each unique URL
 
-## Project Structure
+## Development Scripts
 
-```
-justSteve/
-├── domains.json                # Domain configuration
-├── cdx_analyzer.py            # Analyze snapshot history
-├── generate_timeline.py       # Create visualizations
-├── select_snapshots.py        # Choose snapshots to download
-├── wayback_crawler.py         # Download selected snapshots
-├── requirements.txt           # Python dependencies
-├── cdx_analysis.db           # CDX analysis results (created)
-├── crawler_state.db          # Crawler progress (created)
-├── archived_pages/           # Downloaded files (created)
-│   └── domain/
-│       └── timestamp/
-│           └── path/
-├── reports/                  # Timeline reports (created)
-└── logs/                     # Various log files (created)
-```
-
-## Configuration
-
-Edit constants at the top of scripts to customize:
-
-**wayback_crawler.py**:
-```python
-OFF_PEAK_START = dt_time(22, 0)  # 10 PM
-OFF_PEAK_END = dt_time(6, 0)     # 6 AM
-MIN_DELAY_SECONDS = 30
-MAX_DELAY_SECONDS = 120
-```
-
-**cdx_analyzer.py**:
-```python
-REQUEST_DELAY = 2  # Seconds between CDX API requests
+```bash
+npm run build         # Compile TypeScript
+npm run watch         # Watch mode for development
+npm run test          # Run tests
+npm run test:coverage # Run tests with coverage
+npm run lint          # Lint TypeScript code
+npm run format        # Format code with Prettier
 ```
 
 ## Tips
 
-- **Check ready work**: Use `bd ready` to see what's unblocked and ready to work on
+- **Check development tasks**: Use `bd ready` to see what features/bugs are ready to work on
 - **Start with analysis**: Run CDX analyzer first to understand what's available
 - **Review timelines**: Check HTML timelines in `reports/` before downloading
 - **Be selective**: Use selection strategies to focus on meaningful changes
-- **Track discoveries**: When you find new domains or pages worth archiving, create issues with `bd create`
-- **Monitor progress**: Check log files and `bd list` to see what's happening
-- **Long-term project**: This is designed to run over days/weeks, be patient
+- **Track new features**: When you identify needed functionality, create Beads issues with `bd create`
+- **Monitor progress**: Check log files and database for crawling status
+- **Long-term project**: Archival is designed to run over days/weeks, be patient
+- **Scheduler flexibility**: Use `--no-scheduler` when you need immediate results
 
-## Working with Beads
+## License
 
-### For Humans
+MIT
 
-Check progress at any time:
+## Contributing
 
-```bash
-bd ready              # What can I work on now?
-bd list --status open # What's still pending?
-bd dep tree wayback-5 # Show dependencies for an issue
-bd show wayback-2     # Get details on specific issue
-```
-
-### For AI Assistants
-
-Beads provides a programmatic interface via `--json` flags:
-
-```python
-from beads_integration import *
-
-# Get ready work
-ready = get_ready_work(limit=5)
-for issue in ready:
-    print(f"{issue['id']}: {issue['title']}")
-
-# Create issues for discovered work
-new_id = create_issue(
-    title="Archive example.com",
-    description="Found reference in juststeve.com",
-    priority=1,
-    issue_type="task"
-)
-
-# Link discovered work
-add_dependency(new_id, "wayback-5", dep_type="discovered-from")
-
-# Update status
-update_issue(new_id, status="in_progress")
-```
-
-See `beads_integration.py` for the full API.
-
-### Current Issues
-
-The project is initialized with:
-- **wayback-1**: Epic for archiving juststeve.com across decades
-- **wayback-2**: Task to analyze CDX history (ready to work on!)
-- **wayback-3**: Task to generate timelines (blocked by wayback-2)
-- **wayback-4**: Task to select snapshots (blocked by wayback-3)
-- **wayback-5**: Task to download Feb 1999 snapshot (blocked by wayback-4)
-
-Run `bd ready` to see what's currently unblocked.
-
-## Timeline
-
-This project is designed for patient, long-term archival. The analysis phase is quick (minutes), but downloading can take days or weeks depending on:
-- Number of snapshots selected
-- Number of pages per snapshot
-- Off-peak hour windows
-- Rate limiting delays
+Development tasks are tracked in Beads. Run `bd ready` to see what needs work!
