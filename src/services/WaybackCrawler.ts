@@ -396,12 +396,29 @@ export class WaybackCrawler {
       this.db.markFailed(url, timestamp, 'Failed to fetch');
     }
 
-    // Polite delay between requests
-    const delay = Math.floor(
-      Math.random() * (this.options.maxDelaySeconds - this.options.minDelaySeconds + 1) +
-        this.options.minDelaySeconds
+    return true;
+  }
+
+  /**
+   * Process all files for a given URL/link and then delay
+   */
+  private async processLinkWithDelay(): Promise<boolean> {
+    // Process one link (which may discover multiple files)
+    const hasMore = await this.crawlOne();
+
+    if (!hasMore) {
+      return false;
+    }
+
+    // Delay after all files for this link are processed (max 5 seconds)
+    const delay = Math.min(
+      Math.floor(
+        Math.random() * (this.options.maxDelaySeconds - this.options.minDelaySeconds + 1) +
+          this.options.minDelaySeconds
+      ),
+      5
     );
-    this.logger.info(`Waiting ${delay} seconds before next request`);
+    this.logger.info(`Waiting ${delay} seconds before next link`);
     await new Promise(resolve => setTimeout(resolve, delay * 1000));
 
     return true;
@@ -419,12 +436,13 @@ export class WaybackCrawler {
     } else {
       this.logger.info('Off-peak scheduler disabled - running continuously');
     }
+    this.logger.info('Delay strategy: After processing each link (max 5 seconds)');
 
     // Load snapshot list if provided
     this.loadSnapshotList();
 
     try {
-      while (await this.crawlOne()) {
+      while (await this.processLinkWithDelay()) {
         // Print stats periodically
         const stats = this.db.getStats();
         this.logger.info(`Stats: ${JSON.stringify(stats)}`);
