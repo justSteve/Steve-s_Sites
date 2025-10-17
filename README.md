@@ -187,7 +187,21 @@ The crawler will:
 4. Discover and download linked pages
 5. Track progress in `crawler_state.db`
 
-Stop anytime with `Ctrl+C` and resume later.
+**Deduplication & Resume:**
+
+The crawler tracks all processed snapshots in `crawler_state.db` to prevent duplicate crawling:
+- Each URL+timestamp combination has a unique primary key
+- Status tracking: `pending` → `completed` or `failed`
+- Only pending URLs are crawled
+- Discovered links are automatically added (if not already tracked)
+- **Safe to restart**: The crawler is idempotent - run it multiple times and it will only process new/pending URLs
+
+Check crawl progress:
+```bash
+sqlite3 crawler_state.db "SELECT status, COUNT(*) FROM urls GROUP BY status"
+```
+
+Stop anytime with `Ctrl+C` and resume later - progress is saved automatically.
 
 ## CLI Reference
 
