@@ -18,7 +18,7 @@ export function buildCommand(options: CommandOptions): string {
  * Build command arguments from options
  * Maps to actual CLI flag names, handles negated booleans and positional args
  */
-function buildArgs(options: any, toolScript: string): string[] {
+export function buildArgs(options: any, toolScript: string): string[] {
   const args: string[] = [];
 
   // Handle positional arguments first (selector needs domain as positional)

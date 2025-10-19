@@ -1,5 +1,6 @@
 import inquirer from 'inquirer';
 import { spawn } from 'child_process';
+import { buildArgs } from '../utils/commandBuilder.js';
 
 interface ToolDefinition {
   name: string;
@@ -131,74 +132,11 @@ export class ToolRunner {
       options = await inquirer.prompt(tool.prompts);
     }
 
-    // Build command arguments
-    const args = this.buildArgs(options, tool.script);
+    // Build command arguments using shared utility
+    const args = buildArgs(options, tool.script);
 
     // Execute tool
     await this.executeTool(tool.script, args);
-  }
-
-  /**
-   * Build command arguments from options
-   * Maps to actual CLI flag names, not camelCase prompt names
-   */
-  private buildArgs(options: any, toolScript: string): string[] {
-    const args: string[] = [];
-
-    // Handle positional arguments first (selector needs domain as positional)
-    if (toolScript === 'selector' && options.domain) {
-      args.push(options.domain);
-    }
-
-    for (const [key, value] of Object.entries(options)) {
-      // Skip positional args that were already added
-      if (toolScript === 'selector' && key === 'domain') {
-        continue;
-      }
-
-      // Check if this option has a negated flag in the CLI
-      const negatedFlag = this.getNegatedFlag(key);
-
-      if (value === true) {
-        // For negated options (fetchAssets, useScheduler), true means use default (no flag)
-        // For regular options, true means add the flag
-        if (!negatedFlag) {
-          const flagName = this.mapToCliFlag(key);
-          args.push(`--${flagName}`);
-        }
-      } else if (value === false) {
-        // For negated booleans, use the actual negated flag from CLI
-        if (negatedFlag) {
-          args.push(negatedFlag);
-        }
-      } else if (value) {
-        // For non-boolean values, add flag with value
-        const flagName = this.mapToCliFlag(key);
-        args.push(`--${flagName}`, String(value));
-      }
-    }
-
-    return args;
-  }
-
-  /**
-   * Map camelCase prompt names to CLI flag names
-   */
-  private mapToCliFlag(key: string): string {
-    // Convert camelCase to kebab-case for CLI flags
-    return key.replace(/([A-Z])/g, '-$1').toLowerCase();
-  }
-
-  /**
-   * Get the actual negated flag name for boolean options
-   * Maps to actual CLI definitions (e.g., --no-fetch-assets, not --no-fetchAssets)
-   */
-  private getNegatedFlag(key: string): string | null {
-    const negatedFlags: Record<string, string> = {
-      'fetchAssets': '--no-fetch-assets',
-      'useScheduler': '--no-scheduler'
-    };
-    return negatedFlags[key] || null;
   }
 
   /**
