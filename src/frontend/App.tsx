@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import {
   AppBar,
   Toolbar,
@@ -18,15 +18,6 @@ type View = 'dashboard' | 'domain' | 'logs';
 const App: React.FC = () => {
   const [view, setView] = useState<View>('dashboard');
   const [selectedDomain, setSelectedDomain] = useState<string | null>(null);
-  const [apiStatus, setApiStatus] = useState<boolean>(false);
-
-  useEffect(() => {
-    // Check API health
-    fetch('/api/health')
-      .then(res => res.json())
-      .then(data => setApiStatus(data.status === 'ok'))
-      .catch(() => setApiStatus(false));
-  }, []);
 
   const handleDomainSelect = (domain: string) => {
     setSelectedDomain(domain);
@@ -48,8 +39,8 @@ const App: React.FC = () => {
             Wayback Archive Toolkit
           </Typography>
           <Chip
-            label={apiStatus ? 'API: Online' : 'API: Offline'}
-            color={apiStatus ? 'success' : 'error'}
+            label="Dashboard"
+            color="primary"
             size="small"
             variant="outlined"
           />
@@ -81,6 +72,9 @@ const App: React.FC = () => {
         </Box>
 
         {/* Main Content */}
+        {/* Using Grid v1 (@mui/material/Grid) instead of Grid2 for better compatibility
+            with the current Material-UI setup and to avoid potential breaking changes.
+            Grid v1 is stable and well-supported for this use case. */}
         {view === 'dashboard' && (
           <Grid container spacing={3}>
             {/* System Status - Left Column */}
