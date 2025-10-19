@@ -156,18 +156,24 @@ export class ToolRunner {
         continue;
       }
 
-      // Map camelCase prompt names to actual CLI flag names
-      const flagName = this.mapToCliFlag(key);
+      // Check if this option has a negated flag in the CLI
+      const negatedFlag = this.getNegatedFlag(key);
 
       if (value === true) {
-        args.push(`--${flagName}`);
+        // For negated options (fetchAssets, useScheduler), true means use default (no flag)
+        // For regular options, true means add the flag
+        if (!negatedFlag) {
+          const flagName = this.mapToCliFlag(key);
+          args.push(`--${flagName}`);
+        }
       } else if (value === false) {
         // For negated booleans, use the actual negated flag from CLI
-        const negatedFlag = this.getNegatedFlag(key);
         if (negatedFlag) {
           args.push(negatedFlag);
         }
       } else if (value) {
+        // For non-boolean values, add flag with value
+        const flagName = this.mapToCliFlag(key);
         args.push(`--${flagName}`, String(value));
       }
     }
