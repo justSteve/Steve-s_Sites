@@ -218,6 +218,32 @@ sqlite3 crawler_state.db "SELECT status, COUNT(*) FROM urls GROUP BY status"
 
 Stop anytime with `Ctrl+C` and resume later - progress is saved automatically.
 
+## Asset Fetching
+
+Crawl complete websites with all assets (CSS, JS, images, fonts):
+
+```bash
+# Full asset fetching with no delays
+node dist/cli/crawler.js --snapshots snapshots.txt --no-delay
+
+# HTML only
+node dist/cli/crawler.js --snapshots snapshots.txt --no-fetch-assets
+```
+
+See [Asset Fetching Guide](docs/ASSET_FETCHING.md) for details.
+
+## Local Browsing
+
+View archived pages locally:
+
+**Static Server:**
+```
+http://localhost:3001/archive/example.com/20230615120000/
+```
+
+**React Viewer:**
+Open dashboard → Select domain → Click snapshot
+
 ## CLI Reference
 
 ### CDX Analyzer
