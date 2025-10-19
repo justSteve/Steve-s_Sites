@@ -1,12 +1,22 @@
 import React, { useState, useEffect } from 'react';
-import DomainList from './components/DomainList';
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  Container,
+  Grid,
+  Button,
+  Box,
+  Chip,
+} from '@mui/material';
+import { SystemStatus, CommandBuilder, DomainListPanel } from './components/Dashboard';
 import DomainPage from './components/DomainPage';
 import LogViewer from './components/LogViewer';
 
-type View = 'home' | 'domain' | 'logs';
+type View = 'dashboard' | 'domain' | 'logs';
 
 const App: React.FC = () => {
-  const [view, setView] = useState<View>('home');
+  const [view, setView] = useState<View>('dashboard');
   const [selectedDomain, setSelectedDomain] = useState<string | null>(null);
   const [apiStatus, setApiStatus] = useState<boolean>(false);
 
@@ -25,56 +35,78 @@ const App: React.FC = () => {
 
   const handleNavigation = (newView: View) => {
     setView(newView);
-    if (newView === 'home') {
+    if (newView === 'dashboard') {
       setSelectedDomain(null);
     }
   };
 
   return (
-    <div className="container">
-      <header className="header">
-        <h1>Wayback Archive - Domain Dashboard</h1>
-        <div className="header-subtitle">
-          Multi-domain Internet Archive toolkit
-          {apiStatus && <span style={{ marginLeft: '1rem' }}>[API: ONLINE]</span>}
-          {!apiStatus && <span style={{ marginLeft: '1rem', color: '#ff0000' }}>[API: OFFLINE]</span>}
-        </div>
-      </header>
+    <Box sx={{ flexGrow: 1, minHeight: '100vh', bgcolor: 'background.default' }}>
+      <AppBar position="static" elevation={0}>
+        <Toolbar>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            Wayback Archive Toolkit
+          </Typography>
+          <Chip
+            label={apiStatus ? 'API: Online' : 'API: Offline'}
+            color={apiStatus ? 'success' : 'error'}
+            size="small"
+            variant="outlined"
+          />
+        </Toolbar>
+      </AppBar>
 
-      <nav className="nav">
-        <button
-          className={`nav-link ${view === 'home' ? 'active' : ''}`}
-          onClick={() => handleNavigation('home')}
-        >
-          Domains
-        </button>
-        <button
-          className={`nav-link ${view === 'logs' ? 'active' : ''}`}
-          onClick={() => handleNavigation('logs')}
-        >
-          Logs
-        </button>
-        {selectedDomain && (
-          <span className="nav-link active">
-            {selectedDomain}
-          </span>
+      <Container maxWidth="xl" sx={{ mt: 3, mb: 3 }}>
+        {/* Navigation */}
+        <Box sx={{ mb: 3, display: 'flex', gap: 1 }}>
+          <Button
+            variant={view === 'dashboard' ? 'contained' : 'outlined'}
+            onClick={() => handleNavigation('dashboard')}
+          >
+            Dashboard
+          </Button>
+          <Button
+            variant={view === 'logs' ? 'contained' : 'outlined'}
+            onClick={() => handleNavigation('logs')}
+          >
+            Logs
+          </Button>
+          {selectedDomain && (
+            <Chip
+              label={selectedDomain}
+              color="primary"
+              onDelete={() => handleNavigation('dashboard')}
+            />
+          )}
+        </Box>
+
+        {/* Main Content */}
+        {view === 'dashboard' && (
+          <Grid container spacing={3}>
+            {/* System Status - Left Column */}
+            <Grid item xs={12} md={4}>
+              <SystemStatus />
+            </Grid>
+
+            {/* Domain List - Center Column */}
+            <Grid item xs={12} md={4}>
+              <DomainListPanel onDomainSelect={handleDomainSelect} />
+            </Grid>
+
+            {/* Command Builder - Right Column */}
+            <Grid item xs={12} md={4}>
+              <CommandBuilder />
+            </Grid>
+          </Grid>
         )}
-      </nav>
 
-      <main>
-        {!apiStatus && (
-          <div className="error">
-            API server is offline. Please start the API server at port 3001.
-            <br />
-            <code>node dist/server/api.js</code>
-          </div>
+        {view === 'domain' && selectedDomain && (
+          <DomainPage domain={selectedDomain} />
         )}
 
-        {view === 'home' && <DomainList onDomainSelect={handleDomainSelect} />}
-        {view === 'domain' && selectedDomain && <DomainPage domain={selectedDomain} />}
         {view === 'logs' && <LogViewer />}
-      </main>
-    </div>
+      </Container>
+    </Box>
   );
 };
 
