@@ -17,9 +17,9 @@ export class ToolRunner {
       prompts: [
         {
           type: 'input',
-          name: 'file',
-          message: 'CDX file path:',
-          default: 'snapshots.cdx'
+          name: 'config',
+          message: 'Domains config file:',
+          default: 'domains.json'
         }
       ]
     },
@@ -60,7 +60,7 @@ export class ToolRunner {
         },
         {
           type: 'input',
-          name: 'output',
+          name: 'export',
           message: 'Output file:',
           default: 'selected_snapshots.txt'
         }
