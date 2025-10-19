@@ -8,6 +8,7 @@ import cors from 'cors';
 import * as fs from 'fs';
 import * as path from 'path';
 import Database from 'better-sqlite3';
+import mime from 'mime-types';
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -283,6 +284,78 @@ app.get('/api/logs/:filename', (req: Request, res: Response) => {
       totalLines: allLines.length,
       offset: startIndex,
       hasMore: endIndex < allLines.length
+    });
+  } catch (error: any) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+/**
+ * Static archive server - Serve archived files with assets
+ */
+app.get('/archive/:domain/:timestamp/*', (req: Request, res: Response) => {
+  const { domain, timestamp } = req.params;
+  const assetPath = req.params[0] || 'index.html';
+
+  // Construct full file path
+  const filePath = path.join(
+    __dirname,
+    '../../archived_pages',
+    domain,
+    timestamp,
+    assetPath
+  );
+
+  // Check if file exists
+  if (!fs.existsSync(filePath)) {
+    return res.status(404).send('File not found');
+  }
+
+  // Determine MIME type
+  const mimeType = mime.lookup(filePath) || 'application/octet-stream';
+
+  // Set proper headers
+  res.setHeader('Content-Type', mimeType);
+  res.setHeader('Access-Control-Allow-Origin', '*'); // For iframe embedding
+
+  // Stream file
+  const stream = fs.createReadStream(filePath);
+  stream.pipe(res);
+});
+
+/**
+ * List available snapshots for a domain
+ */
+app.get('/archive/:domain', (req: Request, res: Response) => {
+  const { domain } = req.params;
+  const domainPath = path.join(__dirname, '../../archived_pages', domain);
+
+  if (!fs.existsSync(domainPath)) {
+    return res.status(404).json({ error: 'Domain not found' });
+  }
+
+  try {
+    const timestamps = fs.readdirSync(domainPath)
+      .filter(t => fs.statSync(path.join(domainPath, t)).isDirectory());
+
+    const snapshots = timestamps.map(timestamp => {
+      const manifestPath = path.join(domainPath, timestamp, 'manifest.json');
+      let manifest = null;
+
+      if (fs.existsSync(manifestPath)) {
+        manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf-8'));
+      }
+
+      return {
+        timestamp,
+        url: `/archive/${domain}/${timestamp}/`,
+        manifest,
+      };
+    });
+
+    res.json({
+      domain,
+      snapshots,
     });
   } catch (error: any) {
     res.status(500).json({ error: error.message });
