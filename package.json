@@ -9,6 +9,8 @@
     "watch": "tsc --watch",
     "dev": "vite",
     "api": "node dist/server/api.js",
+    "menu": "node dist/cli/menu.js",
+    "start": "npm run menu",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
