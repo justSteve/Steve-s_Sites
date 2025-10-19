@@ -541,6 +541,12 @@ export class WaybackCrawler {
     timestamp: string
   ): Promise<void> {
     const outputPath = path.join(this.options.outputDir, domain, timestamp, 'skipped_assets.json');
+    const outputDir = path.dirname(outputPath);
+
+    // Ensure directory exists
+    if (!fs.existsSync(outputDir)) {
+      fs.mkdirSync(outputDir, { recursive: true });
+    }
 
     const data = {
       domain,
@@ -561,6 +567,12 @@ export class WaybackCrawler {
     pages: string[]
   ): Promise<void> {
     const manifestPath = path.join(this.options.outputDir, domain, timestamp, 'manifest.json');
+    const outputDir = path.dirname(manifestPath);
+
+    // Ensure directory exists
+    if (!fs.existsSync(outputDir)) {
+      fs.mkdirSync(outputDir, { recursive: true });
+    }
 
     const byType: Record<string, number> = {};
     fetchResult.fetched.forEach((asset) => {
