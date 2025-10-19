@@ -53,6 +53,10 @@
     "vite": "^7.1.10"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^7.3.4",
+    "@mui/material": "^7.3.4",
     "axios": "^1.6.5",
     "better-sqlite3": "^9.2.2",
     "cheerio": "^1.0.0-rc.12",
