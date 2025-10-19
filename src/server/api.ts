@@ -373,10 +373,21 @@ app.get('/api/health', (req: Request, res: Response) => {
   });
 });
 
-// Start server
-app.listen(PORT, () => {
-  console.log(`API server running on http://localhost:${PORT}`);
-  console.log(`Database: ${DB_PATH}`);
-});
+/**
+ * Start the API server
+ */
+export function startServer(port: number = 3001): any {
+  const server = app.listen(port, () => {
+    console.log(`API server running on http://localhost:${port}`);
+    console.log(`Database: ${DB_PATH}`);
+  });
+  return server;
+}
+
+// Start server if run directly (backwards compatibility)
+if (require.main === module) {
+  const PORT = process.env.PORT || 3001;
+  startServer(Number(PORT));
+}
 
 export default app;
