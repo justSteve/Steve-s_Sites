@@ -1,8 +1,9 @@
 import { startServer } from '../server/api';
 import axios from 'axios';
+import { Server } from 'http';
 
 export class ServerManager {
-  private server: any = null;
+  private server: Server | null = null;
   private port: number;
 
   constructor(port: number = 3001) {
@@ -42,11 +43,15 @@ export class ServerManager {
       return;
     }
 
-    return new Promise((resolve) => {
-      this.server.close(() => {
-        this.server = null;
-        console.log('Server stopped');
-        resolve();
+    return new Promise((resolve, reject) => {
+      this.server!.close((err) => {
+        if (err) {
+          reject(err);
+        } else {
+          this.server = null;
+          console.log('Server stopped');
+          resolve();
+        }
       });
     });
   }
@@ -75,6 +80,12 @@ export class ServerManager {
       });
       return response.status === 200;
     } catch (error) {
+      // Expected error when server is not running (connection refused)
+      if (axios.isAxiosError(error) && error.code === 'ECONNREFUSED') {
+        return false;
+      }
+      // Log unexpected errors for debugging
+      console.debug('Unexpected error checking server status:', error);
       return false;
     }
   }
