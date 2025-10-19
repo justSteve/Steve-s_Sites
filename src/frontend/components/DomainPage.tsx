@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { SnapshotViewer } from './SnapshotViewer';
 
 interface DomainPageProps {
   domain: string;
@@ -59,6 +60,11 @@ const DomainPage: React.FC<DomainPageProps> = ({ domain }) => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [viewMode, setViewMode] = useState<'stats' | 'timeline'>('stats');
+  const [selectedSnapshot, setSelectedSnapshot] = useState<{
+    domain: string;
+    timestamp: string;
+    url: string;
+  } | null>(null);
 
   useEffect(() => {
     setLoading(true);
@@ -165,7 +171,16 @@ const DomainPage: React.FC<DomainPageProps> = ({ domain }) => {
         {viewMode === 'stats' && (
           <div className="snapshot-list">
             {data.recentSnapshots.map((snap, idx) => (
-              <div key={idx} className="snapshot-item">
+              <div
+                key={idx}
+                className="snapshot-item"
+                onClick={() => setSelectedSnapshot({
+                  domain,
+                  timestamp: snap.timestamp,
+                  url: snap.url,
+                })}
+                style={{ cursor: 'pointer' }}
+              >
                 <span className="snapshot-timestamp">{formatTimestamp(snap.timestamp)}</span>
                 <span className="snapshot-url">{snap.url}</span>
                 <span className={`snapshot-status ${getStatusClass(snap.statuscode)}`}>
@@ -185,7 +200,16 @@ const DomainPage: React.FC<DomainPageProps> = ({ domain }) => {
                 </div>
                 <div className="snapshot-list">
                   {timeline[year].slice(0, 20).map((snap, idx) => (
-                    <div key={idx} className="snapshot-item">
+                    <div
+                      key={idx}
+                      className="snapshot-item"
+                      onClick={() => setSelectedSnapshot({
+                        domain,
+                        timestamp: snap.timestamp,
+                        url: snap.url,
+                      })}
+                      style={{ cursor: 'pointer' }}
+                    >
                       <span className="snapshot-timestamp">{formatTimestamp(snap.timestamp)}</span>
                       <span className="snapshot-url">{snap.url}</span>
                       <span className={`snapshot-status ${getStatusClass(snap.statuscode)}`}>
@@ -209,6 +233,15 @@ const DomainPage: React.FC<DomainPageProps> = ({ domain }) => {
           </div>
         )}
       </div>
+
+      {selectedSnapshot && (
+        <SnapshotViewer
+          domain={selectedSnapshot.domain}
+          timestamp={selectedSnapshot.timestamp}
+          snapshotUrl={selectedSnapshot.url}
+          onClose={() => setSelectedSnapshot(null)}
+        />
+      )}
     </div>
   );
 };
