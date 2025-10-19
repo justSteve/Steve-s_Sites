@@ -10,6 +10,10 @@ import * as path from 'path';
 import { URL } from 'url';
 import { LoggingService, createLogger } from './LoggingService';
 import Database from 'better-sqlite3';
+import { AssetExtractor } from './AssetExtractor';
+import { AssetFetcher, FetchResult } from './AssetFetcher';
+import { URLRewriter } from './URLRewriter';
+import { AssetManifest, SkippedAsset } from '../models/AssetTypes';
 
 interface CrawlOptions {
   useOffPeakScheduler?: boolean;
@@ -20,6 +24,13 @@ interface CrawlOptions {
   outputDir?: string;
   snapshotListFile?: string;
   logFile?: string;
+
+  // Asset fetching options
+  noDelay?: boolean;
+  fetchAssets?: boolean;
+  fetchExternalAssets?: boolean;
+  maxAssetSizeMB?: number;
+  assetConcurrency?: number;
 }
 
 interface UrlRecord {
@@ -139,6 +150,9 @@ export class WaybackCrawler {
   private session: AxiosInstance;
   private logger: LoggingService;
   private options: Required<CrawlOptions>;
+  private assetExtractor?: AssetExtractor;
+  private assetFetcher?: AssetFetcher;
+  private urlRewriter?: URLRewriter;
 
   constructor(options: CrawlOptions = {}) {
     this.options = {
@@ -149,7 +163,14 @@ export class WaybackCrawler {
       maxDelaySeconds: options.maxDelaySeconds ?? 120,
       outputDir: options.outputDir ?? 'archived_pages',
       snapshotListFile: options.snapshotListFile ?? '',
-      logFile: options.logFile ?? 'crawler.log'
+      logFile: options.logFile ?? 'crawler.log',
+
+      // Asset defaults
+      noDelay: options.noDelay ?? false,
+      fetchAssets: options.fetchAssets ?? true,
+      fetchExternalAssets: options.fetchExternalAssets ?? true,
+      maxAssetSizeMB: options.maxAssetSizeMB ?? 50,
+      assetConcurrency: options.assetConcurrency ?? 10,
     };
 
     this.logger = createLogger('WaybackCrawler', this.options.logFile);
@@ -164,6 +185,19 @@ export class WaybackCrawler {
     // Create output directory
     if (!fs.existsSync(this.options.outputDir)) {
       fs.mkdirSync(this.options.outputDir, { recursive: true });
+    }
+
+    // Initialize asset services if enabled
+    if (this.options.fetchAssets) {
+      // We'll need a domain - we'll set this properly when processing each URL
+      // For now, create placeholder services that will be reinitialized per domain
+      this.assetExtractor = new AssetExtractor('');
+      this.assetFetcher = new AssetFetcher({
+        outputDir: this.options.outputDir,
+        maxAssetSizeMB: this.options.maxAssetSizeMB,
+        concurrency: this.options.assetConcurrency,
+      }, this.logger);
+      this.urlRewriter = new URLRewriter('');
     }
   }
 
@@ -232,7 +266,7 @@ export class WaybackCrawler {
    * Wait until off-peak hours if scheduler is enabled
    */
   private async waitForOffPeak(): Promise<void> {
-    if (!this.options.useOffPeakScheduler) {
+    if (!this.options.useOffPeakScheduler || this.options.noDelay) {
       return;
     }
 
@@ -363,6 +397,209 @@ export class WaybackCrawler {
   }
 
   /**
+   * Process page with asset fetching
+   */
+  private async processPageWithAssets(
+    html: string,
+    url: string,
+    domain: string,
+    timestamp: string
+  ): Promise<string> {
+    if (!this.options.fetchAssets || !this.assetExtractor || !this.assetFetcher || !this.urlRewriter) {
+      // Just return HTML without processing assets
+      return html;
+    }
+
+    // Reinitialize extractors/rewriters for the current domain
+    this.assetExtractor = new AssetExtractor(domain);
+    this.urlRewriter = new URLRewriter(domain);
+
+    this.logger.info(`Extracting assets from ${url}`);
+
+    // Extract assets from HTML
+    const fileName = this.getFileNameFromUrl(url);
+    const assets = this.assetExtractor.extractFromHtml(html, url, fileName);
+
+    // Filter external assets if disabled
+    const assetsToFetch = this.options.fetchExternalAssets
+      ? assets
+      : assets.filter(a => !a.isExternal);
+
+    this.logger.info(
+      `Found ${assets.length} assets (${assetsToFetch.length} to fetch)`
+    );
+
+    // Fetch all assets in parallel
+    const fetchResult = await this.assetFetcher.fetchAssets(assetsToFetch, domain, timestamp);
+
+    this.logger.info(
+      `Assets: ${fetchResult.fetched.length} fetched, ${fetchResult.skipped.length} skipped, ${fetchResult.errors.length} errors`
+    );
+
+    // Save skipped assets log
+    if (fetchResult.skipped.length > 0) {
+      await this.saveSkippedAssets(fetchResult.skipped, domain, timestamp);
+    }
+
+    // Rewrite HTML URLs
+    const rewrittenHtml = this.urlRewriter.rewriteHtml(html, url);
+
+    // Process CSS files and rewrite their URLs
+    for (const asset of fetchResult.fetched.filter(a => a.type === 'css')) {
+      await this.rewriteCssFile(asset.url, domain, timestamp);
+    }
+
+    // Save manifest
+    await this.saveManifest(domain, timestamp, fetchResult, [fileName]);
+
+    return rewrittenHtml;
+  }
+
+  /**
+   * Get filename from URL for tracking
+   */
+  private getFileNameFromUrl(url: string): string {
+    try {
+      const parsed = new URL(url);
+      let pathPart = parsed.pathname.replace(/^\//, '');
+      if (!pathPart) {
+        return 'index.html';
+      } else if (!pathPart.match(/\.(html|htm)$/)) {
+        return path.join(pathPart, 'index.html');
+      }
+      return pathPart;
+    } catch {
+      return 'index.html';
+    }
+  }
+
+  /**
+   * Rewrite CSS file URLs
+   */
+  private async rewriteCssFile(cssUrl: string, domain: string, timestamp: string): Promise<void> {
+    if (!this.urlRewriter) return;
+
+    try {
+      const cssPath = this.getAssetLocalPath(cssUrl, domain, timestamp);
+      if (!fs.existsSync(cssPath)) return;
+
+      const cssContent = fs.readFileSync(cssPath, 'utf-8');
+      const rewrittenCss = this.urlRewriter.rewriteCss(cssContent, cssUrl);
+      fs.writeFileSync(cssPath, rewrittenCss);
+    } catch (error: any) {
+      this.logger.error(`Failed to rewrite CSS ${cssUrl}: ${error.message}`, error);
+    }
+  }
+
+  /**
+   * Get local path for an asset
+   */
+  private getAssetLocalPath(assetUrl: string, domain: string, timestamp: string): string {
+    try {
+      const urlObj = new URL(assetUrl);
+      const isExternal = !urlObj.hostname.endsWith(domain);
+
+      if (isExternal) {
+        const externalDomain = urlObj.hostname;
+        const assetRelativePath = urlObj.pathname.startsWith('/')
+          ? urlObj.pathname.substring(1)
+          : urlObj.pathname;
+
+        return path.join(
+          this.options.outputDir,
+          domain,
+          timestamp,
+          'assets',
+          'external',
+          externalDomain,
+          assetRelativePath
+        );
+      } else {
+        const assetRelativePath = urlObj.pathname.startsWith('/')
+          ? urlObj.pathname.substring(1)
+          : urlObj.pathname;
+
+        return path.join(
+          this.options.outputDir,
+          domain,
+          timestamp,
+          'assets',
+          assetRelativePath
+        );
+      }
+    } catch {
+      return '';
+    }
+  }
+
+  /**
+   * Save skipped assets log
+   */
+  private async saveSkippedAssets(
+    skipped: SkippedAsset[],
+    domain: string,
+    timestamp: string
+  ): Promise<void> {
+    const outputPath = path.join(this.options.outputDir, domain, timestamp, 'skipped_assets.json');
+
+    const data = {
+      domain,
+      timestamp,
+      skipped,
+    };
+
+    fs.writeFileSync(outputPath, JSON.stringify(data, null, 2));
+  }
+
+  /**
+   * Save asset manifest
+   */
+  private async saveManifest(
+    domain: string,
+    timestamp: string,
+    fetchResult: FetchResult,
+    pages: string[]
+  ): Promise<void> {
+    const manifestPath = path.join(this.options.outputDir, domain, timestamp, 'manifest.json');
+
+    const byType: Record<string, number> = {};
+    fetchResult.fetched.forEach((asset) => {
+      byType[asset.type] = (byType[asset.type] || 0) + 1;
+    });
+
+    const externalDomains = Array.from(
+      new Set(
+        fetchResult.fetched
+          .filter((a) => a.isExternal)
+          .map((a) => {
+            try {
+              return new URL(a.url).hostname;
+            } catch {
+              return '';
+            }
+          })
+          .filter(h => h !== '')
+      )
+    );
+
+    const manifest: AssetManifest = {
+      domain,
+      timestamp,
+      crawledAt: new Date().toISOString(),
+      pages,
+      assets: {
+        total: fetchResult.fetched.length,
+        byType,
+        totalSizeMB: 0, // TODO: Calculate from file sizes
+        externalDomains,
+      },
+      skippedCount: fetchResult.skipped.length,
+    };
+
+    fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2));
+  }
+
+  /**
    * Crawl a single URL from the queue
    */
   private async crawlOne(): Promise<boolean> {
@@ -381,8 +618,11 @@ export class WaybackCrawler {
     const content = await this.fetchPage(url, timestamp);
 
     if (content) {
-      // Save the page
-      const localPath = this.savePage(url, timestamp, domain, content);
+      // Process page with assets if enabled
+      const processedContent = await this.processPageWithAssets(content, url, domain, timestamp);
+
+      // Save the page (with rewritten URLs if assets were processed)
+      const localPath = this.savePage(url, timestamp, domain, processedContent);
       this.db.markCompleted(url, timestamp, localPath);
 
       // Extract and queue new links (same timestamp, same domain)
@@ -410,16 +650,19 @@ export class WaybackCrawler {
       return false;
     }
 
-    // Delay after all files for this link are processed (max 5 seconds)
-    const delay = Math.min(
-      Math.floor(
-        Math.random() * (this.options.maxDelaySeconds - this.options.minDelaySeconds + 1) +
-          this.options.minDelaySeconds
-      ),
-      5
-    );
-    this.logger.info(`Waiting ${delay} seconds before next link`);
-    await new Promise(resolve => setTimeout(resolve, delay * 1000));
+    // Apply delay if not disabled
+    if (!this.options.noDelay) {
+      // Delay after all files for this link are processed (max 5 seconds)
+      const delay = Math.min(
+        Math.floor(
+          Math.random() * (this.options.maxDelaySeconds - this.options.minDelaySeconds + 1) +
+            this.options.minDelaySeconds
+        ),
+        5
+      );
+      this.logger.info(`Waiting ${delay} seconds before next link`);
+      await new Promise(resolve => setTimeout(resolve, delay * 1000));
+    }
 
     return true;
   }

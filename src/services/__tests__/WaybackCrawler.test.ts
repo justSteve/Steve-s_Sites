@@ -267,4 +267,34 @@ describe('WaybackCrawler', () => {
       expect(() => crawler.loadSnapshotList()).not.toThrow();
     });
   });
+
+  describe('Asset Fetching Integration', () => {
+    it('should fetch assets when enabled', () => {
+      const crawler = new WaybackCrawler({
+        useOffPeakScheduler: false,
+        noDelay: true,
+        fetchAssets: true,
+        maxAssetSizeMB: 50,
+        assetConcurrency: 10,
+        fetchExternalAssets: true,
+        outputDir: testOutputDir,
+        logFile: testLogFile
+      });
+
+      // Mock or use small test case
+      // This tests that the option is passed through correctly
+      expect(crawler['options'].fetchAssets).toBe(true);
+      expect(crawler['options'].fetchExternalAssets).toBe(true);
+    });
+
+    it('should skip assets when disabled', () => {
+      const crawler = new WaybackCrawler({
+        fetchAssets: false,
+        outputDir: testOutputDir,
+        logFile: testLogFile
+      });
+
+      expect(crawler['options'].fetchAssets).toBe(false);
+    });
+  });
 });
