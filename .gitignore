@@ -18,6 +18,9 @@ ENV/
 # Downloaded archive files
 archived_pages/
 
+# Git worktrees
+.worktrees/
+
 # Progress and state files
 *.db
 *.db-*
