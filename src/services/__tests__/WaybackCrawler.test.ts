@@ -186,7 +186,7 @@ describe('WaybackCrawler', () => {
 
       // Clean up default directory
       if (fs.existsSync('archived_pages')) {
-        fs.rmdirSync('archived_pages');
+        fs.rmSync('archived_pages', { recursive: true, force: true });
       }
     });
 
