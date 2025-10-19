@@ -15,7 +15,8 @@ module.exports = {
     '^@views/(.*)$': '<rootDir>/src/views/$1',
     '^@services/(.*)$': '<rootDir>/src/services/$1',
     '^@utils/(.*)$': '<rootDir>/src/utils/$1',
-    '^open$': '<rootDir>/src/__mocks__/open.ts'
+    '^open$': '<rootDir>/src/__mocks__/open.ts',
+    '^inquirer$': '<rootDir>/src/__mocks__/inquirer.ts'
   },
   coverageThreshold: {
     global: {
