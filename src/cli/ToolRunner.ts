@@ -132,7 +132,7 @@ export class ToolRunner {
     }
 
     // Build command arguments
-    const args = this.buildArgs(options);
+    const args = this.buildArgs(options, tool.script);
 
     // Execute tool
     await this.executeTool(tool.script, args);
@@ -140,21 +140,59 @@ export class ToolRunner {
 
   /**
    * Build command arguments from options
+   * Maps to actual CLI flag names, not camelCase prompt names
    */
-  private buildArgs(options: any): string[] {
+  private buildArgs(options: any, toolScript: string): string[] {
     const args: string[] = [];
 
+    // Handle positional arguments first (selector needs domain as positional)
+    if (toolScript === 'selector' && options.domain) {
+      args.push(options.domain);
+    }
+
     for (const [key, value] of Object.entries(options)) {
+      // Skip positional args that were already added
+      if (toolScript === 'selector' && key === 'domain') {
+        continue;
+      }
+
+      // Map camelCase prompt names to actual CLI flag names
+      const flagName = this.mapToCliFlag(key);
+
       if (value === true) {
-        args.push(`--${key}`);
+        args.push(`--${flagName}`);
       } else if (value === false) {
-        args.push(`--no-${key}`);
+        // For negated booleans, use the actual negated flag from CLI
+        const negatedFlag = this.getNegatedFlag(key);
+        if (negatedFlag) {
+          args.push(negatedFlag);
+        }
       } else if (value) {
-        args.push(`--${key}`, String(value));
+        args.push(`--${flagName}`, String(value));
       }
     }
 
     return args;
+  }
+
+  /**
+   * Map camelCase prompt names to CLI flag names
+   */
+  private mapToCliFlag(key: string): string {
+    // Convert camelCase to kebab-case for CLI flags
+    return key.replace(/([A-Z])/g, '-$1').toLowerCase();
+  }
+
+  /**
+   * Get the actual negated flag name for boolean options
+   * Maps to actual CLI definitions (e.g., --no-fetch-assets, not --no-fetchAssets)
+   */
+  private getNegatedFlag(key: string): string | null {
+    const negatedFlags: Record<string, string> = {
+      'fetchAssets': '--no-fetch-assets',
+      'useScheduler': '--no-scheduler'
+    };
+    return negatedFlags[key] || null;
   }
 
   /**
