@@ -124,6 +124,40 @@ export class DatabaseService {
   }
 
   /**
+   * Initialize the database schema for asset deduplication
+   */
+  initAssetsSchema(): void {
+    try {
+      this.logger.debug('Initializing assets deduplication schema');
+
+      this.db.exec(`
+        CREATE TABLE IF NOT EXISTS assets (
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          wayback_url TEXT UNIQUE NOT NULL,
+          original_url TEXT NOT NULL,
+          content_hash TEXT NOT NULL,
+          file_path TEXT NOT NULL,
+          size_bytes INTEGER NOT NULL,
+          mime_type TEXT,
+          first_downloaded TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+          download_count INTEGER DEFAULT 1,
+          domain TEXT,
+          timestamp TEXT
+        );
+
+        CREATE INDEX IF NOT EXISTS idx_assets_wayback_url ON assets(wayback_url);
+        CREATE INDEX IF NOT EXISTS idx_assets_content_hash ON assets(content_hash);
+        CREATE INDEX IF NOT EXISTS idx_assets_original_url ON assets(original_url);
+      `);
+
+      this.logger.info('Assets schema initialized successfully');
+    } catch (error) {
+      this.logger.error('Failed to initialize assets schema', error as Error);
+      throw error;
+    }
+  }
+
+  /**
    * Save a snapshot to the database
    * @param snapshot - Snapshot data to save
    */
@@ -315,6 +349,132 @@ export class DatabaseService {
       isSignificantChange: Boolean(row.is_significant_change),
       changeScore: row.change_score as number,
     };
+  }
+
+  /**
+   * Check if an asset has already been downloaded (by Wayback URL)
+   * @param waybackUrl - The full Wayback Machine URL
+   * @returns Asset record if exists, null otherwise
+   */
+  getAssetByWaybackUrl(waybackUrl: string): any | null {
+    try {
+      const stmt = this.db.prepare('SELECT * FROM assets WHERE wayback_url = ?');
+      return stmt.get(waybackUrl) || null;
+    } catch (error) {
+      this.logger.error(`Failed to get asset by Wayback URL: ${waybackUrl}`, error as Error);
+      return null;
+    }
+  }
+
+  /**
+   * Get an asset by its content hash
+   * @param contentHash - SHA-256 hash of the content
+   * @returns Asset record if exists, null otherwise
+   */
+  getAssetByContentHash(contentHash: string): any | null {
+    try {
+      const stmt = this.db.prepare('SELECT * FROM assets WHERE content_hash = ?');
+      return stmt.get(contentHash) || null;
+    } catch (error) {
+      this.logger.error(`Failed to get asset by content hash: ${contentHash}`, error as Error);
+      return null;
+    }
+  }
+
+  /**
+   * Save a new asset record
+   * @param asset - Asset information to save
+   */
+  saveAsset(asset: {
+    waybackUrl: string;
+    originalUrl: string;
+    contentHash: string;
+    filePath: string;
+    sizeBytes: number;
+    mimeType?: string;
+    domain?: string;
+    timestamp?: string;
+  }): void {
+    try {
+      const stmt = this.db.prepare(`
+        INSERT INTO assets (
+          wayback_url, original_url, content_hash, file_path,
+          size_bytes, mime_type, domain, timestamp
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+      `);
+
+      stmt.run(
+        asset.waybackUrl,
+        asset.originalUrl,
+        asset.contentHash,
+        asset.filePath,
+        asset.sizeBytes,
+        asset.mimeType || null,
+        asset.domain || null,
+        asset.timestamp || null
+      );
+
+      this.logger.debug(`Asset saved: ${asset.originalUrl} (hash: ${asset.contentHash.substring(0, 8)}...)`);
+    } catch (error) {
+      this.logger.error(`Failed to save asset: ${asset.originalUrl}`, error as Error);
+      throw error;
+    }
+  }
+
+  /**
+   * Increment the download count for an existing asset
+   * @param waybackUrl - The Wayback URL that was reused
+   */
+  incrementAssetDownloadCount(waybackUrl: string): void {
+    try {
+      const stmt = this.db.prepare(`
+        UPDATE assets
+        SET download_count = download_count + 1
+        WHERE wayback_url = ?
+      `);
+
+      stmt.run(waybackUrl);
+      this.logger.debug(`Incremented download count for: ${waybackUrl}`);
+    } catch (error) {
+      this.logger.error(`Failed to increment download count: ${waybackUrl}`, error as Error);
+    }
+  }
+
+  /**
+   * Get asset deduplication statistics
+   * @returns Statistics about asset reuse
+   */
+  getAssetStats(): {
+    totalAssets: number;
+    totalDownloads: number;
+    duplicatesAvoided: number;
+    diskSpaceSavedBytes: number;
+  } {
+    try {
+      const stats = this.db.prepare(`
+        SELECT
+          COUNT(*) as totalAssets,
+          SUM(download_count) as totalDownloads,
+          SUM(download_count - 1) as duplicatesAvoided,
+          SUM(size_bytes * (download_count - 1)) as diskSpaceSavedBytes
+        FROM assets
+      `).get() as any;
+
+      return {
+        totalAssets: stats.totalAssets || 0,
+        totalDownloads: stats.totalDownloads || 0,
+        duplicatesAvoided: stats.duplicatesAvoided || 0,
+        diskSpaceSavedBytes: stats.diskSpaceSavedBytes || 0,
+      };
+    } catch (error) {
+      this.logger.error('Failed to get asset stats', error as Error);
+      return {
+        totalAssets: 0,
+        totalDownloads: 0,
+        duplicatesAvoided: 0,
+        diskSpaceSavedBytes: 0,
+      };
+    }
   }
 
   /**

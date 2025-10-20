@@ -1,9 +1,11 @@
 import axios from 'axios';
 import * as fs from 'fs';
 import * as path from 'path';
+import * as crypto from 'crypto';
 import { URL } from 'url';
 import { AssetReference, SkippedAsset } from '../models/AssetTypes';
 import { LoggingService } from '../../services/LoggingService';
+import { DatabaseService } from '../../services/DatabaseService';
 
 export interface AssetFetcherOptions {
   outputDir: string;
@@ -15,22 +17,29 @@ export interface FetchResult {
   fetched: AssetReference[];
   skipped: SkippedAsset[];
   errors: Array<{ asset: AssetReference; error: string }>;
+  deduplication: {
+    cacheHits: number;
+    contentDuplicates: number;
+    bandwidthSavedMB: number;
+  };
 }
 
 /**
- * Fetches assets from Wayback Machine with size limits and error handling
+ * Fetches assets from Wayback Machine with deduplication and size limits
  */
 export class AssetFetcher {
   private options: AssetFetcherOptions;
   private logger?: LoggingService;
+  private db?: DatabaseService;
 
-  constructor(options: AssetFetcherOptions, logger?: LoggingService) {
+  constructor(options: AssetFetcherOptions, logger?: LoggingService, db?: DatabaseService) {
     this.options = options;
     this.logger = logger;
+    this.db = db;
   }
 
   /**
-   * Fetch multiple assets with concurrency control
+   * Fetch multiple assets with concurrency control and deduplication
    */
   public async fetchAssets(
     assets: AssetReference[],
@@ -41,6 +50,11 @@ export class AssetFetcher {
       fetched: [],
       skipped: [],
       errors: [],
+      deduplication: {
+        cacheHits: 0,
+        contentDuplicates: 0,
+        bandwidthSavedMB: 0,
+      },
     };
 
     // Process in batches based on concurrency limit
@@ -57,6 +71,11 @@ export class AssetFetcher {
             result.fetched.push(asset);
           } else if (res.value.skipped) {
             result.skipped.push(res.value.skipped);
+          } else if (res.value.cacheHit) {
+            result.deduplication.cacheHits++;
+            result.deduplication.bandwidthSavedMB += res.value.sizeMB || 0;
+          } else if (res.value.contentDuplicate) {
+            result.deduplication.contentDuplicates++;
           }
         } else {
           result.errors.push({ asset, error: res.reason.message });
@@ -69,15 +88,48 @@ export class AssetFetcher {
   }
 
   /**
-   * Fetch a single asset from Wayback Machine
+   * Fetch a single asset from Wayback Machine with deduplication
    */
   private async fetchSingleAsset(
     asset: AssetReference,
     domain: string,
     timestamp: string
-  ): Promise<{ success: boolean; skipped?: SkippedAsset }> {
+  ): Promise<{
+    success: boolean;
+    skipped?: SkippedAsset;
+    cacheHit?: boolean;
+    contentDuplicate?: boolean;
+    sizeMB?: number;
+  }> {
     const waybackUrl = `https://web.archive.org/web/${timestamp}/${asset.url}`;
 
+    // STEP 1: Check if this exact Wayback URL has been downloaded before
+    if (this.db) {
+      const cachedAsset = this.db.getAssetByWaybackUrl(waybackUrl);
+      if (cachedAsset) {
+        // Cache hit! Asset already downloaded, reuse it
+        const assetPath = this.getAssetPath(asset, domain, timestamp);
+        this.ensureDirectoryExists(path.dirname(assetPath));
+
+        // Create hardlink to existing file (saves disk space)
+        try {
+          if (!fs.existsSync(assetPath)) {
+            fs.linkSync(cachedAsset.file_path, assetPath);
+          }
+          this.db.incrementAssetDownloadCount(waybackUrl);
+          const sizeMB = cachedAsset.size_bytes / (1024 * 1024);
+          this.logger?.info(
+            `Cache hit: ${asset.url} (saved ${sizeMB.toFixed(2)}MB download)`
+          );
+          return { success: false, cacheHit: true, sizeMB };
+        } catch (linkError) {
+          // If hardlink fails, fall through to download
+          this.logger?.warn(`Failed to create hardlink, will download: ${linkError}`);
+        }
+      }
+    }
+
+    // STEP 2: Download the asset
     try {
       // Stream response to check size before downloading fully
       const response = await axios.get(waybackUrl, {
@@ -117,6 +169,43 @@ export class AssetFetcher {
         writer.on('error', reject);
       });
 
+      // STEP 3: Compute content hash for deduplication
+      if (this.db) {
+        const contentHash = await this.computeFileHash(assetPath);
+        const mimeType = response.headers['content-type'];
+
+        // Check if this exact content already exists
+        const existingAsset = this.db.getAssetByContentHash(contentHash);
+        if (existingAsset && existingAsset.file_path !== assetPath) {
+          // Content duplicate! Replace file with hardlink
+          try {
+            fs.unlinkSync(assetPath); // Delete the duplicate
+            fs.linkSync(existingAsset.file_path, assetPath); // Link to original
+            this.logger?.info(
+              `Content duplicate: ${asset.url} links to existing ${existingAsset.original_url}`
+            );
+          } catch (linkError) {
+            this.logger?.warn(`Failed to deduplicate content: ${linkError}`);
+          }
+        }
+
+        // Save asset record to database
+        this.db.saveAsset({
+          waybackUrl,
+          originalUrl: asset.url,
+          contentHash,
+          filePath: existingAsset?.file_path || assetPath, // Use original if deduplicated
+          sizeBytes: contentLength,
+          mimeType,
+          domain,
+          timestamp,
+        });
+
+        if (existingAsset && existingAsset.file_path !== assetPath) {
+          return { success: true, contentDuplicate: true };
+        }
+      }
+
       this.logger?.info(`Fetched ${asset.type}: ${asset.url} (${sizeMB.toFixed(2)}MB)`);
       return { success: true };
 
@@ -132,6 +221,20 @@ export class AssetFetcher {
       }
       throw error;
     }
+  }
+
+  /**
+   * Compute SHA-256 hash of a file
+   */
+  private async computeFileHash(filePath: string): Promise<string> {
+    return new Promise((resolve, reject) => {
+      const hash = crypto.createHash('sha256');
+      const stream = fs.createReadStream(filePath);
+
+      stream.on('data', data => hash.update(data));
+      stream.on('end', () => resolve(hash.digest('hex')));
+      stream.on('error', reject);
+    });
   }
 
   /**
