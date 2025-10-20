@@ -17,7 +17,8 @@
     "types": ["node", "jest"],
     "baseUrl": "./src",
     "paths": {
-      "@models/*": ["models/*"],
+      "@domain/*": ["domain/*"],
+      "@models/*": ["domain/models/*"],
       "@controllers/*": ["controllers/*"],
       "@views/*": ["views/*"],
       "@services/*": ["services/*"],

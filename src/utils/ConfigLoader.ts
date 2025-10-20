@@ -3,7 +3,7 @@
  */
 
 import { readFileSync } from 'fs';
-import { DomainsConfigFile, DomainConfig } from '../models/types';
+import { DomainsConfigFile, DomainConfig } from '../domain/models/types';
 
 /**
  * Load and parse the domains configuration file

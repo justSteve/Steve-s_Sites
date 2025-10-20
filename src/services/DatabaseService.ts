@@ -4,7 +4,7 @@
  */
 
 import Database from 'better-sqlite3';
-import { Snapshot, DomainStats, YearlyStats, CrawlerURL, CrawlerStats } from '../models/types';
+import { Snapshot, DomainStats, YearlyStats, CrawlerURL, CrawlerStats } from '../domain/models/types';
 import { LoggingService } from './LoggingService';
 
 /**

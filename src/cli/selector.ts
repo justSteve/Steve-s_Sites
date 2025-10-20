@@ -4,7 +4,7 @@
  */
 
 import { Command } from 'commander';
-import { SnapshotSelector, SelectionStrategy } from '../services/SnapshotSelector';
+import { SnapshotSelector, SelectionStrategy } from '../domain/crawler/SnapshotSelector';
 
 const program = new Command();
 

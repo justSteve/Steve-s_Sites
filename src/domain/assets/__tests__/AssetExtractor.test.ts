@@ -1,4 +1,3 @@
-// src/services/__tests__/AssetExtractor.test.ts
 import { AssetExtractor } from '../AssetExtractor';
 import { AssetReference } from '../../models/AssetTypes';
 

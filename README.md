@@ -32,6 +32,38 @@ This project uses a **hybrid architecture** combining the best of both languages
 
 **Future**: Vue.js frontend for interactive timeline visualization
 
+### Project Structure
+
+This project follows a **domain-driven architecture** with shared infrastructure packages:
+
+```
+/root/
+├── packages/              # Shared infrastructure (reusable across projects)
+│   ├── api-server/       # @myorg/api-server
+│   │   └── Express boilerplate with CORS, health check, error handling
+│   └── dashboard-ui/     # @myorg/dashboard-ui
+│       └── React/MUI components and dark theme
+│
+└── projects/justSteve/   # WBM domain project
+    └── src/
+        ├── domain/       # WBM-specific business logic
+        │   ├── cdx/     # CDX analysis
+        │   ├── crawler/ # Wayback crawler
+        │   ├── assets/  # Asset fetching
+        │   └── models/  # Data models
+        ├── api/         # WBM API routes (uses @myorg/api-server)
+        ├── frontend/    # WBM UI (references @myorg/dashboard-ui)
+        ├── cli/         # Command-line tools
+        ├── services/    # Infrastructure services
+        └── utils/       # Shared utilities
+```
+
+**Dependencies:**
+- `@myorg/api-server` - Shared API server infrastructure
+- `@myorg/dashboard-ui` - Shared UI components (available for use)
+
+This structure allows WBM to maintain domain-specific implementations while sharing infrastructure with future projects.
+
 ## Features
 
 ### Analysis Tools

@@ -4,7 +4,7 @@
  */
 
 import { Command } from 'commander';
-import { WaybackCrawler } from '../services/WaybackCrawler';
+import { WaybackCrawler } from '../domain/crawler/WaybackCrawler';
 
 const program = new Command();
 

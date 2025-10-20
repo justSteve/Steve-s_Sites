@@ -1,10 +1,9 @@
-// src/services/AssetFetcher.ts
 import axios from 'axios';
 import * as fs from 'fs';
 import * as path from 'path';
 import { URL } from 'url';
 import { AssetReference, SkippedAsset } from '../models/AssetTypes';
-import { LoggingService } from './LoggingService';
+import { LoggingService } from '../../services/LoggingService';
 
 export interface AssetFetcherOptions {
   outputDir: string;

@@ -4,11 +4,11 @@
  */
 
 import { DomainConfig, Snapshot, CDXRecord } from '../models/types';
-import { DatabaseService } from '../services/DatabaseService';
-import { WaybackAPIService } from '../services/WaybackAPIService';
-import { LoggingService } from '../services/LoggingService';
-import { loadDomainsConfig } from '../utils/ConfigLoader';
-import { extractYear } from '../utils/DateFormatter';
+import { DatabaseService } from '../../services/DatabaseService';
+import { WaybackAPIService } from '../crawler/WaybackAPIService';
+import { LoggingService } from '../../services/LoggingService';
+import { loadDomainsConfig } from '../../utils/ConfigLoader';
+import { extractYear } from '../../utils/DateFormatter';
 
 /**
  * Configuration for CDX Analyzer

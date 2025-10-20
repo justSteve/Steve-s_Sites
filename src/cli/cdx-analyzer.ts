@@ -5,7 +5,7 @@
  */
 
 import { Command } from 'commander';
-import { CDXAnalyzerController } from '../controllers/CDXAnalyzerController';
+import { CDXAnalyzerController } from '../domain/cdx/CDXAnalyzerController';
 import { resolve } from 'path';
 
 const program = new Command();

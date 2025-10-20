@@ -1,4 +1,3 @@
-// src/services/__tests__/AssetFetcher.test.ts
 import { AssetFetcher } from '../AssetFetcher';
 import { AssetReference } from '../../models/AssetTypes';
 import * as fs from 'fs';

@@ -1,4 +1,3 @@
-// src/services/AssetExtractor.ts
 import * as cheerio from 'cheerio';
 import { URL } from 'url';
 import { AssetReference, AssetType } from '../models/AssetTypes';

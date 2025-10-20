@@ -13,6 +13,13 @@ import { SystemStatus, CommandBuilder, DomainListPanel } from './components/Dash
 import DomainPage from './components/DomainPage';
 import LogViewer from './components/LogViewer';
 
+/**
+ * Wayback Archive Toolkit - Main Application
+ *
+ * Note: @myorg/dashboard-ui provides DashboardLayout and generic components
+ * for new projects. WBM uses a custom layout for its specific navigation needs.
+ */
+
 type View = 'dashboard' | 'domain' | 'logs';
 
 const App: React.FC = () => {

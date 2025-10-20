@@ -5,7 +5,7 @@
 
 import axios, { AxiosInstance, AxiosError } from 'axios';
 import { CDXRecord } from '../models/types';
-import { LoggingService } from './LoggingService';
+import { LoggingService } from '../../services/LoggingService';
 
 /**
  * Options for CDX API queries

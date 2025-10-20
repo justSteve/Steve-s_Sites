@@ -8,11 +8,11 @@ import * as cheerio from 'cheerio';
 import * as fs from 'fs';
 import * as path from 'path';
 import { URL } from 'url';
-import { LoggingService, createLogger } from './LoggingService';
+import { LoggingService, createLogger } from '../../services/LoggingService';
 import Database from 'better-sqlite3';
-import { AssetExtractor } from './AssetExtractor';
-import { AssetFetcher, FetchResult } from './AssetFetcher';
-import { URLRewriter } from './URLRewriter';
+import { AssetExtractor } from '../assets/AssetExtractor';
+import { AssetFetcher, FetchResult } from '../assets/AssetFetcher';
+import { URLRewriter } from '../assets/URLRewriter';
 import { AssetManifest, SkippedAsset } from '../models/AssetTypes';
 
 interface CrawlOptions {

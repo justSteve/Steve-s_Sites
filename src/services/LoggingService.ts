@@ -4,7 +4,7 @@
  */
 
 import winston from 'winston';
-import { LogLevel } from '../models/types';
+import { LogLevel } from '../domain/models/types';
 
 /**
  * LoggingService provides centralized, structured logging

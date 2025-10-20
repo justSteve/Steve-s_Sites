@@ -1,5 +1,11 @@
 import { createTheme } from '@mui/material/styles';
 
+/**
+ * WBM-specific theme customization
+ *
+ * Note: A generic dark theme is available in @myorg/dashboard-ui
+ * for new projects, but WBM uses this custom theme for brand consistency.
+ */
 export const theme = createTheme({
   palette: {
     mode: 'dark',

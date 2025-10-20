@@ -1,6 +1,6 @@
 import inquirer from 'inquirer';
 import { spawn } from 'child_process';
-import { buildArgs } from '../utils/commandBuilder.js';
+import { buildArgs } from '../utils/commandBuilder';
 
 interface ToolDefinition {
   name: string;

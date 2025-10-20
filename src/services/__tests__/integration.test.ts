@@ -1,5 +1,4 @@
-// src/services/__tests__/integration.test.ts
-import { WaybackCrawler } from '../WaybackCrawler';
+import { WaybackCrawler } from '../../domain/crawler/WaybackCrawler';
 import * as fs from 'fs';
 import * as path from 'path';
 
