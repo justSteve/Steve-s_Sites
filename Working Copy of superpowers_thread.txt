@@ -1,0 +1,5 @@
+# Copy to your Windows home directory
+xcopy "\\wsl$\Ubuntu\root\projects\ScrapeDiscord" "C:\Users\steve\OneDrive\Code\ScapeDiscord" /E /I /H
+
+# Navigate to it
+cd C:\Users\steve\ScrapeDiscord
