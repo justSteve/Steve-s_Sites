@@ -55,8 +55,9 @@ router.get('/logs', (req: Request, res: Response) => {
  */
 router.get('/logs/:filename', (req: Request, res: Response) => {
   try {
-    const { filename } = req.params;
-    const { lines = 100, offset = 0 } = req.query;
+    const filename = req.params.filename as string;
+    const lines = parseInt(req.query.lines as string || '100', 10);
+    const offset = parseInt(req.query.offset as string || '0', 10);
 
     // Search for the log file
     const searchDirs = [

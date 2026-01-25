@@ -15,21 +15,40 @@ import { AssetFetcher, FetchResult } from '../assets/AssetFetcher';
 import { URLRewriter } from '../assets/URLRewriter';
 import { AssetManifest, SkippedAsset } from '../models/AssetTypes';
 
+interface AuthConfig {
+  loggedInUser: string;
+  loggedInSig: string;
+  s3Access?: string;
+  s3Secret?: string;
+}
+
 interface CrawlOptions {
+  // Authentication (REQUIRED)
+  auth?: AuthConfig;
+
+  // Scheduling
   useOffPeakScheduler?: boolean;
   offPeakStart?: { hour: number; minute: number };
   offPeakEnd?: { hour: number; minute: number };
-  minDelaySeconds?: number;
-  maxDelaySeconds?: number;
+
+  // Delays
+  pageDelaySeconds?: number;      // Delay before starting next page (default: 5)
+  assetDelayMs?: number;          // Delay between individual assets (default: 100)
+
+  // Output
   outputDir?: string;
   snapshotListFile?: string;
   logFile?: string;
 
   // Asset fetching options
-  noDelay?: boolean;
   fetchAssets?: boolean;
   fetchExternalAssets?: boolean;
   maxAssetSizeMB?: number;
+
+  // Legacy (deprecated)
+  minDelaySeconds?: number;
+  maxDelaySeconds?: number;
+  noDelay?: boolean;
   assetConcurrency?: number;
 }
 
@@ -143,44 +162,109 @@ export class CrawlerDB {
 }
 
 /**
+ * Load auth config from .env file
+ */
+function loadAuthFromEnv(): AuthConfig | null {
+  const envPath = path.join(process.cwd(), '.env');
+  if (!fs.existsSync(envPath)) {
+    return null;
+  }
+
+  const envContent = fs.readFileSync(envPath, 'utf-8');
+  const env: Record<string, string> = {};
+
+  for (const line of envContent.split('\n')) {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith('#')) continue;
+    const [key, ...valueParts] = trimmed.split('=');
+    if (key && valueParts.length > 0) {
+      env[key.trim()] = valueParts.join('=').trim().replace(/^["']|["']$/g, '');
+    }
+  }
+
+  const loggedInUser = env['IA_LOGGED_IN_USER'];
+  const loggedInSig = env['IA_LOGGED_IN_SIG'];
+
+  if (!loggedInUser || !loggedInSig) {
+    return null;
+  }
+
+  return {
+    loggedInUser,
+    loggedInSig,
+    s3Access: env['IA_S3_ACCESS'],
+    s3Secret: env['IA_S3_SECRET'],
+  };
+}
+
+/**
  * Polite crawler for Wayback Machine archives
+ * Requires authentication via .env file
  */
 export class WaybackCrawler {
   private db: CrawlerDB;
   private session: AxiosInstance;
   private logger: LoggingService;
-  private options: Required<CrawlOptions>;
+  private auth: AuthConfig;
+  private options: {
+    useOffPeakScheduler: boolean;
+    offPeakStart: { hour: number; minute: number };
+    offPeakEnd: { hour: number; minute: number };
+    pageDelaySeconds: number;
+    assetDelayMs: number;
+    outputDir: string;
+    snapshotListFile: string;
+    logFile: string;
+    fetchAssets: boolean;
+    fetchExternalAssets: boolean;
+    maxAssetSizeMB: number;
+  };
   private assetExtractor?: AssetExtractor;
   private assetFetcher?: AssetFetcher;
   private urlRewriter?: URLRewriter;
 
   constructor(options: CrawlOptions = {}) {
+    // Load and validate auth - REQUIRED
+    const auth = options.auth ?? loadAuthFromEnv();
+    if (!auth) {
+      throw new Error(
+        'Authentication required. Run: python python/test_wayback_auth.py --setup\n' +
+        'Then ensure .env contains IA_LOGGED_IN_USER and IA_LOGGED_IN_SIG'
+      );
+    }
+    this.auth = auth;
+
     this.options = {
-      useOffPeakScheduler: options.useOffPeakScheduler ?? true,
+      useOffPeakScheduler: options.useOffPeakScheduler ?? false,  // Default OFF for authenticated users
       offPeakStart: options.offPeakStart ?? { hour: 22, minute: 0 },
       offPeakEnd: options.offPeakEnd ?? { hour: 6, minute: 0 },
-      minDelaySeconds: options.minDelaySeconds ?? 30,
-      maxDelaySeconds: options.maxDelaySeconds ?? 120,
+      pageDelaySeconds: options.pageDelaySeconds ?? 5,            // 5 seconds between pages
+      assetDelayMs: options.assetDelayMs ?? 100,                  // 100ms between assets
       outputDir: options.outputDir ?? 'archived_pages',
       snapshotListFile: options.snapshotListFile ?? '',
       logFile: options.logFile ?? 'crawler.log',
-
-      // Asset defaults
-      noDelay: options.noDelay ?? false,
       fetchAssets: options.fetchAssets ?? true,
       fetchExternalAssets: options.fetchExternalAssets ?? true,
       maxAssetSizeMB: options.maxAssetSizeMB ?? 50,
-      assetConcurrency: options.assetConcurrency ?? 10,
     };
 
     this.logger = createLogger('WaybackCrawler', this.options.logFile);
     this.db = new CrawlerDB('crawler_state.db', this.logger);
+
+    // Create authenticated session
     this.session = axios.create({
       headers: {
-        'User-Agent': 'JustSteveCrawler/1.0 (Archival Research; slow/polite crawler)'
+        'User-Agent': 'JustSteveCrawler/1.0 (personal archive; authenticated)',
+        'Cookie': `logged-in-user=${this.auth.loggedInUser}; logged-in-sig=${this.auth.loggedInSig}`,
+        ...(this.auth.s3Access && this.auth.s3Secret
+          ? { 'Authorization': `LOW ${this.auth.s3Access}:${this.auth.s3Secret}` }
+          : {}),
       },
-      timeout: 30000
+      timeout: 30000,
     });
+
+    this.logger.info('Crawler initialized with authentication');
+    this.logger.info(`Auth: logged-in-user=${this.auth.loggedInUser.substring(0, 10)}...`);
 
     // Create output directory
     if (!fs.existsSync(this.options.outputDir)) {
@@ -189,13 +273,13 @@ export class WaybackCrawler {
 
     // Initialize asset services if enabled
     if (this.options.fetchAssets) {
-      // We'll need a domain - we'll set this properly when processing each URL
-      // For now, create placeholder services that will be reinitialized per domain
       this.assetExtractor = new AssetExtractor('');
       this.assetFetcher = new AssetFetcher({
         outputDir: this.options.outputDir,
         maxAssetSizeMB: this.options.maxAssetSizeMB,
-        concurrency: this.options.assetConcurrency,
+        concurrency: 1,  // Sequential with delays
+        assetDelayMs: this.options.assetDelayMs,
+        auth: this.auth,
       }, this.logger);
       this.urlRewriter = new URLRewriter('');
     }
@@ -266,7 +350,7 @@ export class WaybackCrawler {
    * Wait until off-peak hours if scheduler is enabled
    */
   private async waitForOffPeak(): Promise<void> {
-    if (!this.options.useOffPeakScheduler || this.options.noDelay) {
+    if (!this.options.useOffPeakScheduler) {
       return;
     }
 
@@ -652,29 +736,20 @@ export class WaybackCrawler {
   }
 
   /**
-   * Process all files for a given URL/link and then delay
+   * Process a page and all its assets, then delay before next page
    */
-  private async processLinkWithDelay(): Promise<boolean> {
-    // Process one link (which may discover multiple files)
+  private async processPageWithDelay(): Promise<boolean> {
+    // Process one page (which fetches all assets with per-asset delays)
     const hasMore = await this.crawlOne();
 
     if (!hasMore) {
       return false;
     }
 
-    // Apply delay if not disabled
-    if (!this.options.noDelay) {
-      // Delay after all files for this link are processed (max 5 seconds)
-      const delay = Math.min(
-        Math.floor(
-          Math.random() * (this.options.maxDelaySeconds - this.options.minDelaySeconds + 1) +
-            this.options.minDelaySeconds
-        ),
-        5
-      );
-      this.logger.info(`Waiting ${delay} seconds before next link`);
-      await new Promise(resolve => setTimeout(resolve, delay * 1000));
-    }
+    // Fixed delay between pages (default 5 seconds)
+    const delay = this.options.pageDelaySeconds;
+    this.logger.info(`Waiting ${delay}s before next page...`);
+    await new Promise(resolve => setTimeout(resolve, delay * 1000));
 
     return true;
   }
@@ -683,33 +758,43 @@ export class WaybackCrawler {
    * Main crawl loop
    */
   async run(): Promise<void> {
-    this.logger.info('Starting crawler...');
+    this.logger.info('='.repeat(60));
+    this.logger.info('Starting authenticated crawler');
+    this.logger.info('='.repeat(60));
+    this.logger.info(`Delay strategy: ${this.options.assetDelayMs}ms per asset, ${this.options.pageDelaySeconds}s between pages`);
+
     if (this.options.useOffPeakScheduler) {
       this.logger.info(
-        `Off-peak scheduler enabled: ${this.options.offPeakStart.hour}:${this.options.offPeakStart.minute} - ${this.options.offPeakEnd.hour}:${this.options.offPeakEnd.minute}`
+        `Off-peak scheduler: ${this.options.offPeakStart.hour}:${String(this.options.offPeakStart.minute).padStart(2, '0')} - ${this.options.offPeakEnd.hour}:${String(this.options.offPeakEnd.minute).padStart(2, '0')}`
       );
-    } else {
-      this.logger.info('Off-peak scheduler disabled - running continuously');
     }
-    this.logger.info('Delay strategy: After processing each link (max 5 seconds)');
 
     // Load snapshot list if provided
     this.loadSnapshotList();
 
+    let pagesProcessed = 0;
+    const startTime = Date.now();
+
     try {
-      while (await this.processLinkWithDelay()) {
-        // Print stats periodically
+      while (await this.processPageWithDelay()) {
+        pagesProcessed++;
         const stats = this.db.getStats();
-        this.logger.info(`Stats: ${JSON.stringify(stats)}`);
+        const elapsed = ((Date.now() - startTime) / 1000 / 60).toFixed(1);
+        this.logger.info(`Progress: ${pagesProcessed} pages in ${elapsed}min | pending=${stats.pending ?? 0}, completed=${stats.completed ?? 0}, failed=${stats.failed ?? 0}`);
       }
     } catch (err: any) {
       if (err.message !== 'interrupted') {
+        this.logger.error(`Crawler error: ${err.message}`, err);
         throw err;
       }
       this.logger.info('Crawler stopped by user');
     } finally {
       const stats = this.db.getStats();
-      this.logger.info(`Final stats: ${JSON.stringify(stats)}`);
+      const elapsed = ((Date.now() - startTime) / 1000 / 60).toFixed(1);
+      this.logger.info('='.repeat(60));
+      this.logger.info(`Crawl complete: ${pagesProcessed} pages in ${elapsed} minutes`);
+      this.logger.info(`Final: pending=${stats.pending ?? 0}, completed=${stats.completed ?? 0}, failed=${stats.failed ?? 0}`);
+      this.logger.info('='.repeat(60));
       this.db.close();
     }
   }

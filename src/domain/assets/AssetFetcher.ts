@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios, { AxiosInstance } from 'axios';
 import * as fs from 'fs';
 import * as path from 'path';
 import * as crypto from 'crypto';
@@ -7,10 +7,19 @@ import { AssetReference, SkippedAsset } from '../models/AssetTypes';
 import { LoggingService } from '../../services/LoggingService';
 import { DatabaseService } from '../../services/DatabaseService';
 
+export interface AuthConfig {
+  loggedInUser: string;
+  loggedInSig: string;
+  s3Access?: string;
+  s3Secret?: string;
+}
+
 export interface AssetFetcherOptions {
   outputDir: string;
   maxAssetSizeMB: number;
   concurrency: number;
+  assetDelayMs?: number;  // Delay between asset fetches (default: 100ms)
+  auth?: AuthConfig;      // Authentication config (required)
 }
 
 export interface FetchResult {
@@ -25,21 +34,51 @@ export interface FetchResult {
 }
 
 /**
- * Fetches assets from Wayback Machine with deduplication and size limits
+ * Fetches assets from Wayback Machine with deduplication, size limits, and rate limiting
  */
 export class AssetFetcher {
   private options: AssetFetcherOptions;
   private logger?: LoggingService;
   private db?: DatabaseService;
+  private session: AxiosInstance;
+  private assetDelayMs: number;
+  private fetchCount: number = 0;
+  private errorCount: number = 0;
 
   constructor(options: AssetFetcherOptions, logger?: LoggingService, db?: DatabaseService) {
     this.options = options;
     this.logger = logger;
     this.db = db;
+    this.assetDelayMs = options.assetDelayMs ?? 100;
+
+    // Create authenticated session
+    const headers: Record<string, string> = {
+      'User-Agent': 'JustSteveCrawler/1.0 (personal archive; authenticated)',
+    };
+
+    if (options.auth) {
+      headers['Cookie'] = `logged-in-user=${options.auth.loggedInUser}; logged-in-sig=${options.auth.loggedInSig}`;
+      if (options.auth.s3Access && options.auth.s3Secret) {
+        headers['Authorization'] = `LOW ${options.auth.s3Access}:${options.auth.s3Secret}`;
+      }
+    }
+
+    this.session = axios.create({
+      headers,
+      timeout: 30000,
+      maxRedirects: 5,
+    });
   }
 
   /**
-   * Fetch multiple assets with concurrency control and deduplication
+   * Delay helper
+   */
+  private async delay(ms: number): Promise<void> {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+
+  /**
+   * Fetch multiple assets sequentially with delays between each
    */
   public async fetchAssets(
     assets: AssetReference[],
@@ -57,34 +96,88 @@ export class AssetFetcher {
       },
     };
 
-    // Process in batches based on concurrency limit
-    const batches = this.chunkArray(assets, this.options.concurrency);
+    this.fetchCount = 0;
+    this.errorCount = 0;
+    const startTime = Date.now();
 
-    for (const batch of batches) {
-      const promises = batch.map(asset => this.fetchSingleAsset(asset, domain, timestamp));
-      const batchResults = await Promise.allSettled(promises);
+    this.logger?.info(`Fetching ${assets.length} assets (${this.assetDelayMs}ms delay between each)`);
 
-      batchResults.forEach((res, idx) => {
-        const asset = batch[idx];
-        if (res.status === 'fulfilled') {
-          if (res.value.success) {
-            result.fetched.push(asset);
-          } else if (res.value.skipped) {
-            result.skipped.push(res.value.skipped);
-          } else if (res.value.cacheHit) {
-            result.deduplication.cacheHits++;
-            result.deduplication.bandwidthSavedMB += res.value.sizeMB || 0;
-          } else if (res.value.contentDuplicate) {
-            result.deduplication.contentDuplicates++;
-          }
-        } else {
-          result.errors.push({ asset, error: res.reason.message });
-          this.logger?.error(`Failed to fetch ${asset.url}: ${res.reason.message}`);
+    // Process assets sequentially with delays
+    for (let i = 0; i < assets.length; i++) {
+      const asset = assets[i];
+
+      // Add delay before each fetch (except the first)
+      if (i > 0) {
+        await this.delay(this.assetDelayMs);
+      }
+
+      try {
+        const fetchResult = await this.fetchSingleAsset(asset, domain, timestamp);
+        this.fetchCount++;
+
+        if (fetchResult.success) {
+          result.fetched.push(asset);
+        } else if (fetchResult.skipped) {
+          result.skipped.push(fetchResult.skipped);
+        } else if (fetchResult.cacheHit) {
+          result.deduplication.cacheHits++;
+          result.deduplication.bandwidthSavedMB += fetchResult.sizeMB || 0;
+        } else if (fetchResult.contentDuplicate) {
+          result.deduplication.contentDuplicates++;
+          result.fetched.push(asset);  // Still counts as fetched
         }
-      });
+
+        // Progress log every 10 assets
+        if ((i + 1) % 10 === 0) {
+          const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
+          this.logger?.info(`  Asset progress: ${i + 1}/${assets.length} (${elapsed}s elapsed)`);
+        }
+
+      } catch (err: any) {
+        this.errorCount++;
+        const errorMsg = this.formatError(err);
+        result.errors.push({ asset, error: errorMsg });
+        this.logger?.error(`Asset fetch failed [${asset.type}]: ${asset.url} - ${errorMsg}`);
+
+        // If we hit rate limiting, add extra delay
+        if (err.response?.status === 429) {
+          const retryAfter = parseInt(err.response.headers['retry-after'] || '60', 10);
+          this.logger?.warn(`Rate limited! Waiting ${retryAfter}s before continuing...`);
+          await this.delay(retryAfter * 1000);
+        }
+      }
     }
 
+    const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
+    this.logger?.info(
+      `Asset fetch complete: ${result.fetched.length} fetched, ${result.skipped.length} skipped, ` +
+      `${result.errors.length} errors, ${result.deduplication.cacheHits} cache hits (${elapsed}s)`
+    );
+
     return result;
+  }
+
+  /**
+   * Format error message with status code if available
+   */
+  private formatError(err: any): string {
+    if (err.response) {
+      const status = err.response.status;
+      const statusText = err.response.statusText || '';
+      switch (status) {
+        case 401: return `401 Unauthorized - auth cookies may be expired`;
+        case 403: return `403 Forbidden - access denied`;
+        case 404: return `404 Not Found in Wayback Machine`;
+        case 429: return `429 Rate Limited`;
+        case 500: return `500 Server Error`;
+        case 503: return `503 Service Unavailable`;
+        default: return `${status} ${statusText}`;
+      }
+    }
+    if (err.code === 'ECONNREFUSED') return 'Connection refused';
+    if (err.code === 'ETIMEDOUT') return 'Connection timeout';
+    if (err.code === 'ENOTFOUND') return 'DNS lookup failed';
+    return err.message || 'Unknown error';
   }
 
   /**
@@ -129,13 +222,11 @@ export class AssetFetcher {
       }
     }
 
-    // STEP 2: Download the asset
+    // STEP 2: Download the asset (using authenticated session)
     try {
       // Stream response to check size before downloading fully
-      const response = await axios.get(waybackUrl, {
+      const response = await this.session.get(waybackUrl, {
         responseType: 'stream',
-        timeout: 30000,
-        maxRedirects: 5,
       });
 
       const contentLength = parseInt(response.headers['content-length'] || '0', 10);

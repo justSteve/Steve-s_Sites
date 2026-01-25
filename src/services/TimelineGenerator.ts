@@ -421,7 +421,7 @@ ${timelineHtml}    </div>
     const domains = this.getDomains();
 
     if (domains.length === 0) {
-      console.log('No domains found in database. Run cdx_analyzer.py first.');
+      console.log('No domains found in database. Run the CDX analyzer first.');
       return;
     }
 

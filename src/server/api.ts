@@ -248,8 +248,9 @@ app.get('/api/logs', (req: Request, res: Response) => {
  */
 app.get('/api/logs/:filename', (req: Request, res: Response) => {
   try {
-    const { filename } = req.params;
-    const { lines = 100, offset = 0 } = req.query;
+    const filename = req.params.filename as string;
+    const lines = parseInt(req.query.lines as string || '100', 10);
+    const offset = parseInt(req.query.offset as string || '0', 10);
 
     // Search for the log file
     const searchDirs = [
@@ -294,8 +295,9 @@ app.get('/api/logs/:filename', (req: Request, res: Response) => {
  * Static archive server - Serve archived files with assets
  */
 app.get('/archive/:domain/:timestamp/*', (req: Request, res: Response) => {
-  const { domain, timestamp } = req.params;
-  const assetPath = req.params[0] || 'index.html';
+  const domain = req.params.domain as string;
+  const timestamp = req.params.timestamp as string;
+  const assetPath = (req.params[0] || 'index.html') as string;
 
   // Construct full file path
   const filePath = path.join(
@@ -327,7 +329,7 @@ app.get('/archive/:domain/:timestamp/*', (req: Request, res: Response) => {
  * List available snapshots for a domain
  */
 app.get('/archive/:domain', (req: Request, res: Response) => {
-  const { domain } = req.params;
+  const domain = req.params.domain as string;
   const domainPath = path.join(__dirname, '../../archived_pages', domain);
 
   if (!fs.existsSync(domainPath)) {

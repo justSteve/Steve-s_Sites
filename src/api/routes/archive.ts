@@ -14,8 +14,9 @@ const router = Router();
  * Static archive server - Serve archived files with assets
  */
 router.get('/:domain/:timestamp/*', (req: Request, res: Response) => {
-  const { domain, timestamp } = req.params;
-  const assetPath = req.params[0] || 'index.html';
+  const domain = req.params.domain as string;
+  const timestamp = req.params.timestamp as string;
+  const assetPath = (req.params[0] || 'index.html') as string;
 
   // Construct full file path
   const filePath = path.join(
@@ -47,7 +48,7 @@ router.get('/:domain/:timestamp/*', (req: Request, res: Response) => {
  * List available snapshots for a domain
  */
 router.get('/:domain', (req: Request, res: Response) => {
-  const { domain } = req.params;
+  const domain = req.params.domain as string;
   const domainPath = path.join(process.cwd(), 'archived_pages', domain);
 
   if (!fs.existsSync(domainPath)) {
