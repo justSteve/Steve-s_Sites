@@ -123,9 +123,15 @@ export class AssetExtractor {
 
   /**
    * Resolve a potentially relative URL to absolute
+   * Handles Wayback Machine rewritten URLs that start with /web/
    */
   private resolveUrl(url: string, baseUrl: string): string {
     try {
+      // Detect Wayback Machine relative URLs (e.g., /web/19990224015124im_/http://...)
+      if (url.startsWith('/web/')) {
+        return `https://web.archive.org${url}`;
+      }
+
       const resolved = new URL(url, baseUrl);
       return resolved.href;
     } catch {

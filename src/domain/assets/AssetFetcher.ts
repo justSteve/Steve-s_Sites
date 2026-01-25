@@ -194,7 +194,10 @@ export class AssetFetcher {
     contentDuplicate?: boolean;
     sizeMB?: number;
   }> {
-    const waybackUrl = `https://web.archive.org/web/${timestamp}/${asset.url}`;
+    // Don't double-wrap URLs that are already Wayback URLs
+    const waybackUrl = asset.url.startsWith('https://web.archive.org/') || asset.url.startsWith('https://web-static.archive.org/')
+      ? asset.url
+      : `https://web.archive.org/web/${timestamp}/${asset.url}`;
 
     // STEP 1: Check if this exact Wayback URL has been downloaded before
     if (this.db) {
