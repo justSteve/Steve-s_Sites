@@ -1,0 +1,391 @@
+/* ttstrain.com — Evolutionary Timeline Archive Stylesheet
+   Extends the justSteve.com pattern with TTS steel-blue palette.
+   Narrative timeline of 10 eras across 22 years (1998-2020). */
+
+:root {
+  --text: #333;
+  --bg: #fffff8;
+  --accent: #2c5f8a;
+  --era-accent: #6699CC;
+  --link: #2c5f8a;
+  --link-visited: #5a4a7a;
+  --border: #ccc;
+  --sidebar-bg: #f4f4f0;
+  --era-alt-bg: #f7f9fb;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text);
+  background-color: var(--bg);
+  margin: 0;
+  padding: 0;
+}
+
+.page-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem 3rem;
+}
+
+/* Header / Site Identity */
+.site-header {
+  border-bottom: 3px solid var(--accent);
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.site-header h1 {
+  font-size: 1.8rem;
+  margin: 0 0 0.2rem;
+  color: var(--accent);
+}
+
+.site-header .subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+}
+
+/* Navigation */
+nav {
+  margin: 1rem 0 2rem;
+}
+
+nav ul {
+  list-style: square;
+  padding-left: 1.5rem;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 2rem;
+}
+
+nav li {
+  margin-bottom: 0.3rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--link);
+  font-size: 0.95rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Content */
+h1 { font-size: 1.8rem; color: var(--accent); margin-top: 2rem; }
+h2 { font-size: 1.4rem; color: var(--accent); margin-top: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+h3 { font-size: 1.15rem; color: var(--accent); }
+
+a { color: var(--link); }
+a:visited { color: var(--link-visited); }
+
+p { margin: 0.8rem 0; }
+
+ul { list-style-type: square; padding-left: 1.5rem; }
+li { margin-bottom: 0.4rem; }
+
+blockquote {
+  border-left: 3px solid var(--era-accent);
+  margin: 1rem 0 1rem 0.5rem;
+  padding: 0.5rem 1rem;
+  color: #555;
+  background: var(--era-alt-bg);
+}
+
+/* Era Sections */
+.era-section {
+  margin: 2.5rem 0;
+  padding: 1.5rem 1.5rem 1.5rem 2rem;
+  border-left: 4px solid var(--era-accent);
+  background: var(--bg);
+  border-radius: 0 4px 4px 0;
+}
+
+.era-section:nth-child(even) {
+  background: var(--era-alt-bg);
+}
+
+.era-header {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.era-header h2 {
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.era-date {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 0.15rem 0.6rem;
+  border-radius: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.era-meta {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+/* Timeline Marker */
+.timeline-marker {
+  position: relative;
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+
+.timeline-marker::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 10px;
+  height: 10px;
+  background: var(--era-accent);
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+}
+
+/* Tech Badges */
+.tech-badge {
+  display: inline-block;
+  background: #e8eef4;
+  color: var(--accent);
+  font-size: 0.75rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 3px;
+  margin: 0.1rem 0.2rem;
+  font-family: monospace;
+}
+
+/* Image grids within eras */
+.era-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1rem 0;
+  align-items: flex-end;
+}
+
+.era-images img {
+  max-height: 120px;
+  width: auto;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  background: #fff;
+  padding: 4px;
+}
+
+.era-images .hero-img {
+  max-height: none;
+  max-width: 100%;
+  height: auto;
+}
+
+.era-images figcaption,
+.era-images .img-caption {
+  font-size: 0.75rem;
+  color: #888;
+  text-align: center;
+}
+
+.era-figure {
+  text-align: center;
+}
+
+.era-figure figcaption {
+  font-size: 0.75rem;
+  color: #888;
+  margin-top: 0.25rem;
+}
+
+/* Logo Gallery */
+.logo-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.logo-card {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1rem;
+  background: #fff;
+  text-align: center;
+}
+
+.logo-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.logo-card .logo-dates {
+  font-size: 0.85rem;
+  color: var(--accent);
+  font-weight: bold;
+  margin: 0.3rem 0;
+}
+
+.logo-card .logo-details {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.logo-comparison {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: var(--era-alt-bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.logo-comparison img {
+  max-height: 70px;
+  width: auto;
+}
+
+.logo-comparison .arrow {
+  font-size: 1.5rem;
+  color: var(--era-accent);
+}
+
+/* Archive Notes Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+th {
+  background: var(--accent);
+  color: #fff;
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+}
+
+td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+tr:nth-child(even) {
+  background: var(--era-alt-bg);
+}
+
+/* Introduction panel */
+.intro-panel {
+  background: linear-gradient(135deg, #2c5f8a 0%, #6699CC 100%);
+  color: #fff;
+  padding: 2rem;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+.intro-panel h2 {
+  color: #fff;
+  border: none;
+  margin-top: 0;
+}
+
+.intro-panel a {
+  color: #cde;
+}
+
+/* Era navigation (table of contents) */
+.era-nav {
+  background: var(--sidebar-bg);
+  padding: 1rem 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+.era-nav h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.era-nav ol {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.era-nav li {
+  margin-bottom: 0.3rem;
+}
+
+.era-nav a {
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.era-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.site-footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 3px solid var(--accent);
+  font-size: 0.85rem;
+  color: #888;
+  text-align: right;
+}
+
+.site-footer a {
+  color: #888;
+}
+
+/* Snapshot highlight */
+.snapshot-ref {
+  font-size: 0.8rem;
+  color: #999;
+  font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .page-wrapper { padding: 1rem; }
+  .era-section { padding: 1rem; border-left-width: 3px; }
+  .era-header { flex-direction: column; gap: 0.3rem; }
+  .era-images img { max-height: 80px; }
+  .logo-gallery { grid-template-columns: 1fr; }
+  .logo-comparison { flex-direction: column; }
+  nav ul { flex-direction: column; gap: 0; }
+  table { font-size: 0.8rem; }
+  th, td { padding: 0.3rem 0.5rem; }
+}
