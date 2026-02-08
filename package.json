@@ -18,6 +18,7 @@
     "format": "bun run prettier --write src/**/*.ts",
     "cdx-analyzer": "bun run dist/cli/cdx-analyzer.js",
     "crawler": "bun run dist/cli/crawler.js",
+    "selective-crawl": "bun run dist/cli/selective-crawl.js",
     "selector": "bun run dist/cli/selector.js",
     "generator": "bun run dist/cli/generator.js",
     "typecheck": "bun run tsc --noEmit"
