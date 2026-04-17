@@ -1,0 +1,61 @@
+{
+  "domain": "w3.ttstrain.com",
+  "crawledAt": "2026-01-25T17:28:16.395Z",
+  "config": {
+    "minSizeChangePercent": 30,
+    "minSizeChangeWithTime": 15,
+    "daysForTimeBasedChange": 180,
+    "maxSubstantiveSnapshots": 3
+  },
+  "totalSnapshotsAvailable": 97,
+  "snapshotsCaptured": [
+    {
+      "timestamp": "20080102235012",
+      "url": "http://w3.ttstrain.com:80/robots.txt",
+      "digest": "PJ4GGHVPBCKKF3SPBA2ACK6G7FHHDUVI",
+      "length": 440,
+      "statuscode": "200",
+      "captureReason": "first"
+    },
+    {
+      "timestamp": "20080102235014",
+      "url": "http://w3.ttstrain.com:80/$spindb.query.index.ttsview",
+      "digest": "UCWTKFEJRSBORGGITGNYC2D5M4INTVA7",
+      "length": 2491,
+      "statuscode": "200",
+      "captureReason": "substantive",
+      "changeDetails": {
+        "sizeChangePercent": 466.1363636363636,
+        "daysElapsed": 0,
+        "previousDigest": "PJ4GGHVPBCKKF3SPBA2ACK6G7FHHDUVI"
+      }
+    },
+    {
+      "timestamp": "20080108103809",
+      "url": "http://w3.ttstrain.com:80/robots.txt",
+      "digest": "PJ4GGHVPBCKKF3SPBA2ACK6G7FHHDUVI",
+      "length": 441,
+      "statuscode": "200",
+      "captureReason": "substantive",
+      "changeDetails": {
+        "sizeChangePercent": 82.29626655961462,
+        "daysElapsed": 5,
+        "previousDigest": "UCWTKFEJRSBORGGITGNYC2D5M4INTVA7"
+      }
+    },
+    {
+      "timestamp": "20080108103811",
+      "url": "http://w3.ttstrain.com:80/$spindb.query.index.ttsview",
+      "digest": "UCWTKFEJRSBORGGITGNYC2D5M4INTVA7",
+      "length": 2491,
+      "statuscode": "200",
+      "captureReason": "substantive",
+      "changeDetails": {
+        "sizeChangePercent": 464.85260770975054,
+        "daysElapsed": 0,
+        "previousDigest": "PJ4GGHVPBCKKF3SPBA2ACK6G7FHHDUVI"
+      }
+    }
+  ],
+  "skippedSnapshots": 93
+}

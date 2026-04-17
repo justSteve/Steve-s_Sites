@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Lato Hairline'), local('Lato-Hairline'), url(https://web.archive.org/web/20200406055244im_/https://fonts.gstatic.com/s/lato/v16/S6u8w4BMUTPHh30AXC-v.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://web.archive.org/web/20200406055244im_/https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://web.archive.org/web/20200406055244im_/https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://web.archive.org/web/20200406055244im_/https://fonts.gstatic.com/s/sourcesanspro/v13/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7g.ttf) format('truetype');
+}
+
+/*
+     FILE ARCHIVED ON 05:52:44 Apr 06, 2020 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:42:42 Feb 08, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.697
+  exclusion.robots: 0.101
+  exclusion.robots.policy: 0.089
+  esindex: 0.011
+  cdx.remote: 20.172
+  LoadShardBlock: 764.632 (3)
+  PetaboxLoader3.datanode: 857.536 (4)
+  load_resource: 259.602
+  PetaboxLoader3.resolve: 116.234
+*/

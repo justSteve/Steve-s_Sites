@@ -1,0 +1,1 @@
+{"id":"SS-001","type":"task","title":"Git hygiene: fix .gitignore, stage archived_pages + docs + python","status":"in_progress","created":"2026-04-17","description":"Add .venv/ to .gitignore, remove archived_pages/ from .gitignore so collected pages can be shared via GitHub, stage docs/superpowers/ and python/crawl_ttstrain_curated.py."}

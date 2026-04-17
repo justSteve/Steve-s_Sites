@@ -1,0 +1,56 @@
+#header
+{
+	width: 100%;
+	background: url(/web/20130724021321im_/http://bankwebinars.com/Content/images/header.jpg) -0 0 no-repeat;
+} 
+
+/* Begin Structure */
+#headerWS {
+    height: 156px;
+    position: relative;
+
+    background-repeat: repeat-x;
+}
+/* Begin Header */
+#logoWS {
+    position: absolute;
+    width: 229px;
+    height: 134px;
+    left: 27px;
+    top: 0px;
+}
+#taglineWS {
+    color: #fff;
+    font-family:Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 24px;
+    position: absolute;
+    left: 264px;
+    bottom: 8px;
+    z-index: 20;
+}
+/************************************* HOMEPAGE ************************************************************/
+#contactinfoWS { padding-right: 10px; padding-top: 25px; text-align: right; color: #fff;}
+#contactinfoWS a { color: #EBEACC; font-weight: bold; }
+
+
+
+/*
+     FILE ARCHIVED ON 02:13:21 Jul 24, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:00:30 Mar 22, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.968
+  exclusion.robots: 0.104
+  exclusion.robots.policy: 0.088
+  esindex: 0.015
+  cdx.remote: 24.42
+  LoadShardBlock: 138.678 (3)
+  PetaboxLoader3.datanode: 158.065 (4)
+  load_resource: 81.609
+*/

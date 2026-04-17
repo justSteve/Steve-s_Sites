@@ -1,0 +1,20 @@
+{
+  "domain": "juststeve.com",
+  "timestamp": "19990224015124",
+  "crawledAt": "2026-01-25T13:14:19.010Z",
+  "pages": [
+    "index.html"
+  ],
+  "assets": {
+    "total": 4,
+    "byType": {
+      "css": 2,
+      "js": 2
+    },
+    "totalSizeMB": 0,
+    "externalDomains": [
+      "web-static.archive.org"
+    ]
+  },
+  "skippedCount": 1
+}

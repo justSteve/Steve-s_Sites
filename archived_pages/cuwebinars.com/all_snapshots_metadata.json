@@ -1,0 +1,1253 @@
+{
+  "domain": "cuwebinars.com",
+  "fetchedAt": "2026-01-25T19:37:09.403Z",
+  "totalSnapshots": 178,
+  "snapshots": [
+    {
+      "timestamp": "20110130210502",
+      "url": "http://cuwebinars.com/",
+      "digest": "RKPTRLF4BHO5OMRJPTKBYZ3UXHNGHCTN",
+      "length": 7117,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20131231141324",
+      "url": "http://cuwebinars.com/",
+      "digest": "5YSYWP4T6DPB6IKCP5MEQKTEZNLGTVFQ",
+      "length": 6462,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20140207190932",
+      "url": "http://www.cuwebinars.com/",
+      "digest": "ZCBDVPLNTF7X5UH6IISIRUJRNKCCKC26",
+      "length": 6688,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20140517072216",
+      "url": "http://cuwebinars.com/",
+      "digest": "WH5WDOJA5CTYRFAVXMYFKTOGA2G53RSF",
+      "length": 6505,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20141217032533",
+      "url": "http://cuwebinars.com/",
+      "digest": "CD4ACQKEZ4PPCX4ZKX7C3XRSIGV4NABG",
+      "length": 6714,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20141219113823",
+      "url": "http://www.cuwebinars.com/",
+      "digest": "HW2C5J447DYBNDM53I4EBC34G6WPB3RX",
+      "length": 6717,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20150309173712",
+      "url": "http://www.cuwebinars.com:80/",
+      "digest": "4IQ5KBZZBLCKXJHKLKB6JMYR2V42XVWS",
+      "length": 6716,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20150409071644",
+      "url": "http://www.cuwebinars.com:80/",
+      "digest": "DO273NGW4DTJ6YCJ6UQFJU5CXFNLX4SQ",
+      "length": 6730,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20150510043029",
+      "url": "http://www.cuwebinars.com:80/",
+      "digest": "LF4QQU53ECD55TKABGCLVYDGG2A7CBE7",
+      "length": 6744,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20150801123426",
+      "url": "http://cuwebinars.com/",
+      "digest": "ARS7KUUF3KOP4VAMJWPVGYTUP5QTYKAV",
+      "length": 8736,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20151125084954",
+      "url": "http://cuwebinars.com/",
+      "digest": "33ODILSONOB5FOXBKGI7CERBF4XVE33T",
+      "length": 7109,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20160112032908",
+      "url": "http://cuwebinars.com/",
+      "digest": "IO7TBNJGL76BKZWYVY6GW6GKUJI2HL3W",
+      "length": 7090,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20160407020301",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "QDXJ74DGW6CA5NVM5PQDF3OVKJZD4VK5",
+      "length": 7066,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20161023095047",
+      "url": "https://cuwebinars.com/",
+      "digest": "JH45VQSSELK7KAUTUAHHGK5ITGHTIY27",
+      "length": 7570,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20171016095243",
+      "url": "https://cuwebinars.com/",
+      "digest": "YMZOFQNHUKBHWE7I4F32H3ZAWOLSGCI3",
+      "length": 8134,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20180105192551",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "7NCBA4ST6TWZ353PKRG3RMYEFY7RYYVX",
+      "length": 7889,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20180420225918",
+      "url": "https://cuwebinars.com/",
+      "digest": "56XRPGUPUJNSFVC6GE6JDZ7IH2TTO6WW",
+      "length": 7681,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20180813232417",
+      "url": "https://cuwebinars.com/",
+      "digest": "REQTWA4SNEFSANRHOPWYWT5S4WKNQZOP",
+      "length": 8351,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20181004023649",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "AWUGUD7BN5JW36L277JRDCHTECGYD22H",
+      "length": 8286,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20190109110219",
+      "url": "https://cuwebinars.com/",
+      "digest": "DNVFX7G7YEINETEV7SJP6MDF4XSVZM3Y",
+      "length": 8359,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20190822082017",
+      "url": "https://cuwebinars.com/",
+      "digest": "YXOHHFXRVMZXGDD3DDBDZ7CW2JMIZI75",
+      "length": 12347,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20190921191000",
+      "url": "https://cuwebinars.com/",
+      "digest": "TYGTPMUQ7YS47XEXVEQQ36XSJ7ZPN7RZ",
+      "length": 12783,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20191015105007",
+      "url": "https://cuwebinars.com/",
+      "digest": "XUB3PFXUDTEQTCYZN35FOWWQGUSGKIBR",
+      "length": 12769,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20191118132800",
+      "url": "https://cuwebinars.com/",
+      "digest": "OBB45W3A7EG47MRPTXGM2CT3EZPD3WK6",
+      "length": 12539,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20191212014949",
+      "url": "https://cuwebinars.com/",
+      "digest": "KDRFVTJOS47FE72QR3LQ5OQM3OO5YIB5",
+      "length": 12485,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20200813191710",
+      "url": "https://cuwebinars.com/",
+      "digest": "63YH32OB73WG7LVDSCUD34RAPSMJJH2S",
+      "length": 16362,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20200926103623",
+      "url": "https://cuwebinars.com/",
+      "digest": "3MYPFZO7LTM4QQVPWCKFF2SZEXQG7YQS",
+      "length": 16523,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20200929005559",
+      "url": "https://cuwebinars.com/",
+      "digest": "R3ZQCILLYWPTZFW4IPL2RDXCVILYSKXW",
+      "length": 16523,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20201202175512",
+      "url": "https://cuwebinars.com/",
+      "digest": "ILEVGI6TYUX5PJ6VCF5Q3IJJ62HXLRT4",
+      "length": 16685,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20210124205322",
+      "url": "https://cuwebinars.com/",
+      "digest": "S4PXNDOSVJE7F72EI27LTZR4HBYXNBC5",
+      "length": 16842,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20210304210215",
+      "url": "https://cuwebinars.com/",
+      "digest": "W2ZIKHEWRLA3NZTSMVT2TYHTGIRJUT4D",
+      "length": 16832,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20210417193506",
+      "url": "https://cuwebinars.com/",
+      "digest": "NWQEIEOKCOIHAVIWR2J7AFG3EX3G5HHD",
+      "length": 16864,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20210509093433",
+      "url": "https://cuwebinars.com/",
+      "digest": "GOKMD6PXWVXWZDLTNARLG6KHMKOGN2GN",
+      "length": 16873,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20210619021319",
+      "url": "https://cuwebinars.com/",
+      "digest": "ODEYHHQYFMXLXIHFKOXEHIEQRO3B4V6V",
+      "length": 17004,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20210619021319",
+      "url": "https://cuwebinars.com/",
+      "digest": "ODEYHHQYFMXLXIHFKOXEHIEQRO3B4V6V",
+      "length": 17004,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20210725175250",
+      "url": "https://cuwebinars.com/",
+      "digest": "EVC4NDCCYY5VMYA3QBBJMKN5CO2GZX6A",
+      "length": 17016,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20210921071641",
+      "url": "https://cuwebinars.com/",
+      "digest": "IS2PY7GRN3IREXB3GV6PKOI27KH7A7JK",
+      "length": 17011,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20211130020340",
+      "url": "https://cuwebinars.com/",
+      "digest": "Q4QDAFJXUOE24EFU5F5H3IERYJ5ALRJP",
+      "length": 17385,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20211225193349",
+      "url": "https://cuwebinars.com/",
+      "digest": "7MUAGRRNJOX766DIQTBW7A2K4TMOQC3D",
+      "length": 17173,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220125131044",
+      "url": "https://cuwebinars.com/",
+      "digest": "P6SQIHLF6IGI6V4SSCEGRYSSCABRPJS3",
+      "length": 17468,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220311113310",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "IX46TU3E2SD3CECEAQC5UWRDUBIY6BEN",
+      "length": 52742,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220518151646",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "IZ67KG6SQBUAF5UW63OLWKMNSZ2FVET2",
+      "length": 51998,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220521144220",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "FGF3VZEJV6FQWEVI3F3PGWIXITBKLJYG",
+      "length": 51734,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220627215946",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "4IXMX5C33ANASYBDVABKP4OUECOXXX4S",
+      "length": 53409,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220629024708",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "3WX5QUIEEGXOQEGDPAVAPS4I4MJ33KGO",
+      "length": 53406,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220629092425",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "DWMEF4RFWUTXCNHTHF7FZ6PLEHRWBOAJ",
+      "length": 48945,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220630150346",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "CVWFYZLNOXRHLFA44YIWVWVI5STDYOK3",
+      "length": 43378,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220701035957",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "K6M3ZLY3HDKN3SP52HSO5OHAZ6J7IUXS",
+      "length": 43320,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220826151218",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "E42YV55ARUVEM2EQMWDHNV2OSOSWLHYF",
+      "length": 45455,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220906130114",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "NNEFDD7C6UKTOBDNZABLIFIEAK3GU5WP",
+      "length": 45504,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220930163448",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "MK45Y7ZGB74HOFUKQZATFPAAGP4MFS7O",
+      "length": 54996,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20221010203809",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "P4QB2BK2SJH46GISE76D77PD6LPFKRGP",
+      "length": 45529,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20221104180558",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "UXNVBKUMZ2HVRVCTNTA6777ZUX46VRZ5",
+      "length": 44525,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20221201024453",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "Y5OW6STVXPYGQTIVUSDSYBPDVIYYUEUH",
+      "length": 53166,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230113180801",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "P5DWQKRKDCPFYQBA5CPGCJ77EYMODD57",
+      "length": 43234,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230129113228",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "X6HVJMXCLHFEUYMZDMK36HFIUSSKPXAG",
+      "length": 59610,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230210040339",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "R53HPXEPBXOEXZ7FBY3VHKFM2O6J3ICH",
+      "length": 54295,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230315130919",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "KXAID2KKES7XDYF5TGJUYZO7WJDIC6HB",
+      "length": 54122,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230323101806",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "RBQI3ETX7TYX6Z5L7VD5BZOKRCELYTBB",
+      "length": 61937,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230323225335",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "EOXYMJVVREYRYV32WWFRV2DGBWF7JUIB",
+      "length": 61940,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230404011045",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "X7A5RW7IDSGSCKFOD6X5PI5WEFYWCWSD",
+      "length": 54170,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230519230655",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "VFK6PGU3227IHMWSTILOG3FIUST7UADT",
+      "length": 53069,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230520140228",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "CVW7ACEXUXVGOLKOMKHMUX4MROJINRH5",
+      "length": 53021,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230520143003",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "X3MCA3GZ7BPT3QTOJFHDRXHC53SDEJMZ",
+      "length": 53001,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230520144311",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "CVW7ACEXUXVGOLKOMKHMUX4MROJINRH5",
+      "length": 52986,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230520152728",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "VVFBRMKV7WIMVS2YA4ANVOBK2ABFORJD",
+      "length": 53011,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230520165829",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "OXKL3ZFB3WDOJXIXKCEJ2EQKMY5M5WII",
+      "length": 53030,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230520173713",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "IGEZL6ZZJVPC4RNWU27BRYMAI5RZNVZ5",
+      "length": 53056,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230520180936",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "SQEXCRXQUX2M4BLZMOXRGBE3WVIOOO54",
+      "length": 52961,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230520181903",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "2BW3JALGVMFQUM4HHDR24IP7L5XJWPE5",
+      "length": 52984,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230520182824",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "SQEXCRXQUX2M4BLZMOXRGBE3WVIOOO54",
+      "length": 53005,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230520200242",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "QPEYQZRMWPBLWLX4PUTPRFRKUXLKPXCK",
+      "length": 53002,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230520213036",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "SQEXCRXQUX2M4BLZMOXRGBE3WVIOOO54",
+      "length": 52985,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230520232005",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "SQEXCRXQUX2M4BLZMOXRGBE3WVIOOO54",
+      "length": 53098,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230521013958",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "OXKL3ZFB3WDOJXIXKCEJ2EQKMY5M5WII",
+      "length": 53074,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230521032842",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "OXKL3ZFB3WDOJXIXKCEJ2EQKMY5M5WII",
+      "length": 53013,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230522193055",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "SL5BHVPCPUMMVX5TN6C6OW4WAYCXAAT5",
+      "length": 52953,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230522201423",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "BYQDHYZ7FN2FKCRBMSNIEJ3O6TE67HIZ",
+      "length": 53028,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230522201903",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "BD5BKUWKL4BLNZXUG37FXG3Z6FTMNJ4E",
+      "length": 52965,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230522204151",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "ELZRW3URZS67FABO4HJXZEFT2GHOROQX",
+      "length": 53076,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230522210725",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "F4BUDM5DSRNBLMR7VHRXEG23LYB5KJ6E",
+      "length": 53038,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230522210807",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "K7UZRO3ERRL5ZSVR7J6OYSPOHJENBZWM",
+      "length": 52989,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230522221708",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "5EQUTQRVV4OMFOVC4V5NQ7RWIP2AIEL7",
+      "length": 52954,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230522223328",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "SL5BHVPCPUMMVX5TN6C6OW4WAYCXAAT5",
+      "length": 53087,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230522234120",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "K7UZRO3ERRL5ZSVR7J6OYSPOHJENBZWM",
+      "length": 52998,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230522234432",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "BYQDHYZ7FN2FKCRBMSNIEJ3O6TE67HIZ",
+      "length": 53078,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230523003513",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "F4BUDM5DSRNBLMR7VHRXEG23LYB5KJ6E",
+      "length": 53046,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230523143229",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "N4VBCK5TAHZOHJG7WKLTFM7OKDHVPNZZ",
+      "length": 53045,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230523173041",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "NXKFIZFZWL3HT55RBV2K6ZXYHEIXX5LO",
+      "length": 53057,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230523204332",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "QGLXX54LAQOGP555J55I2DYQ3ET7DF37",
+      "length": 52997,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230524025456",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "DLT5WWY6FL2UH6V2X74G6MCJE2USIQTC",
+      "length": 53057,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230524045540",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "BYKLSGQ4YVVFK7OAKJZEVRPF6FR47AYG",
+      "length": 53053,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230524083130",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "BYKLSGQ4YVVFK7OAKJZEVRPF6FR47AYG",
+      "length": 53076,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230524111623",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "TJK7MI56EI23WKTHQHXG4L4FPNPHOD7K",
+      "length": 53079,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230531023755",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "VJI4QZ3PJGGTFN6CGKRSENGBPXCZADWP",
+      "length": 60525,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230601112350",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "NMMOSRK442GBHB7GTN4G2QUG5BZFGPCK",
+      "length": 60952,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230922103504",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "QCJAFBONLRBP2QHTFXVCHTNNCGSFEKYF",
+      "length": 49869,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20231128183939",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "6WI2AGHJMFOZ2TZZNXMZRY2TZV3GGMLO",
+      "length": 50490,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240223154857",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "IAH5VITTJPGJNCZ5I5RUNA7YFL5KRXOQ",
+      "length": 50597,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240416063841",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "4RKIJDYG5JX3PAVPTUL4TFHOEWMUC5LA",
+      "length": 70886,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240425002700",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "66G5QZIOI3VA5AWUKBOLCYQPQOUFXD2C",
+      "length": 71505,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240510221701",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "NQPBT4TYVOT5J6N4RZTURO2MIQP7HOXW",
+      "length": 70909,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240510223103",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "NQPBT4TYVOT5J6N4RZTURO2MIQP7HOXW",
+      "length": 70906,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240523174450",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "L4VHYZOGAXBS3V2D7TG3IY2JQ6VHE6OE",
+      "length": 70357,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240613093607",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "VMGQ453PKYBTXJU22ILESNIK6HYRZWLZ",
+      "length": 49837,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240614204126",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "235LLZ4W2VD6CK4JO3K3HXBDBZXCVYES",
+      "length": 43841,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240720180557",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "RYKEVQN5FWG7A4C3O6EX3A334BY2WJNE",
+      "length": 49733,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240802235847",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "G27I56G2NCMSUGJK65W2JVQJRFFHP6DH",
+      "length": 49816,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240830113212",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "HAHVQ2BPOSH3FYJBCBHH5DFARAKQNVVZ",
+      "length": 43650,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240830213452",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "HAHVQ2BPOSH3FYJBCBHH5DFARAKQNVVZ",
+      "length": 43808,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240831203706",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "2IELNG3YJRFYO7VYLSBZDZ5TD4FJI5TN",
+      "length": 43801,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240831215944",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "45OM5OJNVPC36ETCXFQ4HXTTGZDHOZ2A",
+      "length": 43794,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240831220051",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "45OM5OJNVPC36ETCXFQ4HXTTGZDHOZ2A",
+      "length": 43792,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240901025959",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "45OM5OJNVPC36ETCXFQ4HXTTGZDHOZ2A",
+      "length": 43795,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240901181955",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "45OM5OJNVPC36ETCXFQ4HXTTGZDHOZ2A",
+      "length": 43830,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240901212612",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "45OM5OJNVPC36ETCXFQ4HXTTGZDHOZ2A",
+      "length": 43822,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240909121207",
+      "url": "https://mcstaging.cuwebinars.com/",
+      "digest": "NQMJMPB5EPT2VAN3DL3BGSIF3V7SNQLC",
+      "length": 49322,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240916001036",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "XOZ57XA65XEH4JSWSKE5IIL6J5L326Y7",
+      "length": 70486,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240919141700",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "FODIEK3HMIEQVHZE3LQAQADHSQ27ZVRK",
+      "length": 44212,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240919213102",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "667QLKRMCH7RSQQLLQ4MR2XDPFJCILL3",
+      "length": 44232,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240919232240",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "RFB4TJT6PDIQBU6HN7D2WAX3YC6NN5KE",
+      "length": 44221,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240920151307",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "72AWTT5ZK5K45MHHF57KUBU66HWHA3O6",
+      "length": 44036,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240921172255",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "GPYAFJUS4CAGNCDV3QLQZEPTWR232OJ3",
+      "length": 44057,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240922004619",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "KE6O563VYI6TL536DTUSISJHOJMXGKFR",
+      "length": 44007,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240922044407",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "KE6O563VYI6TL536DTUSISJHOJMXGKFR",
+      "length": 44022,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240924003747",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "3OGMEATABEUMV5YOZXPGCINOMMIJR76A",
+      "length": 44019,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240924084129",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "3OGMEATABEUMV5YOZXPGCINOMMIJR76A",
+      "length": 44017,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240924111233",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "7XVT4JODGR66NVDMXAWEK3EJOAXJFSEI",
+      "length": 44022,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240925071550",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "36AJAJ766OELVOQMWO6YEFMJPUA2BP5U",
+      "length": 43993,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20241004021910",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "P7X4IMZBVYCQN3X7WHNHNJWQHYA6E6XJ",
+      "length": 44025,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20241004024941",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "6Q32WV6TYU65WVFJZNZENNY7YVGFHJMS",
+      "length": 44032,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20241005023501",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "3HG6CMWJEMRFXGPAOWWG6ONX5TZWKHUR",
+      "length": 44032,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20241005040246",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "3HG6CMWJEMRFXGPAOWWG6ONX5TZWKHUR",
+      "length": 69641,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20241009123146",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "PJKJTAK37Q6TA7TUFUSTKUG7SVH6VBCR",
+      "length": 70556,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20241108061114",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "XYIM4KJWDWLXUXU4JFX77FARBWW7W3LC",
+      "length": 47345,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20241108061215",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "XYIM4KJWDWLXUXU4JFX77FARBWW7W3LC",
+      "length": 47331,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20241109173642",
+      "url": "https://mcstaging.cuwebinars.com/",
+      "digest": "6MPIO3GTCLYK2KYMMYTLNC4SY7QJTOZM",
+      "length": 73108,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20241112020017",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "PPQWA7AJRVFA7ZOCFG53ANN7TBTOFT2K",
+      "length": 70098,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20241119152616",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "S3TTGSJ77KOSXCMV6N754UKEHRWKIEZW",
+      "length": 47932,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20241120203045",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "2DKWGMFO6565756HWHAFVHGC3ON7EGRN",
+      "length": 47431,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20241121213648",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "QFGJLDGDMHCMQGBWFDPJR3EFNY66ZQGD",
+      "length": 47664,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20241122082255",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "YK6L6POXY3ORBDU4SIP43HKQKE4D75EP",
+      "length": 47712,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20241129215324",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "GSR6HK4CKK5DSZSGJPQYOP5ZIHSBFSXB",
+      "length": 47742,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20241202195609",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "CNZVX2HXX3G7WABVH4DPUUAR37K2REDR",
+      "length": 47709,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20241203004627",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "QMENQFMMJMTEWO6UBJI4WV5O4O7EUSFU",
+      "length": 47738,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20241203005123",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "QMENQFMMJMTEWO6UBJI4WV5O4O7EUSFU",
+      "length": 47739,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20241203005610",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "QMENQFMMJMTEWO6UBJI4WV5O4O7EUSFU",
+      "length": 47740,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20241203015251",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "QMENQFMMJMTEWO6UBJI4WV5O4O7EUSFU",
+      "length": 47758,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20241203024604",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "QMENQFMMJMTEWO6UBJI4WV5O4O7EUSFU",
+      "length": 47745,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20241204015837",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "TW24MSZHLI63TXXMN7V554QJBHYIIULS",
+      "length": 47714,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20241206081245",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "FKIQ7A6YRZWAGYPX5HFLLGK43OUBF3RJ",
+      "length": 47772,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20241206090032",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "FKIQ7A6YRZWAGYPX5HFLLGK43OUBF3RJ",
+      "length": 47734,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20241206112904",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "FKIQ7A6YRZWAGYPX5HFLLGK43OUBF3RJ",
+      "length": 47761,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20241206222311",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "AN4H326B27LW6NAUVISPYFIGDXBWAQ6S",
+      "length": 70005,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20241207141009",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "FKIQ7A6YRZWAGYPX5HFLLGK43OUBF3RJ",
+      "length": 47760,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20241212134736",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "MSXQCXI2YF3TNOSGADOXR2G4VH47XGBY",
+      "length": 73859,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250105091402",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "DN77NWRVJ3YW7WNIMPQCROUTWRPSFA37",
+      "length": 72993,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250126041421",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "KI2EHUKUSJMW6PEGAL6QRXYI5EVTRMA4",
+      "length": 69038,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250202103157",
+      "url": "https://mcstaging.cuwebinars.com/",
+      "digest": "6AAGO2BSDD77IEATCS33W2JZ25J4KJCJ",
+      "length": 72504,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250206200238",
+      "url": "https://mcstaging.cuwebinars.com/",
+      "digest": "T2SMY35MDNCSBR23KFXQH5RGAX4765B4",
+      "length": 72513,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250209195343",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "G7IZ7GKQZSOUMIKTLZI3NX4J3IBQDWNA",
+      "length": 69155,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250214165149",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "254EJIRPU2733Z35PMP6LGHUK6GHSOQS",
+      "length": 69166,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250220194915",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "U3JQDX7D7V34DR23GDEIQTPWMELMJ3L4",
+      "length": 73529,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250221024848",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "46U7LTKLXB2WDWYMW35VLMTIFQZRAG6E",
+      "length": 73201,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250305174648",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "EFKEZNZKMS3443MGAZ7CJIOUHFHSE2GE",
+      "length": 73299,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250308022455",
+      "url": "https://mcstaging.cuwebinars.com/",
+      "digest": "43UAK2M73NK4DFMVZYFFZRHYUSDKU75Q",
+      "length": 72673,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250331072011",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "E4JTNAMUKRRJF4ZUDP3GUJWW23YSYHIO",
+      "length": 64166,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250401194050",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "4CRPQ54WQLPSETNHVPOSTLGPBGRJSQ52",
+      "length": 64171,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250411060907",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "XLNDOVMQ7EQEEJOKABVEKIH6KVD26HUP",
+      "length": 64519,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250413024114",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "EG4K672EXKELLX7CDYRXSY45ZP6YF5RE",
+      "length": 64529,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250512141531",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "MIUYP74Z6NP2AQ3YRCWKFZVBVPAKHE7J",
+      "length": 76123,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250617070143",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "PYOBOAWI53T6RWWTPMHFLVQKRXA6TIDG",
+      "length": 76828,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250714020202",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "E2JOCPS6VPKBRIB5EYSOKJ263BHZ2QIA",
+      "length": 76894,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250803043549",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "IEJ2SJID5W76NWPF24XX5FYU26MDLIPI",
+      "length": 77102,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250912213722",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "B6255LXVB4JDKG3AQOCYTTD4TRJG53MV",
+      "length": 78133,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20251005212326",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "S5K3P6RWQDOXPYUF2LTAVYHJCK63OAIK",
+      "length": 78436,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20251110125037",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "WVSGTFMZRFB27BMA5AQT3CBD5TEGK5UQ",
+      "length": 78848,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20251210013010",
+      "url": "https://www.cuwebinars.com/",
+      "digest": "KRVQXA5XDB63JGJ3OD6R3U3OWIID5HLV",
+      "length": 80194,
+      "statuscode": "200"
+    }
+  ]
+}

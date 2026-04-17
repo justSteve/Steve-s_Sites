@@ -1,0 +1,676 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	background-image:url(/web/20160218213521im_/http://ttstrain.com/images/bkgrd.jpg);
+	background-repeat:repeat-x;
+	background-color:#FFFFFF;
+}
+
+#wrap {
+	min-height: 100%;
+	width: 900px;
+	height:auto;
+	margin-right:auto;
+	padding-top:20px;
+	margin-left:auto;
+	padding-bottom: 150px;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-bottom:20px;
+
+}
+
+/*Top Page Navigation*/
+
+#navbar {
+	float:left;
+	font-size:12px;
+     width:400px;
+	 height:30px;
+	 font-family:Arial, Helvetica, sans-serif;
+	 margin-bottom:5px;
+}
+
+#navbar a {
+	text-decoration:none;
+	color:#FFFFFF;
+    float:left;
+     margin:0;
+     padding:10px;
+     text-decoration:none;
+}
+
+#navbar a:hover {
+	color:#000;
+	background-color:#FFFFFF;
+}
+
+#navbar ul {
+	list-style-type:none;
+	height:100px;
+	margin:0;
+	padding:10px 10px 0 10px;
+
+}
+
+#navbar ul li{
+	float:left;
+	text-align:center;
+	display:inline;
+      margin:0;
+      padding:0;
+}
+
+#navbar ul li a{
+	float:left;
+	margin-top:0px;
+	padding-right:20px;
+}
+	
+/*Newsletter Signup Box*/
+#enewsletterWRAP {
+	float:right;
+	margin-bottom:20px;
+}
+
+#enewsletterBUTTON {
+	float:left;
+	z-index:2;
+	margin-top:5px;
+	margin-left:-25px;
+	width:40px;
+}
+
+#enewsletterBOX {
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	
+	border:medium solid #FFF;
+	width:300px;
+	color:#FFFFFF;
+	background-color:#2199d6;
+	float:right;
+	padding:10px;
+	margin-top:5px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+/*TTS Logo*/
+#TTSlogo {
+	float:left;
+	margin-top:20px;
+}
+
+/*Home Page - Banner*/
+#bannerWRAP {
+	float:left;
+	margin-top:30px;
+	margin-bottom:10px;
+	border:medium solid #FFF;
+	width:840px;
+	height:299px;
+	margin-bottom:20px;
+	
+}
+
+.bannerslide {
+	float:left;
+}
+
+/*Home Page - 3 small boxes*/
+
+.box1 {
+	float:left;
+	width:200px;
+	height:225px;
+	background-color:#2199d6;
+	margin-right:27px;
+	border:#FFF solid medium;
+	 font-family:Arial, Helvetica, sans-serif;
+}
+
+#box2 {
+	float:left;
+	width:200px;
+	height:225px;
+	background-color:#003d74;
+	margin-right:27px;
+	border:#FFF solid medium;
+	 font-family:Arial, Helvetica, sans-serif;
+}
+
+#box1 img, #box2 img{
+	margin:5px;
+	float:right;
+}
+
+.boxtext {
+	float:left;
+	padding:5px;
+	color:#FFF;
+}
+.boxtext img {
+}
+
+
+.boxtext p {
+	margin-top:0px;
+}
+
+.boxTitle {
+	float:left;
+	padding:5px;
+	vertical-align:bottom;
+	background-color:#FFFFFF;
+	width:193px;
+	height:25px;
+	font-size:15px;
+	opacity:0.4;
+	filter:alpha(opacity=40); /* For IE8 and earlier */
+	 font-family:Arial, Helvetica, sans-serif;
+}
+
+.boxTitle h3{
+	color:#000;
+	opacity:1;
+	filter:alpha(opacity=100); /* For IE8 and earlier */
+	text-align:center;
+	font-size:20px;
+	font-weight:100;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-top:0px;
+
+}
+
+/*Event Stream*/
+#eventBox {
+	float: right;
+	background-color:#716f6f;
+	width:201px;
+	margin:0px;
+	padding-bottom:10px;
+	 font-family:Arial, Helvetica, sans-serif;
+	 margin-bottom:10px;
+
+}
+
+#eventTitle {
+	float:left;
+	padding:5px;
+	background-color:#979797;
+	color:#FFF;
+	width:190px;
+	 font-family:Arial, Helvetica, sans-serif;
+
+}
+
+#eventTitle h3{
+	text-align:center;
+	font-size:20px;
+	font-weight:100;
+	 font-family:Arial, Helvetica, sans-serif;
+
+}
+
+#eventInfo {
+	float:left;
+	width:200px;
+	color:#FFFFFF;
+	padding:10px;
+	 font-family:Arial, Helvetica, sans-serif;
+
+}
+
+#eventBox hr {
+	color:#FFFFFF;
+}
+
+.eventwrap {
+	border-bottom:thin dashed #CCC;
+	margin-bottom:10px;
+	padding-bottom:10px;
+	width:180px;
+}
+
+#eventBox .date {
+	font-style:italic;
+	font-size:12px;
+	 font-family:Arial, Helvetica, sans-serif;
+
+}
+
+#eventBox .date a {
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+#eventBox .event {
+	font-weight:600;
+	font-size:12px;
+	line-height:20px;
+}
+
+#eventBox .event a {
+	color:#FFFFFF;
+	text-decoration:underline;
+}
+	
+	
+.eventwrap2 {
+	float:left;
+	width:600px;
+	border-bottom:medium #999 dotted;
+	margin-top:10px;
+
+}
+
+
+
+.eventwrap2 h3 {
+	margin-top:5px;
+}
+
+
+/*Home Page - News Stream*/
+#news {
+	float:left;
+	margin-top:0px;
+	vertical-align:top;
+	padding-bottom:20px;
+	margin-bottom:10px;
+}
+
+#allNews {
+	float:left;
+	width:400px;
+}
+
+.newswrap {
+
+}
+
+#news .date {
+	font-weight:bold;
+	margin-right:5px;
+	margin-bottom:5px;
+	float:left;
+	vertical-align:top;
+}
+
+#news .artical {
+	margin-bottom:5px;
+	float:left;
+	vertical-align:top;
+	margin-left:230px;
+	margin-top:-28px;
+	width:450px;
+	text-wrap:normal;
+}
+
+#news h2 {
+	font-weight:bold;
+	color:#003d74;
+	float:left;
+	vertical-align:top;
+	font-size:24px;
+	margin-bottom:5px;
+}
+
+.news {
+	float:left;
+	margin-top:5px;
+	width:400px;
+}
+
+.dashedline {
+	width:650px;
+	height:5px;
+	margin-top:0px;
+	margin-bottom:20px;
+	float:left;
+	border-bottom:thin dashed #003d74;
+	margin-right:27px;
+	margin-bottom:10px;
+}
+
+.dashedline2 {
+	width:550px;
+	height:5px;
+	margin-top:0px;
+	margin-bottom:20px;
+	float:left;
+	border-bottom:thin dashed #003d74;
+	margin-right:27px;
+	margin-bottom:10px;
+}
+
+.newswrap2 {
+	float:left;
+	width:400px;
+
+}
+
+.date2 {
+	font-weight:bold;
+	margin-right:5px;
+	margin-bottom:5px;
+	float:left;
+	vertical-align:top;
+}
+
+.artical2 {
+	margin-bottom:5px;
+	float:left;
+	vertical-align:top;
+	margin-left:230px;
+	margin-top:-28px;
+	width:400px;
+	text-wrap:normal;
+}
+
+.date2 a {
+	color:#003d74;
+	float:left;
+}
+
+
+#news .date a {
+	color:#003d74;
+	text-decoration:none;
+	float:left;
+}
+
+#news .artical a {
+	color:#003d74;
+	text-decoration:underline;
+	float:left;
+}
+
+/*Advertisment boxes*/
+
+.advertisment {
+	width:197px;
+	background-color:#000000;
+	border:#003d74 solid medium;
+	height:75px;
+	float:right;
+	margin-top:15px;
+	margin-bottom:20px;
+}
+
+.advertisment-left {
+	width:225px;
+	background-color:#000000;
+	border:#2199d6 solid medium;
+	height:120px;
+	float:left;
+	margin-top:15px;
+}
+
+/*Sticky Footer*/
+#footer {
+	position: relative;
+	margin-top: -150px; /* negative value of footer height */
+	height: 200px;
+	background-color:#494949;
+	clear:both;
+	color:#FFFFFF;
+	font-size:10px;
+	padding-top:20px;
+	text-align:center;
+	 font-family:Arial, Helvetica, sans-serif;
+} 
+	
+#footerWrap {
+	min-height: 100%;
+	width: 900px;
+	height:auto;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+#footer ul {
+	list-style-type:none;
+	width:900px;
+	font-size:12px;
+	margin-bottom:20px;
+	padding-bottom:20px;
+	margin-top:5px;
+
+}
+
+#footer ul li{
+	float:left;
+	text-align:center;
+	display:inline;
+	margin-right:25px;
+	width:125px;
+	margin-bottom:5px;
+}
+
+#footer ul li a{
+	float:left;
+	margin-top:0px;
+	padding-right:20px;
+	color:#999;
+	text-decoration:none;
+}
+
+#footer ul li a:hover{
+	text-decoration:underline;
+}
+
+/*TTS Bottom Footer Info*/
+
+#ttsFooter {
+	width:900px;
+	color:#FFF;
+	float:left;
+	border-top:#666 thin solid;
+}
+
+#ttsFooter ul {
+	list-style-type:none;
+	width:900px;
+	font-size:12px;
+	margin-left:50px;
+
+}
+
+#ttsFooter ul li{
+	float:left;
+	text-align:center;
+	display:inline;
+	width:250px;
+	margin-bottom:5px;
+	margin-top:20px;
+}
+
+#ttsFooter ul li a{
+	float:left;
+	color:#FFF;
+	text-decoration:none;
+}
+
+#ttsFooter ul li a:hover{
+	text-decoration:underline;
+}
+
+/*Moonstruck Media*/
+#mmplogo {
+	float:right;
+	margin-top:10px;
+}
+
+/*General*/
+
+img a {
+	border:none;
+}
+
+.floatleft {
+	float:left;
+}
+
+p {
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+/*pages css*/
+
+#pagewrap {
+	float:left;
+	margin-top:30px;
+	margin-bottom:20px;
+	width:910px;
+	height:auto;
+}
+
+#page {
+	float:left;
+	width:610px;
+	background-color:#FFFFFF;
+	padding:15px;
+}
+	
+#page h1 {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#003d74;
+	font-size:34px;
+	margin-bottom:5px;
+	font-weight:100;
+}
+
+#page h2 {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#494949;
+	font-size:26px;
+	font-weight:100;
+	margin-bottom:10px;
+}
+	
+h2.book-title {
+	margin-bottom:5px;
+}
+
+h3.book-descr {
+	margin-top:0px;
+}
+
+h3.book-descr a:link {
+	color:#000;
+}
+
+/*Side link Bar*/
+
+#sidelink-wrap {
+	float:left;
+	width:240px;
+	height:auto;
+	margin-left:10px;
+	margin-right:20px;
+}
+
+#sidelinks {
+	float: left;
+	background-color:#716f6f;
+	width:220px;
+	height:auto;
+	padding-bottom:10px;
+	font-family:Arial, Helvetica, sans-serif;
+	border:#FFF solid medium;
+	padding-right:5px;
+}
+
+#sidelinks ul {
+	display:inline;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#FFFFFF;
+}
+
+#sidelinks ul li {
+	padding-left:15px;
+	padding-bottom:10px;
+	padding-top:10px;
+	display:block;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	font-size:18px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+#sidelinks ul li a {
+	color:#FFF;
+	text-decoration:none;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+#sidelinks ul li a:hover {
+	text-decoration:underline;
+}
+
+.border-image {
+	-moz-box-shadow: 0 0 1em #999999;
+	-webkit-box-shadow: 0 0 1em #999999;
+    box-shadow: 0 0 1em #999999;
+	border:#FFF medium solid;
+	float:right;
+	margin:10px;
+	font-size:10px;
+	text-align:center;
+	color:#333;
+}
+
+ol li {
+	margin-bottom:10px;
+}
+
+.archive {
+	float:right;
+	color:#666;
+}
+
+.archive a:link {
+	color:#666;
+}
+
+.cost {
+	font-weight:bold;
+	color:#F00; 
+	font-size:20px;
+}
+
+.product {
+	float:right;
+	margin:10px;
+}
+
+.currentpage {
+	color:#66CCFF;
+}
+/*
+     FILE ARCHIVED ON 21:35:21 Feb 18, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:34:23 Feb 08, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.651
+  exclusion.robots: 0.056
+  exclusion.robots.policy: 0.042
+  esindex: 0.011
+  cdx.remote: 8.989
+  LoadShardBlock: 218.253 (3)
+  PetaboxLoader3.datanode: 200.796 (4)
+  PetaboxLoader3.resolve: 95.837 (2)
+  load_resource: 147.931
+*/

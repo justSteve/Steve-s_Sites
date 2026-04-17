@@ -1,0 +1,61 @@
+{
+  "domain": "bankwebinars.com",
+  "crawledAt": "2026-01-25T17:36:29.679Z",
+  "config": {
+    "minSizeChangePercent": 30,
+    "minSizeChangeWithTime": 15,
+    "daysForTimeBasedChange": 180,
+    "maxSubstantiveSnapshots": 3
+  },
+  "totalSnapshotsAvailable": 458,
+  "snapshotsCaptured": [
+    {
+      "timestamp": "20080704105703",
+      "url": "http://www.bankwebinars.com/",
+      "digest": "CUFDZO5QLJVDY2TLY6UUQRS3UTNB4ALS",
+      "length": 3960,
+      "statuscode": "200",
+      "captureReason": "first"
+    },
+    {
+      "timestamp": "20110109020835",
+      "url": "http://www.bankwebinars.com:80/",
+      "digest": "Q7DBYZR3WBTGGYY5WO55QA2FMTR5GEEQ",
+      "length": 7046,
+      "statuscode": "200",
+      "captureReason": "substantive",
+      "changeDetails": {
+        "sizeChangePercent": 77.92929292929293,
+        "daysElapsed": 918,
+        "previousDigest": "CUFDZO5QLJVDY2TLY6UUQRS3UTNB4ALS"
+      }
+    },
+    {
+      "timestamp": "20120630194103",
+      "url": "http://www.bankwebinars.com:80/",
+      "digest": "OAONB66OWZCL5E2RCA36TUS25BKFBMLQ",
+      "length": 8177,
+      "statuscode": "200",
+      "captureReason": "substantive",
+      "changeDetails": {
+        "sizeChangePercent": 16.051660516605164,
+        "daysElapsed": 538,
+        "previousDigest": "Q7DBYZR3WBTGGYY5WO55QA2FMTR5GEEQ"
+      }
+    },
+    {
+      "timestamp": "20190818181800",
+      "url": "https://beta.bankwebinars.com/",
+      "digest": "AIGBR3O7MPQG4QZLNYWA5AUESP5KFHFW",
+      "length": 11023,
+      "statuscode": "200",
+      "captureReason": "substantive",
+      "changeDetails": {
+        "sizeChangePercent": 34.80494068729363,
+        "daysElapsed": 2604,
+        "previousDigest": "OAONB66OWZCL5E2RCA36TUS25BKFBMLQ"
+      }
+    }
+  ],
+  "skippedSnapshots": 454
+}

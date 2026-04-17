@@ -1,0 +1,19 @@
+{
+  "domain": "juststeve.com",
+  "timestamp": "19990125100519",
+  "crawledAt": "2026-01-25T13:18:42.414Z",
+  "pages": [
+    "resume.htm"
+  ],
+  "assets": {
+    "total": 1,
+    "byType": {
+      "css": 1
+    },
+    "totalSizeMB": 0,
+    "externalDomains": [
+      "web-static.archive.org"
+    ]
+  },
+  "skippedCount": 0
+}

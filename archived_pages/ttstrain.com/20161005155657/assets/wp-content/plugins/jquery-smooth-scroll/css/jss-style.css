@@ -1,0 +1,62 @@
+a#scroll-to-top {
+	
+	/* Background image, replace in images folder */
+	background: url(/web/20161101121918im_/http://ttstrain.com/wp-content/plugins/jquery-smooth-scroll/images/arrow.png) no-repeat center center;
+	
+	/* Match to background image size */
+	width: 35px;
+	height: 35px;
+	
+	/* Postion on the page */
+	position: fixed;	
+	right: 30px;
+	bottom: 30px;
+	
+	/* Hide link text */
+	text-indent: -9999px;
+	font-size: 0;
+	
+	/* Other */
+	cursor: pointer;	
+	outline: 0;
+	
+}
+
+body.rtl a#scroll-to-top {
+	left: 30px;
+}
+
+/* Responsive Design Support */
+@media only screen and (max-width: 480px) {
+	
+	a#scroll-to-top {
+	
+		/* Changing Position */		
+		right: 0;
+		bottom: 0;
+	}
+		
+	body.rtl a#scroll-to-top {
+		left: 0;
+		bottom: 0;
+	}
+}
+/*
+     FILE ARCHIVED ON 12:19:18 Nov 01, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:37:19 Feb 08, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.561
+  exclusion.robots: 0.053
+  exclusion.robots.policy: 0.045
+  esindex: 0.009
+  cdx.remote: 22.427
+  LoadShardBlock: 166.087 (3)
+  PetaboxLoader3.datanode: 212.773 (4)
+  load_resource: 96.036
+*/

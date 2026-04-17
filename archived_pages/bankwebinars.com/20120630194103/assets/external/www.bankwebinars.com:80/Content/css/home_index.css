@@ -1,0 +1,184 @@
+table, th, td
+{
+    margin: 0px;
+    padding: 0px;
+}
+.accDate
+{
+    font-size:.95em;
+    font-style:italic;
+    font-weight:300;
+}
+#Calendar
+{
+    background: #1F5B93 none repeat scroll 0 0;
+    height: 33px;
+    text-align:center;
+    font-family: Georgia;
+    font-size:.96em;
+    color: White;
+}
+#upcoming-header
+{
+    text-align:center;
+        background: #1F5B93 none repeat scroll 0 0;
+    height: 33px;
+    width: 350px;
+    color: White;
+}
+.upcoming-text
+{
+    color: #FFFFFF;
+    font-family: Georgia;
+    padding: 5px;
+}
+
+#upcoming-header a
+{
+    border-bottom: 2px solid #5D90BF;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+#upcoming-header a:hover
+{
+    border-bottom: 2px solid #D89304;
+    color: #FFFFFF;
+}
+#upcoming-sub
+{
+    background: #EAD09B none repeat scroll 0 0;
+    height: 30px;
+    width: 350px;
+    padding-top: 7px;
+}
+.upcoming-sub
+{
+    margin: 3px;
+}
+
+.upcoming
+{
+    font-size: 15pt;
+    margin-top: 10px;
+}
+
+h5
+{
+    color: #000000;
+    font-family: Georgia;
+    font-size: 14pt;
+    font-weight: 500;
+    margin: 0 0 0 10px;
+    padding: 0;
+}
+.box_header
+{
+    font-weight: bold;
+}
+
+#box-calendar
+{
+    float: left;
+    width: 120px;
+}
+
+#box-subs
+{
+    float: left;
+    width: 123px;
+    margin-left: 65px;
+}
+
+#box-mailing
+{
+    margin-left: 5px;
+    float: left;
+    width: 123px;
+}
+
+#box-header
+{
+    width: 133px;
+    height: 28px;
+    background: #E7F1FA none repeat scroll 0 0;
+}
+
+.box-body
+{
+    width: 133px;
+    height: 73px;
+    background: #d4e6f6;
+}
+
+.box-body a
+{
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #7f7f7f;
+}
+
+.box-body p
+{
+    padding: 0;
+    padding-top: 6px;
+    padding-left: 8px;
+    margin: 0;
+    font-size: 8pt;
+    font-family: Verdana;
+}
+
+.box-body a:hover
+{
+    color: #3f83c1;
+    border-bottom: 1px solid #d89304;
+}
+
+
+.welcome
+{
+    color: #000000;
+    font-family: Georgia;
+    font-size: 11pt;
+    font-weight: bold;
+    text-align: center;
+}
+.welcome-text
+{
+    color: #1C568B;
+    font-family: Georgia;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 960px;
+}
+#on-demand
+{
+    border-bottom: 1px dotted #1D578C;
+    border-top: 1px dotted #1D578C;
+    float: left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+
+
+/*
+     FILE ARCHIVED ON 02:16:39 Jul 24, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:00:28 Mar 22, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 1.06
+  exclusion.robots: 0.117
+  exclusion.robots.policy: 0.1
+  esindex: 0.015
+  cdx.remote: 6.822
+  LoadShardBlock: 139.502 (3)
+  PetaboxLoader3.datanode: 99.644 (4)
+  load_resource: 353.864
+  PetaboxLoader3.resolve: 298.532
+*/

@@ -1,0 +1,169 @@
+#accordion1 {
+
+	color:#fff;
+
+	height:300px;
+
+	list-style:none;
+
+	margin:0;
+
+	overflow:scroll;
+
+	padding:0;
+
+	text-shadow:0 1px 0 #333;
+
+	width:840px;
+
+}
+
+#accordion1 li {
+
+	height:295px;
+
+	position:relative;
+
+}
+
+#accordion1 .slide_handle {
+
+	background:url(/web/20131208202824im_/http://ttstrain.com/images/ttshandels.png);
+
+	bottom:0;
+
+	cursor:pointer;
+
+	left:0;
+
+	position:absolute;
+
+	top:0;
+
+	width:45px;
+
+}
+
+#accordion1 .slide2 .slide_handle { background-position:-45px 0; }
+
+#accordion1 .slide3 .slide_handle { background-position:-91px 0; }
+
+#accordion1 .slide4 .slide_handle { background-position:-137px 0; }
+
+#accordion1 .slide5 .slide_handle { background-position:-183px 0; }
+
+#accordion1 .slide_handle div {
+
+	background:url(/web/20131208202824im_/http://ttstrain.com/images/acord/arrows.gif);
+
+	bottom:5px;
+
+	height:7px;
+
+	left:16px;
+
+	position:absolute;
+
+	width:7px;
+
+}
+
+#accordion1 .slide_opened .slide_handle { cursor:default; }
+
+#accordion1 .slide_opened .slide_handle div { background-position:0 -7px; }
+
+#accordion1 .slide_content {
+
+	bottom:0;
+
+	left:46px; /* Matches the width of .slide_handle */
+
+	position:absolute;
+
+	right:0;
+
+	top:0;
+
+}
+
+#accordion1 .slide_content a img { border:0; }
+
+#accordion1 .slide_caption {
+
+	background:url(/web/20131208202824im_/http://ttstrain.com/images/acord/black-30pct.png); /* You could use rgba instead, but that means less browser support */
+
+	bottom:0;
+
+	left:0;
+
+	padding:10px 20px;
+
+	position:absolute;
+
+	right:0;
+
+	/* To change the height of the caption, set the captionHeight option in script.js */
+
+}
+
+#accordion1 .slide_caption_toggle {
+
+	cursor:pointer;
+
+	height:10px;
+
+	left:0;
+
+	position:absolute;
+
+	right:0;
+
+	top:0;
+
+}
+
+#accordion1 .slide_caption_toggle div {
+
+	background:url(/web/20131208202824im_/http://ttstrain.com/images/acord/toggle-caption.png) no-repeat 50% -10px;
+
+	height:100%;
+
+}
+
+#accordion1 .slide_caption_toggle:hover { background:url(/web/20131208202824im_/http://ttstrain.com/images/acord/black-30pct.png); }
+
+#accordion1 .slide_caption_collapsed .slide_caption_toggle div { background-position:50% 0; }
+
+#accordion1 a {
+
+	background:none;
+
+	color:#fff;
+
+	text-shadow:0 1px 0 #333;
+
+}
+
+#accordion1 a:hover { text-decoration:none; }
+
+
+/*
+     FILE ARCHIVED ON 20:28:24 Dec 08, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:32:26 Feb 08, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 2.538
+  exclusion.robots: 0.775
+  exclusion.robots.policy: 0.033
+  esindex: 0.009
+  cdx.remote: 234.048
+  LoadShardBlock: 244.616 (3)
+  PetaboxLoader3.datanode: 298.993 (4)
+  load_resource: 309.042
+  PetaboxLoader3.resolve: 227.984
+*/

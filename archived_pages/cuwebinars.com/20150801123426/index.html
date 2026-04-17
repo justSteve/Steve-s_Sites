@@ -1,0 +1,459 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en" dir="ltr"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en" dir="ltr"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en" dir="ltr"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!--Start of Zopim Live Chat Script-->
+    <script type="text/javascript">
+
+        window.$zopim || (function (d, s) {
+            var z = window.$zopim = function (c) {
+                z._.push(c);
+            },
+                $ = z.s = d.createElement(s),
+                e = d.getElementsByTagName(s)[0];
+
+            z.set = function (o) {
+                z.set._.push(o);
+            };
+            z._ = [];
+            z.set._ = [];
+            $.async = !0;
+            $.setAttribute("charset", "utf-8");
+            $.src = "//v2.zopim.com/?1BDmmaRbQeFUryIji8yLVYKv2lpVZeqU";
+            z.t = +new Date;
+            $.type = "text/javascript";
+            e.parentNode.insertBefore($, e);
+        })(document, "script");
+    </script>
+    <!--End of Zopim Live Chat Script-->
+
+    <title></title>
+        <script type="text/javascript">
+
+            var currentAffiliateId = "19";
+            var currentAffiliateDisplayTitle = "Total Training Solutions";
+        </script>
+                <script>
+                    var _rollbarConfig = {
+                        accessToken: "0d82246aeaa5423cb22a9c258edc8e8f",
+                        captureUncaught: true,
+                        payload: {
+                            environment: "production"
+                        }
+                    };
+                !function (r) { function t(o) { if (e[o]) return e[o].exports; var n = e[o] = { exports: {}, id: o, loaded: !1 }; return r[o].call(n.exports, n, n.exports, t), n.loaded = !0, n.exports } var e = {}; return t.m = r, t.c = e, t.p = "", t(0) }([function (r, t, e) { "use strict"; var o = e(1).Rollbar, n = e(2), a = "https://d37gvrvc0wt4s1.cloudfront.net/js/v1.4/rollbar.min.js"; _rollbarConfig.rollbarJsUrl = _rollbarConfig.rollbarJsUrl || a; var i = o.init(window, _rollbarConfig), l = n(i, _rollbarConfig); i.loadFull(window, document, !1, _rollbarConfig, l) }, function (r, t) { "use strict"; function e() { var r = window.console; r && "function" == typeof r.log && r.log.apply(r, arguments) } function o(r) { this.shimId = ++u, this.notifier = null, this.parentShim = r, this.logger = e, this._rollbarOldOnError = null } function n(r, t, e) { window._rollbarWrappedError && (e[4] || (e[4] = window._rollbarWrappedError), e[5] || (e[5] = window._rollbarWrappedError._rollbarContext), window._rollbarWrappedError = null), r.uncaughtError.apply(r, e), t && t.apply(window, e) } function a(r) { var t = o; return l(function () { if (this.notifier) return this.notifier[r].apply(this.notifier, arguments); var e = this, o = "scope" === r; o && (e = new t(this)); var n = Array.prototype.slice.call(arguments, 0), a = { shim: e, method: r, args: n, ts: new Date }; return window._rollbarShimQueue.push(a), o ? e : void 0 }) } function i(r, t) { if (t.hasOwnProperty && t.hasOwnProperty("addEventListener")) { var e = t.addEventListener; t.addEventListener = function (t, o, n) { e.call(this, t, r.wrap(o), n) }; var o = t.removeEventListener; t.removeEventListener = function (r, t, e) { o.call(this, r, t && t._wrapped ? t._wrapped : t, e) } } } function l(r, t) { return t = t || e, function () { try { return r.apply(this, arguments) } catch (e) { t("Rollbar internal error:", e) } } } var u = 0; o.init = function (r, t) { var e = t.globalAlias || "Rollbar"; if ("object" == typeof r[e]) return r[e]; r._rollbarShimQueue = [], r._rollbarWrappedError = null, t = t || {}; var a = new o; return l(function () { if (a.configure(t), t.captureUncaught) { a._rollbarOldOnError = r.onerror, r.onerror = function () { var r = Array.prototype.slice.call(arguments, 0); n(a, a._rollbarOldOnError, r) }; var o, l, u = "EventTarget,Window,Node,ApplicationCache,AudioTrackList,ChannelMergerNode,CryptoOperation,EventSource,FileReader,HTMLUnknownElement,IDBDatabase,IDBRequest,IDBTransaction,KeyOperation,MediaController,MessagePort,ModalWindow,Notification,SVGElementInstance,Screen,TextTrack,TextTrackCue,TextTrackList,WebSocket,WebSocketWorker,Worker,XMLHttpRequest,XMLHttpRequestEventTarget,XMLHttpRequestUpload".split(","); for (o = 0; o < u.length; ++o) l = u[o], r[l] && r[l].prototype && i(a, r[l].prototype) } return r[e] = a, a }, a.logger)() }, o.prototype.loadFull = function (r, t, e, o, n) { var a = l(function () { var r = t.createElement("script"), n = t.getElementsByTagName("script")[0]; r.src = o.rollbarJsUrl, r.async = !e, r.onload = i, n.parentNode.insertBefore(r, n) }, this.logger), i = l(function () { var t; if (void 0 === r._rollbarPayloadQueue) { var e, o, a, i; for (t = new Error("rollbar.js did not load") ; e = r._rollbarShimQueue.shift() ;) for (a = e.args, i = 0; i < a.length; ++i) if (o = a[i], "function" == typeof o) { o(t); break } } "function" == typeof n && n(t) }, this.logger); l(function () { e ? a() : r.addEventListener ? r.addEventListener("load", a, !1) : r.attachEvent("onload", a) }, this.logger)() }, o.prototype.wrap = function (r, t) { try { var e; if (e = "function" == typeof t ? t : function () { return t || {} }, "function" != typeof r) return r; if (r._isWrap) return r; if (!r._wrapped) { r._wrapped = function () { try { return r.apply(this, arguments) } catch (t) { throw t._rollbarContext = e() || {}, t._rollbarContext._wrappedSource = r.toString(), window._rollbarWrappedError = t, t } }, r._wrapped._isWrap = !0; for (var o in r) r.hasOwnProperty(o) && (r._wrapped[o] = r[o]) } return r._wrapped } catch (n) { return r } }; for (var s = "log,debug,info,warn,warning,error,critical,global,configure,scope,uncaughtError".split(","), p = 0; p < s.length; ++p) o.prototype[s[p]] = a(s[p]); r.exports = { Rollbar: o, _rollbarWindowOnError: n } }, function (r, t) { "use strict"; r.exports = function (r, t) { return function (e) { if (!e && !window._rollbarInitialized) { var o = window.RollbarNotifier, n = t || {}, a = n.globalAlias || "Rollbar", i = window.Rollbar.init(n, r); i._processShimQueue(window._rollbarShimQueue || []), window[a] = i, window._rollbarInitialized = !0, o.processPayloads() } } } }]);
+        </script>
+            <script>
+                (function (i, s, o, g, r, a, m) {
+                    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+                })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+                ga('create', 'UA-44361719-1', 'auto');
+                ga('send', 'pageview');
+
+            </script>
+
+    <script src="/bundles/modernizr?v=wBEWDufH_8Md-Pbioxomt90vm6tJN2Pyy9u9zHtWsPo1"></script>
+
+    <script src="/bundles/jquery?v=Q4J7Ybaegv2oCN6XbaLwTVaZMSsm45MXFaJkrAfNM_Q1"></script>
+
+    <script src="/bundles/CommonModules?v=tIlemL8weIsm3g1d80A06IrD3nn9DUvvhJ1LfOQ02kY1"></script>
+
+    <script src="/bundles/myApp?v=PW41pRI702krIYRt3QeIWK0-8mGtceMXt8-E3eKRKuU1"></script>
+
+    <script src="/bundles/app-processing-manage?v=MKi_wPgFUqhIdtdOWJFZM0JHedmtutKNVsQsyCo1gzs1"></script>
+
+    <link href="/Content/CrispCSS?v=_hV94-ayn5zm53K6t64vhqk8Jb4i6bH6EcMPgVMP8nM1" rel="stylesheet"/>
+
+    <link href="/Content/common-styles?v=9Fhj5PiCumtD-TgguNilxnxP4NRTV1xlY5CI6NKRm7Y1" rel="stylesheet"/>
+
+
+    <!-- Icons ================ -->
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="http://ttsmedia.ttstrain.com/images/BankWebinars/apple-touch-icon.png" />
+    <!-- For first- and second-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://ttsmedia.ttstrain.com/images/BankWebinars/apple-touch-icon-72x72-precomposed.png" />
+    <!-- For iPhone with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://ttsmedia.ttstrain.com/images/BankWebinars/apple-touch-icon-114x114-precomposed.png" />
+    <!-- For third-generation iPad with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://ttsmedia.ttstrain.com/images/BankWebinars/apple-touch-icon-144x144-precomposed.png" />
+
+    <link rel="shortcut icon" href="http://ttsmedia.ttstrain.com/images/BankWebinars/favicon.ico" />
+    <!-- Open Graph for facebook
+        http://graph.facebook.com/[UserName] replace [UserName]
+        with yours and get your fb:admis content information where the XXXX goes.
+        ================================================== -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:locale" content="en_us" />
+    <meta property="og:description" content="CUWebinars is Webinars for the financial industry." />
+
+    
+    <style>
+        table td {
+            border: none;
+            text-align: center;
+        }
+
+        .hero-unit {
+            padding-top: 20px;
+            padding-bottom: 0px;
+        }
+    </style>
+    <script>
+        window.$zopim(function () {
+            window.$zopim.livechat.bubble.setTitle('Help & Feedback');
+        });
+
+    </script>
+
+</head>
+<body class="index-flex-dark">
+    <!-- begin accesibility skip to nav skip content -->
+    <ul class="visuallyhidden" id="top">
+        <li><a href="#nav" title="Skip to navigation" accesskey="n">Skip to navigation</a></li>
+        <li><a href="#page" title="Skip to content" accesskey="c">Skip to content</a></li>
+    </ul>
+    <!-- end /.visuallyhidden accesibility-->
+    <!-- mobile navigation trigger-->
+    <h5 class="mobile_nav">
+        <a href="javascript:void(0)"><span>&nbsp;</span></a>
+    </h5>
+    <!--end mobile navigation trigger-->
+    <section class="container preheader">
+        <!--this is the login for the user-->
+        <div id="loginContainer">
+                <nav class="user clearfix"> <a id="btnLogin" href="/Account/Login"><i class="icon-user"></i> Login</a> </nav>
+
+
+        </div>
+
+        <div class="phone"><a href="tel:8008310678" class="tele">800.831.0678</a></div>
+        <ul class="social">
+            <li><a href="" target="_blank" data-placement="bottom" title="A TTS Production"><img src="http://ttsmedia.ttstrain.com/images/TTS-logoPreHeader.jpg" /></a></li>
+            <li><a class="socicon small facebook" href="http://www.facebook.com/home.php#!/pages/Total-Training-Solutions/300546163412" target="_blank" data-placement="bottom" title="Follow us on Facebook"></a></li>
+            <li><a class="socicon small twitterbird" href="http://twitter.com/#!/ttstrain" target="_blank" data-placement="bottom" title="Follow us on Twitter"></a></li>
+            <li><a class="socicon small linkedin" href="https://www.linkedin.com/company/bankwebinars.com" target="_blank" data-placement="bottom" title="Follow us on LinkedIn"></a></li>
+        </ul>
+
+        <div id="search-wrapper" class="search-wrapper">
+            <form class="search" method="post" action="/webinar/search">
+                <ul class="notifications" id="userNotifications">
+                    <li><i class="icon-search"></i></li>
+                </ul>
+                <input id="search-box" name="searchTerm" type="text" placeholder="Search for?">
+            </form>
+        </div>
+
+    </section>
+    <!-- begin .header-->
+    <header class="header  clearfix" style="margin-bottom: 0px; padding-bottom: 0; ">
+        <div class="container">
+            <div class="row-fluid">
+                <!-- begin #logo-->
+                <a href="/">
+                    <div id="logo" class="span3" style='background: url("http://ttsmedia.ttstrain.com/images/logoCU.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0)'></div>
+                </a>
+                <!-- end #logo -->
+                <!-- begin #main_menu -->
+                <nav id="main_menu" class="span8">
+                    <ul class="primary_menu">
+                        <li class="parent"><a href="/webinar/calendar">calendar</a></li>
+                        <li class="parent">
+                            <a href="javascript:void(0)">topics<i></i></a>
+                            <ul>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="/Webinar/ListByTopic/15">Compliance</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="/Webinar/ListByTopic/26">Risk Management</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="/Webinar/ListByTopic/16">IRA</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="/Webinar/ListByTopic/17">Customer Service</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="/Webinar/ListByTopic/19">Operations</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="/Webinar/ListByTopic/18">Security</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="/Webinar/ListByTopic/20">Auditing</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="/Webinar/ListByTopic/21">Sales</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="/Webinar/ListByTopic/22">Lending</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="/Webinar/ListByTopic/23">Human Resources</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="/Webinar/ListByTopic/27">Teller</a></li>
+                            </ul>
+                        </li>
+                        <li class="parent">
+                            <a href="javascript:void(0)">Upcoming Webinars<i></i></a>
+
+                            <ul><li role='presentation'><a  role="menuitem" tabindex="-1"  href='/Webinar/allActive/?eventsToShow=upcoming'>View <b>All</b> Upcoming Events</a></li><li role="presentation"><a role="menuitem" tabindex="-1" href='/4593/dos-and-donts-on-checks'>Do&#39;s and Don&#39;ts on Checks</a></li><li role="presentation"><a role="menuitem" tabindex="-1" href='/4629/opening-trust-estate-and-fiduciary-accounts'>Opening Trust, Estate and Fiduciary...</a></li><li role="presentation"><a role="menuitem" tabindex="-1" href='/1807/ira-distributions-premature-and-normal'>IRA Distributions: Premature and No...</a></li><li role="presentation"><a role="menuitem" tabindex="-1" href='/4628/smart-social-media'>Smart Social Media</a></li><li role="presentation"><a role="menuitem" tabindex="-1" href='/4627/appraisals-101-the-sales-comparison-approach'>Appraisals 101: The Sales Compariso...</a></li><li role="presentation"><a role="menuitem" tabindex="-1" href='/4633/vital-check-issues-25-questions-and-answers'>Vital Check Issues: 25 Questions an...</a></li><li role="presentation"><a role="menuitem" tabindex="-1" href='/4630/annual-bsa-training-for-the-frontline'>Annual BSA Training for the Frontli...</a></li><li role="presentation"><a role="menuitem" tabindex="-1" href='/4631/10-lessons-learned-when-your-member-dies'>10 Lessons Learned When Your Member...</a></li></ul>
+                        </li>
+                        <li class="parent">
+                            <a href="javascript:void(0)">OnDemand Webinars<i></i></a>
+                            <ul><li role='presentation'><a  role="menuitem" tabindex="-1"  href='/Webinar/allActive/?eventsToShow=recorded'>View <b>All</b> Recordings</a></li><li role="presentation"><a role="menuitem" tabindex="-1" href='/4626/home-equity-lines-of-credit'>Home Equity Lines of Credit</a></li><li role="presentation"><a role="menuitem" tabindex="-1" href='/1806/ira-products'>IRA Products</a></li><li role="presentation"><a role="menuitem" tabindex="-1" href='/4598/opening-accounts-for-nonresident-aliens-w-8ben-w-8ben-e-and-due-diligence-rules'>Opening Accounts for Nonresident Aliens: W-8B...</a></li><li role="presentation"><a role="menuitem" tabindex="-1" href='/1751/analyzing-sole-proprietorships-and-one-member-llcs'>Analyzing Sole Proprietorships and One-Member...</a></li><li role="presentation"><a role="menuitem" tabindex="-1" href='/4597/new-share-member-account-interview--cip-cdd-and-legal-issues'>New Share Member Account Interview - CIP, CDD...</a></li><li role="presentation"><a role="menuitem" tabindex="-1" href='/4596/handling-powers-of-attorney'>Handling Powers of Attorney</a></li><li role="presentation"><a role="menuitem" tabindex="-1" href='/1804/digital-signatures-and-e-mail-encryption-keeping-your-institution-safe-and-compliant'>Digital Signatures &amp; E-mail Encryption: Keepi...</a></li><li role="presentation"><a role="menuitem" tabindex="-1" href='/4625/for-sales-managers-why-arent-your-bankers-selling'>For Sales Managers: Why Aren&#39;t Your Bankers S...</a></li></ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">About Us<i></i></a>
+                            <ul>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="/Home/WhatIsAWebinar">What Is A Webinar?</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="/Home/CommonQuestions">Commonly Asked Questions</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="/Home/DetailedConnectionInstructions">Connecting to Your Webinar</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="/Home/contactus">Contact Us</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- close / #main_menu -->
+            </div>
+        </div>
+        <!-- close / .container-->
+    </header>
+    <!-- close /.header -->
+    <div id="page">
+        
+<!-- Begin Slider
+    https://github.com/woothemes/FlexSlider/issues/104?source=cc -->
+
+<div class="content-slider-wrapper clearfix dark">
+    <!--add "dark" class for light colored backgrounds -->
+    <div class="flexslider loading content-slider">
+        <ul class="slides">
+            <!--begin slide content inside each li tag-->
+            <li>
+                <div class="img">
+                    <div>
+                        <img alt="" src="http://ttsmedia.ttstrain.com/images/menu/L/Lending.jpg">
+                    </div>
+                </div>
+                <div class="caption">
+                    <h2 align="center">Welcome!</h2>
+                    <div style="margin-left: 50px;">
+
+                        <p>Welcome to the new CUWebinars website.  If you are a first time visitor, welcome.  If you have visited us before, welcome back.  We hope you find what you want and that the ordering process is efficient.  Be sure and let us know if you have any comments by using the Help & Feedback link below. </p>
+
+                    </div>
+
+                    
+                </div>
+            </li>
+            <li>
+                <div class="img">
+                    
+                    <div><img alt="" src="http://ttsmedia.ttstrain.com/images/menu/L/Compliance.jpg"></div>
+                </div>
+                <div class="caption">
+                    <h2 align="center">Our Topics Have You Covered!</h2>
+                    <div style="margin-left: 50px;">
+
+                        <table width="100%">
+                            <tr><td>Compliance</td><td>Risk Management</td></tr>
+                            <tr><td>IRA</td><td>Customer Service</td></tr>
+                            <tr><td>Operations</td><td>Security</td></tr>
+                            <tr><td>Sales</td><td>Auditing</td></tr>
+                            <tr><td>Lending</td><td>Human Resources</td></tr>
+                            <tr><td>Teller</td><td></td></tr>
+                        </table>
+
+                    </div>
+
+                    
+                </div>
+            </li>
+            <!--add the "full" class for an image or video only slide w/o text-->
+            
+            <li>
+                <div class="img">
+                    <div><img alt="" src="http://ttsmedia.ttstrain.com/images/menu/L/Security.jpg"></div>
+                </div>
+                <div class="caption">
+                    <div class="FrontPageSubHead">
+                        <h2 class="ReverseHead">OnDemand Webinars</h2>
+                    </div>
+                    <p style="margin-left: 20px;">
+                        In addition to our live webinars, CUWebinars .com also offers a wide-selection
+                        of recorded webinars to fit your schedule.
+                        <br />
+                    </p>
+                    <p style="font-size: 13pt; color: #D89304;"><b>BENEFITS</b></p>
+                    <blockquote>
+                        <ul>
+                            <li>The same great information as our live webinars</li>
+                            <li>Unlimited playback for 6-months after the live date</li>
+                            <li>An accompanying CD and handouts for offline viewing </li>
+                        </ul>
+                    </blockquote>
+                </div>
+            </li>
+
+            <li>
+                <div class="img">
+                    <div><img alt="" src="http://ttsmedia.ttstrain.com/images/menu/L/HumanResources.jpg"></div>
+                </div>
+                <div class="caption">
+                    <div class="FrontPageSubHead">
+                        <h2 class="ReverseHead">Compliance Perspectives: Monthly Update</h2>
+                    </div>
+                    <p style="margin-left: 20px; margin-right: 20px;">
+                        We are pleased to offer a monthly webinar
+                        series to help you keep up with changes and deadlines in the compliance area.
+                    </p>
+                    <p class="more"><a class="btn btn-primary" target="_blank" href="http://www.CompliancePerspectives.com">Details &rarr;</a></p>
+                </div>
+
+            </li>
+
+        </ul>
+    </div> <!-- end  .flexslider.content-slider -->
+</div>
+<!-- end  .content-slider-wrapper dark -->
+
+<div class="content-wrapper">
+    <hgroup class="title">
+        <h2></h2>
+    </hgroup>
+
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#page > div').height(497);
+    });
+</script>
+
+
+<script language="javascript" type="text/javascript">
+    $(window).load(function () {
+
+        $('.flexslider.content-slider').flexslider({
+            slideshow: false,
+            animation: "fade",
+            pauseOnAction: true,
+            pauseOnHover: true,
+            useCSS: true,
+
+            controlNav: true,               //Boolean: Create navigation for paging control of each clide? Note: Leave true for manualControls usage
+            directionNav: true,             //Boolean: Create navigation for previous/next navigation? (true/false)
+            prevText: "Previous",           //String: Set the text for the "previous" directionNav item
+            nextText: "Next",
+
+            start: function (slider) {
+                $('#page > div').removeAttr('style');
+                slider.removeClass('loading');
+            }
+        });
+    });</script>
+
+
+    </div>
+    <!--begin footer -->
+    <footer id="footer" class="clearfix">
+        <div class="container">
+            <!--footer container-->
+            <!--footer container-->
+            <div class="row-fluid">
+                <div class="span4">
+                    <section>
+                        <h4>Stay Updated</h4>
+
+
+
+
+<script language="javascript" type="text/javascript">
+    function openJWindow() {
+        window.open('http://form.jotform.us/form/32764012877155?yourEmail21=' + $("#getEmail").val(), 'blank', 'scrollbars=yes,toolbar=no,width=700,height=500');
+    }
+</script>
+
+<section>
+    <p style="font-size: small;">
+        Learn about upcoming events.<br />
+        
+        <span class="input-append">
+            <input type="email" id="getEmail" placeholder="Email Address" class="span6" name="email" />
+            <button onclick="javascript: openJWindow();" class="btn btn-primary">Sign Up</button>
+
+        </span>
+        <br />
+        (We <i>won't</i> share your email address.)
+    </p>
+</section>
+
+
+
+                    </section>
+                </div>
+                <!-- close .span4 -->
+                <div class="span4">
+                    <section>
+                        <h4>Contact Us</h4>
+                        <p>Total Training Solutions<br>Waunakee, Wisconsin 53597<br><strong>phone:</strong> 800.831.0678<br><strong>fax:</strong> 800.831.3776<br><strong>email:</strong> <a href="mailto:info@ttstrain.com">info@ttstrain.com</a></p>
+                    </section>
+                    <!--close section-->
+                </div>
+                <!-- close .span4 -->
+                <div class="span4">
+                    <section>
+                        <h4>Follow Us</h4>
+                        <ul class="social"><li><a class="socicon small facebook" href="http://www.facebook.com/home.php#!/pages/Total-Training-Solutions/300546163412" target="_blank" data-placement="bottom" title="Follow us on Facebook"></a></li><li><a class="socicon small twitterbird" href="http://twitter.com/#!/ttstrain" target="_blank" data-placement="bottom" title="Follow us on Twitter"></a></li><li><a class="socicon small linkedin" href="https://www.linkedin.com/company/bankwebinars.com" target="_blank" data-placement="bottom" title="Follow us on LinkedIn"></a></li></ul>
+
+
+                    </section>
+
+                </div>
+                <!-- close .span4 -->
+            </div>
+            <!-- close .row-fluid-->
+        </div>
+        <!-- close footer .container-->
+        <section class="footerCredits">
+            <div class="container">
+                <ul class="clearfix">
+                    <li style="text-align: right;">CUWebinars is © 2015 & All Rights Reserved By Total Training Solutions. <br /></li>
+                    <li style="text-align: left;"><a href="/home/privacystatement">Privacy Statement</a><br />For financial institution training visit<a href="http://www.ttstrain.com/?s=cuwebinars" target="_new"> TTSTrain.com </a></li>
+                </ul>
+            </div>
+            <!--footerCredits container-->
+        </section>
+        <!--close section-->
+    </footer>
+    <!--/.footer-->
+    
+    <!-- close #page-->
+
+    <div class="modal hide fade in" id="DisplayErrorModal">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3 id="CreateUserHeader">Error Condition Detected</h3>
+        </div>
+        <div id="DisplayErrorBody" class="modal-body">
+            <div id="ErrorBody"></div>
+        </div>
+        <div class="modal-footer">
+            <a href="#" id="ErrorSubmitter" class="btn btn-primary">Continue</a>
+        </div>
+    </div>
+
+
+    <script src="/bundles/jqueryui?v=iCdjbzEj_1nl6bqG-mru1sWHcTg_y0I2TI3x60wMhUU1"></script>
+
+    <script src="/bundles/CrispApp?v=0wkOLUaSsKIyXhzlUo0MD4-olDla7yjuXL-Fx2pVrNo1"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#search-box").hide();
+            $("#search-wrapper").mouseover(function () {
+                $("#search-box").show();
+            });
+        });
+    </script>
+    
+
+</body>
+</html>

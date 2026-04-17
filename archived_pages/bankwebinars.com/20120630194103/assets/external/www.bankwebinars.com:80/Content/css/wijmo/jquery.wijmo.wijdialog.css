@@ -1,0 +1,49 @@
+.wijmo-wijdialog-captionbutton { 
+	height:18px;
+	padding:1px;
+	width:19px;
+	display: inline-block;
+	margin-right:.2em;
+	outline:none;
+	text-align: left;
+}
+.wijmo-wijdialog-captionbutton:hover,
+.wijmo-wijdialog-captionbutton .ui-state-focus { 
+	padding: 0;
+}
+.wijmo-wijdialog-captionbutton .ui-icon{
+	margin:1px;
+}
+.wijmo-wijdialog .wijmo-wijdialog-hasframe{
+	padding: 0;
+}
+.wijmo-wijdialog-defaultdockingzone { position:fixed; bottom: 0px;left:0px; }
+
+.ui-dialog-titlebar {/* extend jquery.ui.dialog.css*/
+	text-align: right;
+}
+
+/* for ie 6 minimize*/
+* html .wijmo-wijdialog-defaultdockingzone .ui-dialog-titlebar {
+	float:left;
+}
+
+/*
+     FILE ARCHIVED ON 02:16:25 Jul 24, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:00:24 Mar 22, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 1.144
+  exclusion.robots: 0.14
+  exclusion.robots.policy: 0.122
+  esindex: 0.015
+  cdx.remote: 94.305
+  LoadShardBlock: 2790.239 (3)
+  PetaboxLoader3.datanode: 3032.207 (4)
+  load_resource: 326.913
+*/

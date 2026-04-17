@@ -1,0 +1,192 @@
+{
+  "domain": "juststeve.com",
+  "timestamp": "19990224001716",
+  "skipped": [
+    {
+      "url": "http://www.juststeve.com/web/19990224001716cs_/http://www.juststeve.com/stevestyle.css",
+      "reason": "fetch_error",
+      "waybackUrl": "https://web.archive.org/web/19990224001716/http://www.juststeve.com/web/19990224001716cs_/http://www.juststeve.com/stevestyle.css",
+      "error": "404 Not Found in Wayback Machine"
+    },
+    {
+      "url": "https://web-static.archive.org/_static/js/ruffle/ruffle.js",
+      "reason": "fetch_error",
+      "waybackUrl": "https://web.archive.org/web/19990224001716/https://web-static.archive.org/_static/js/ruffle/ruffle.js",
+      "error": "404 Not Found in Wayback Machine"
+    },
+    {
+      "url": "http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_00.gif",
+      "reason": "fetch_error",
+      "waybackUrl": "https://web.archive.org/web/19990224001716/http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_00.gif",
+      "error": "404 Not Found in Wayback Machine"
+    },
+    {
+      "url": "http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_00.gif",
+      "reason": "fetch_error",
+      "waybackUrl": "https://web.archive.org/web/19990224001716/http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_00.gif",
+      "error": "404 Not Found in Wayback Machine"
+    },
+    {
+      "url": "http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_00.gif",
+      "reason": "fetch_error",
+      "waybackUrl": "https://web.archive.org/web/19990224001716/http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_00.gif",
+      "error": "404 Not Found in Wayback Machine"
+    },
+    {
+      "url": "http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_01_01.jpg",
+      "reason": "fetch_error",
+      "waybackUrl": "https://web.archive.org/web/19990224001716/http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_01_01.jpg",
+      "error": "404 Not Found in Wayback Machine"
+    },
+    {
+      "url": "http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_00.gif",
+      "reason": "fetch_error",
+      "waybackUrl": "https://web.archive.org/web/19990224001716/http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_00.gif",
+      "error": "404 Not Found in Wayback Machine"
+    },
+    {
+      "url": "http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_02_01.jpg",
+      "reason": "fetch_error",
+      "waybackUrl": "https://web.archive.org/web/19990224001716/http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_02_01.jpg",
+      "error": "404 Not Found in Wayback Machine"
+    },
+    {
+      "url": "http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_02_02.jpg",
+      "reason": "fetch_error",
+      "waybackUrl": "https://web.archive.org/web/19990224001716/http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_02_02.jpg",
+      "error": "404 Not Found in Wayback Machine"
+    },
+    {
+      "url": "http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_02_03.jpg",
+      "reason": "fetch_error",
+      "waybackUrl": "https://web.archive.org/web/19990224001716/http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_02_03.jpg",
+      "error": "404 Not Found in Wayback Machine"
+    },
+    {
+      "url": "http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_00.gif",
+      "reason": "fetch_error",
+      "waybackUrl": "https://web.archive.org/web/19990224001716/http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_00.gif",
+      "error": "404 Not Found in Wayback Machine"
+    },
+    {
+      "url": "http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_03_02.jpg",
+      "reason": "fetch_error",
+      "waybackUrl": "https://web.archive.org/web/19990224001716/http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_03_02.jpg",
+      "error": "404 Not Found in Wayback Machine"
+    },
+    {
+      "url": "http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_00.gif",
+      "reason": "fetch_error",
+      "waybackUrl": "https://web.archive.org/web/19990224001716/http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_00.gif",
+      "error": "404 Not Found in Wayback Machine"
+    },
+    {
+      "url": "http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_04_02.jpg",
+      "reason": "fetch_error",
+      "waybackUrl": "https://web.archive.org/web/19990224001716/http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_04_02.jpg",
+      "error": "404 Not Found in Wayback Machine"
+    },
+    {
+      "url": "http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_00.gif",
+      "reason": "fetch_error",
+      "waybackUrl": "https://web.archive.org/web/19990224001716/http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_00.gif",
+      "error": "404 Not Found in Wayback Machine"
+    },
+    {
+      "url": "http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_05_02.jpg",
+      "reason": "fetch_error",
+      "waybackUrl": "https://web.archive.org/web/19990224001716/http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_05_02.jpg",
+      "error": "404 Not Found in Wayback Machine"
+    },
+    {
+      "url": "http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_00.gif",
+      "reason": "fetch_error",
+      "waybackUrl": "https://web.archive.org/web/19990224001716/http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_00.gif",
+      "error": "404 Not Found in Wayback Machine"
+    },
+    {
+      "url": "http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_06_02.jpg",
+      "reason": "fetch_error",
+      "waybackUrl": "https://web.archive.org/web/19990224001716/http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_06_02.jpg",
+      "error": "404 Not Found in Wayback Machine"
+    },
+    {
+      "url": "http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_00.gif",
+      "reason": "fetch_error",
+      "waybackUrl": "https://web.archive.org/web/19990224001716/http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_00.gif",
+      "error": "404 Not Found in Wayback Machine"
+    },
+    {
+      "url": "http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_07_02.jpg",
+      "reason": "fetch_error",
+      "waybackUrl": "https://web.archive.org/web/19990224001716/http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_07_02.jpg",
+      "error": "404 Not Found in Wayback Machine"
+    },
+    {
+      "url": "http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_00.gif",
+      "reason": "fetch_error",
+      "waybackUrl": "https://web.archive.org/web/19990224001716/http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_00.gif",
+      "error": "404 Not Found in Wayback Machine"
+    },
+    {
+      "url": "http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_08_02.jpg",
+      "reason": "fetch_error",
+      "waybackUrl": "https://web.archive.org/web/19990224001716/http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_08_02.jpg",
+      "error": "404 Not Found in Wayback Machine"
+    },
+    {
+      "url": "http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_00.gif",
+      "reason": "fetch_error",
+      "waybackUrl": "https://web.archive.org/web/19990224001716/http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_00.gif",
+      "error": "404 Not Found in Wayback Machine"
+    },
+    {
+      "url": "http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_09_02.jpg",
+      "reason": "fetch_error",
+      "waybackUrl": "https://web.archive.org/web/19990224001716/http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_09_02.jpg",
+      "error": "404 Not Found in Wayback Machine"
+    },
+    {
+      "url": "http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_00.gif",
+      "reason": "fetch_error",
+      "waybackUrl": "https://web.archive.org/web/19990224001716/http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_00.gif",
+      "error": "404 Not Found in Wayback Machine"
+    },
+    {
+      "url": "http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_10_02.jpg",
+      "reason": "fetch_error",
+      "waybackUrl": "https://web.archive.org/web/19990224001716/http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_10_02.jpg",
+      "error": "404 Not Found in Wayback Machine"
+    },
+    {
+      "url": "http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_00.gif",
+      "reason": "fetch_error",
+      "waybackUrl": "https://web.archive.org/web/19990224001716/http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_00.gif",
+      "error": "404 Not Found in Wayback Machine"
+    },
+    {
+      "url": "http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_11_02.jpg",
+      "reason": "fetch_error",
+      "waybackUrl": "https://web.archive.org/web/19990224001716/http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_11_02.jpg",
+      "error": "404 Not Found in Wayback Machine"
+    },
+    {
+      "url": "http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_00.gif",
+      "reason": "fetch_error",
+      "waybackUrl": "https://web.archive.org/web/19990224001716/http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/mglobe_00.gif",
+      "error": "404 Not Found in Wayback Machine"
+    },
+    {
+      "url": "http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/logo.jpg",
+      "reason": "fetch_error",
+      "waybackUrl": "https://web.archive.org/web/19990224001716/http://www.juststeve.com/web/19990224001716im_/http://www.juststeve.com/images/logo.jpg",
+      "error": "404 Not Found in Wayback Machine"
+    },
+    {
+      "url": "https://web.archive.org/web/19990224001716im_/http://38.152.102.2/images/acmeicon.gif",
+      "reason": "fetch_error",
+      "waybackUrl": "https://web.archive.org/web/19990224001716/https://web.archive.org/web/19990224001716im_/http://38.152.102.2/images/acmeicon.gif",
+      "error": "404 Not Found in Wayback Machine"
+    }
+  ]
+}

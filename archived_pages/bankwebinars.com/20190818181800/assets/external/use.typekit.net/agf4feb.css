@@ -1,0 +1,94 @@
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * vista-sans:
+ *   - http://typekit.com/eulas/00000000000000003b9adcff
+ *   - http://typekit.com/eulas/00000000000000003b9adcf7
+ *   - http://typekit.com/eulas/00000000000000003b9adcf8
+ *   - http://typekit.com/eulas/00000000000000003b9add00
+ * vista-sans-narrow:
+ *   - http://typekit.com/eulas/00000000000000003b9adceb
+ *   - http://typekit.com/eulas/00000000000000003b9adcf3
+ *   - http://typekit.com/eulas/00000000000000003b9adcf4
+ *   - http://typekit.com/eulas/00000000000000003b9adcec
+ *
+ * © 2009-2020 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2019-03-25 21:58:07 UTC"}*/
+
+@import url("https://web.archive.org/web/20200311193147cs_/https://p.typekit.net/p.css?s=1&k=agf4feb&ht=tk&f=28701.28702.28706.28710.28713.28718.28721.28723&a=14991961&app=typekit&e=css");
+
+@font-face {
+font-family:"vista-sans-narrow";
+src:url("https://web.archive.org/web/20200311193147im_/https://use.typekit.net/af/7ac6bc/00000000000000003b9adceb/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://web.archive.org/web/20200311193147im_/https://use.typekit.net/af/7ac6bc/00000000000000003b9adceb/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://web.archive.org/web/20200311193147im_/https://use.typekit.net/af/7ac6bc/00000000000000003b9adceb/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;
+}
+
+@font-face {
+font-family:"vista-sans-narrow";
+src:url("https://web.archive.org/web/20200311193147im_/https://use.typekit.net/af/740739/00000000000000003b9adcf3/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://web.archive.org/web/20200311193147im_/https://use.typekit.net/af/740739/00000000000000003b9adcf3/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://web.archive.org/web/20200311193147im_/https://use.typekit.net/af/740739/00000000000000003b9adcf3/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;
+}
+
+@font-face {
+font-family:"vista-sans-narrow";
+src:url("https://web.archive.org/web/20200311193147im_/https://use.typekit.net/af/3f5d2e/00000000000000003b9adcf4/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("https://web.archive.org/web/20200311193147im_/https://use.typekit.net/af/3f5d2e/00000000000000003b9adcf4/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("https://web.archive.org/web/20200311193147im_/https://use.typekit.net/af/3f5d2e/00000000000000003b9adcf4/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+font-display:auto;font-style:italic;font-weight:400;
+}
+
+@font-face {
+font-family:"vista-sans-narrow";
+src:url("https://web.archive.org/web/20200311193147im_/https://use.typekit.net/af/39d51f/00000000000000003b9adcec/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"),url("https://web.archive.org/web/20200311193147im_/https://use.typekit.net/af/39d51f/00000000000000003b9adcec/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"),url("https://web.archive.org/web/20200311193147im_/https://use.typekit.net/af/39d51f/00000000000000003b9adcec/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
+font-display:auto;font-style:italic;font-weight:700;
+}
+
+@font-face {
+font-family:"vista-sans";
+src:url("https://web.archive.org/web/20200311193147im_/https://use.typekit.net/af/e99728/00000000000000003b9adcff/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://web.archive.org/web/20200311193147im_/https://use.typekit.net/af/e99728/00000000000000003b9adcff/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://web.archive.org/web/20200311193147im_/https://use.typekit.net/af/e99728/00000000000000003b9adcff/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;
+}
+
+@font-face {
+font-family:"vista-sans";
+src:url("https://web.archive.org/web/20200311193147im_/https://use.typekit.net/af/2c97ea/00000000000000003b9adcf7/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://web.archive.org/web/20200311193147im_/https://use.typekit.net/af/2c97ea/00000000000000003b9adcf7/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://web.archive.org/web/20200311193147im_/https://use.typekit.net/af/2c97ea/00000000000000003b9adcf7/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;
+}
+
+@font-face {
+font-family:"vista-sans";
+src:url("https://web.archive.org/web/20200311193147im_/https://use.typekit.net/af/bb831c/00000000000000003b9adcf8/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"),url("https://web.archive.org/web/20200311193147im_/https://use.typekit.net/af/bb831c/00000000000000003b9adcf8/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"),url("https://web.archive.org/web/20200311193147im_/https://use.typekit.net/af/bb831c/00000000000000003b9adcf8/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
+font-display:auto;font-style:italic;font-weight:700;
+}
+
+@font-face {
+font-family:"vista-sans";
+src:url("https://web.archive.org/web/20200311193147im_/https://use.typekit.net/af/fb5fb4/00000000000000003b9add00/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("https://web.archive.org/web/20200311193147im_/https://use.typekit.net/af/fb5fb4/00000000000000003b9add00/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("https://web.archive.org/web/20200311193147im_/https://use.typekit.net/af/fb5fb4/00000000000000003b9add00/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+font-display:auto;font-style:italic;font-weight:400;
+}
+
+.tk-vista-sans-narrow { font-family: "vista-sans-narrow",sans-serif; }
+.tk-vista-sans { font-family: "vista-sans",sans-serif; }
+
+/*
+     FILE ARCHIVED ON 19:31:47 Mar 11, 2020 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:01:29 Mar 22, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.967
+  exclusion.robots: 0.084
+  exclusion.robots.policy: 0.067
+  esindex: 0.016
+  cdx.remote: 23.315
+  LoadShardBlock: 106.297 (3)
+  PetaboxLoader3.datanode: 164.423 (4)
+  PetaboxLoader3.resolve: 135.774 (2)
+  load_resource: 244.402
+*/

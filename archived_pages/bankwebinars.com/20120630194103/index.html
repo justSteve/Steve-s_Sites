@@ -1,0 +1,788 @@
+
+<!DOCTYPE html>
+<html>
+<head id="Head1"><title>
+	
+    BankWebinars Home
+
+</title><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <script src="/Scripts/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="/Scripts/ui/jquery.effects.core.min.js" type="text/javascript"></script>
+    <script src="/Scripts/ui/jquery.ui.position.min.js" type="text/javascript"></script>
+    <script src="/Scripts/ui/jquery.ui.widget.min.js" type="text/javascript"></script>
+    <script src="/Scripts/jquery.bgiframe-2.1.2.js" type="text/javascript"></script>
+    <script src="/Scripts/ui/jquery.ui.dialog.min.js" type="text/javascript"></script>
+    <script src="/Scripts/jquery.mousewheel.min.js" type="text/javascript"></script>
+    <script src="/Scripts/ui/jquery.ui.core.min.js" type="text/javascript"></script>
+    <script src="/Scripts/ui/jquery.ui.button.min.js" type="text/javascript"></script>
+    <script src="/Scripts/ui/jquery.ui.accordion.min.js" type="text/javascript"></script>
+    
+    <script src="/Scripts/wijmo/jquery.wijmo.wijutil.js" type="text/javascript"></script>
+    <script src="/Scripts/wijmo/jquery.wijmo.wijmenu.js" type="text/javascript"></script>
+    <script src="/Scripts/Wijmo/jquery.wijmo.wijsuperpanel.min.js" type="text/javascript"></script>
+    <script src="/Scripts/Wijmo/jquery.wijmo.wijdialog.min.js" type="text/javascript"></script>
+    <link href="/Content/css/styles.css" rel="stylesheet" type="text/css" /><link href="/Content/css/wijmo/themes/wijmo/jquery.wijmo.wijmenu.css" rel="stylesheet" type="text/css" /><link href="/Content/css/wijmo/jquery.wijmo.wijdialog.css" rel="stylesheet" type="text/css" /><link href="/Content/css/wijmo/themes/aristo/jquery-wijmo.css" rel="stylesheet" type="text/css" />
+    
+    <script type="text/javascript" src="/content/js/loginBox.js"></script>
+    <style type="text/css">
+        .noLink
+        {
+            font: bold;
+            margin-bottom: 1em;
+            border-bottom-width: thin;
+            border-bottom-style: solid;
+        }
+        
+        .gMenu
+        {
+            text-align: center;
+            font-size: 1.14em;
+            line-height: 140%;
+        }
+    </style>
+    <script id="scriptInit" type="text/javascript">
+        $(document).ready(function () {
+
+            $("#main").show();
+            $("#nav_div").hide();
+            
+            $("#menu").wijmenu("option", "position", { my: "left bottom", at: "left bottom" });
+            var subUpcoming = $("<ul></ul>");
+            subUpcoming.append("<li align='center'><a href='/Webinar/Upcoming/'><b>View All Upcoming</b></a></li><li><a href='/Webinar/Details/1120'>Analyzing Tax Returns for Mortgage ...</a></li><li><a href='/Webinar/Details/1121'>Notary Public</a></li><li><a href='/Webinar/Details/1122'>Seven Habits of Effective Credit Ad...</a></li><li><a href='/Webinar/Details/1123'>Salesmanship for the Lender</a></li><li><a href='/Webinar/Details/1169'>New Mortgage Requirements for 2012 ...</a></li><li><a href='/Webinar/Details/1124'>CRA Nuts & Bolts - How to Define an...</a></li><li><a href='/Webinar/Details/1125'>The 8 Keys to Teller Excellence</a></li><li><a href='/Webinar/Details/883'>Compliance Perspectives:  A Monthly...</a></li>");
+
+            $("#upcomingTop").append(subUpcoming);
+
+            var subrecorded = $("<ul></ul>");
+            subrecorded.append("<li align='center'><a href='/Webinar/recorded/'><b>View All Recordings</b></a></li><li><a href='/Webinar/Details/1119'>Background Screening, References and Pre-Empl...</a></li><li><a href='/Webinar/Details/1118'>FDIC Hot Spots - 10 Steps For Passing Your Ne...</a></li><li><a href='/Webinar/Details/1162'>Counseling the Consumer II - Home Refinance T...</a></li><li><a href='/Webinar/Details/842'>Compliance Perspectives:  A Monthly Update</a></li><li><a href='/Webinar/Details/1116'>The World of RESPA: What Lessons Have We Lear...</a></li><li><a href='/Webinar/Details/1115'>Check Holds</a></li><li><a href='/Webinar/Details/1161'>Counseling the Consumer I - Home Purchase Tra...</a></li><li><a href='/Webinar/Details/1114'>Safe Deposit The Fundamentals - 2012 Update</a></li>");
+            $("#recordedTop").append(subrecorded);
+            $("#menu").wijmenu().hide();
+            $("#menu").wijmenu("refresh");
+            $("#menu").wijmenu().show();
+            $("#nav_div").show();
+            //.css("background: url(/Content/images/footer_bg.png)");
+
+//search controls
+
+        $("#searchFor").focus(function () {
+            if ($(this).hasClass("searchBlank")) {
+                $(this).removeClass("searchBlank");
+                $(this).val("");
+            }
+        });
+
+        $("#searchFor").blur(function () {
+            if ($(this).val().length == 0) {
+                $(this).addClass("searchBlank");
+                $(this).val("Search");
+            }
+        });
+
+        $("#searchFor").each(function () {
+            if ($(this).val() != "Search")
+                $(this).removeClass("searchBlank");
+        });
+
+        $("#searchImg").click(function (ev) {
+            if ($("#searchFor").hasClass("searchBlank")) {
+                ev.preventDefault();
+                ev.stopPropagation();
+                alert("Please enter a search term.");
+            }
+        });
+    
+    
+    
+    });
+    </script>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-1443899-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+    
+    <link href="/Content/css/home_index.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" language="javascript">
+
+        var revert = new Array();
+        var imageName = new Array("Compliance", "RiskManage", "IRA", "CustService", "Ops", "Security", "Auditing", "Sales", "Lending", "HR", "Teller");
+        var rolloverName = new Array("/content/img/BTN_Compliance2.jpg", "/content/img/BTN_RiskManage2.jpg", "/content/img/BTN_IRA2.jpg", "/content/img/BTN_CustService2.jpg", "/content/img/BTN_Ops2.jpg", "/content/img/BTN_Security2.jpg", "/content/img/BTN_Auditing2.jpg", "/content/img/BTN_Sales2.jpg", "/content/img/BTN_Lending2.jpg", "/content/img/BTN_HR2.jpg", "/content/img/BTN_Teller2.jpg");
+        var mainImageSwap = new Array("/content/img/Compliance.jpg", "/content/img/RiskManage.jpg", "/content/img/IRA.jpg", "/content/img/CustService.jpg", "/content/img/Ops.jpg", "/content/img/Security.jpg", "/content/img/Auditing.jpg", "/content/img/Sales.jpg", "/content/img/Lending.jpg", "/content/img/HR.jpg", "/content/img/Teller.jpg");
+
+
+        if (document.images) {
+            var rolloverImage = new Array();
+            var rolloverMainImage = new Array();
+            for (i = 0; i < rolloverName.length; i++) {
+                rolloverImage[i] = new Image();
+                rolloverImage[i].src = rolloverName[i];
+                rolloverMainImage[i] = new Image();
+                rolloverMainImage[i].src = mainImageSwap[i];
+            }
+
+        }
+
+        function over1(num) {
+
+            if (document.images) {
+                revert[num] = document.images[imageName[num]].src;
+                document.images[imageName[num]].src = rolloverImage[num].src;
+                document.MainImage.src = rolloverMainImage[num].src;
+            }
+
+        }
+
+        function out1(num) {
+            if (document.images) document.images[imageName[num]].src = revert[num];
+        }
+    </script>
+<link href="/Content/css/affStyling.css" rel="stylesheet" type="text/css" /></head>
+<body>
+    <!-- wrap START -->
+    <div id="wrap">
+        <!-- container START -->
+        <div id="container">
+            <!-- header START -->
+            
+            <div id="header">
+                <a id="headerImg" href="/"></a>
+            </div>
+            
+            <div id="nav_div" style="display: none">
+                <!-- navigation START -->
+                <ul id="menu">
+                    <li><a href="/Home/" class="gMenu"><b>Home</b></a></li>
+                    <li><a href="/Home/Topics" class="gMenu"><b>Topics</b></a>
+                        <ul>
+                            <li><a href="/Webinar/ListByTopic/15">Compliance</a></li>
+                            <li><a href="/Webinar/ListByTopic/26">Risk Management</a></li>
+                            <li><a href="/Webinar/ListByTopic/16">IRA</a></li>
+                            <li><a href="/Webinar/ListByTopic/17">Customer Service</a></li>
+                            <li><a href="/Webinar/ListByTopic/19">Operations</a></li>
+                            <li><a href="/Webinar/ListByTopic/18">Security</a></li>
+                            <li><a href="/Webinar/ListByTopic/20">Auditing</a></li>
+                            <li><a href="/Webinar/ListByTopic/21">Sales</a></li>
+                            <li><a href="/Webinar/ListByTopic/22">Lending</a></li>
+                            <li><a href="/Webinar/ListByTopic/23">Human Resources</a></li>
+                            <li><a href="/Webinar/ListByTopic/27">Teller</a></li>
+                        </ul>
+                    </li>
+                    <li id="upcomingTop"><a class="gMenu" href="/Webinar/Upcoming"><b>Upcoming<br />
+                        Events</b></a> </li>
+                    <li id="recordedTop"><a href="/Webinar/Recorded" class="gMenu"><b>OnDemand<br />
+                        Playback</b></a> </li>
+                    <li><a href="/Home/WhatIsAWebinar" class="gMenu"><b>About Us</b></a>
+                        <ul>
+                            <li><a class="gMenu" href="/Home/WhatIsAWebinar">What is a Webinar?</a></li>
+                            <li><a class="gMenu" href="/Home/CommonQuestions">Common Questions</a></li>
+                            <li><a class="gMenu" href="/Home/DetailedConnectionInstructions">Registration & Attendance
+                                Process</a></li>
+                            <li><a class="gMenu" href="/Home/ContactUs">Contact Us</a> </li>
+                        </ul>
+                    </li>
+                    <span class="gMenu"><b>
+                        </b></span>
+                    <div id="loginBox">
+                        
+<div class="showLoggedUser">
+    <button id="login-user">
+        Login</button>
+</div>
+<form action="/Webinar/Search" class="searchDiv" method="post"><input class="searchInput searchBlank" id="searchFor" name="searchFor" type="text" value="Search" />
+                        <input type="image" src="/Content/images/search-icon.png" name="searchImg" id="searchImg"
+                            class="searchIcon" />
+                        </form>
+                    </div>
+                </ul>
+                <!-- loginBox END -->
+            </div>
+            <!-- ui-dialog -->
+            <div id="content">
+                <div id="main">
+                    
+    <script type="text/javascript" language="javascript">
+        $(document).ready(function () {
+            $("#accordion").accordion({ header: "h3" });
+
+        });       
+    </script>
+    <p align="center">
+        <span class="welcome">Welcome</span>&nbsp;&nbsp; As you explore our webinars consider
+        the additional savings offered by our <i>subscription service.</i><br />
+    </p>
+    <div class="holdAccordion">
+        <div id="upcoming-header">
+            <p class="upcoming-text">
+                <span class="upcoming">Upcoming Events</span> &nbsp;&nbsp;&nbsp; <a href="/Webinar/Upcoming">
+                    View the complete list</a></p>
+        </div>
+        <div id="upcoming-sub" style="text-align: center">
+            Sign-up for a live webinar today and start training!
+        </div>
+        <div id="accordion">
+            
+            <div id="accordionItem">
+                <div class="evenClass">
+                    <h3>
+                        <a href="#"><b>
+                            Analyzing Tax Returns for Mortgage Decisions</b><br />
+                            <span class="accDate">
+                                Tuesday, July 10th, 2012</span></a></h3>
+                    <div id="descContent">
+                        <a href="/Webinar/Details/1120">
+                            <p>This webinar is designed to give mortgage lenders a better grasp of tax returns and their importance in making quality loan decisions.</p>
+                            ...more</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="accordionItem">
+                <div class="oddClass">
+                    <h3>
+                        <a href="#"><b>
+                            Notary Public</b><br />
+                            <span class="accDate">
+                                Wednesday, July 11th, 2012</span></a></h3>
+                    <div id="descContent">
+                        <a href="/Webinar/Details/1121">
+                            <p>This two hour webinar is designed to provide notaries with the best practices for dealing with issues that are unique to the financial industry.</p>
+                            ...more</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="accordionItem">
+                <div class="evenClass">
+                    <h3>
+                        <a href="#"><b>
+                            Seven Habits of Effective Credit Administration in Commercial Banks</b><br />
+                            <span class="accDate">
+                                Thursday, July 12th, 2012</span></a></h3>
+                    <div id="descContent">
+                        <a href="/Webinar/Details/1122">
+                            <p>This course will address the factors you need to know to make a positive difference in the credit administration at your bank.</p>
+                            ...more</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="accordionItem">
+                <div class="oddClass">
+                    <h3>
+                        <a href="#"><b>
+                            Salesmanship for the Lender</b><br />
+                            <span class="accDate">
+                                Thursday, July 12th, 2012</span></a></h3>
+                    <div id="descContent">
+                        <a href="/Webinar/Details/1123">
+                            <p>Sales Formula 8-2-5.&nbsp; 8 Steps to Sales Success.&nbsp; 2 Key Habits.&nbsp; 5 Ways to Overcome Barriers.</p>
+                            ...more</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="accordionItem">
+                <div class="evenClass">
+                    <h3>
+                        <a href="#"><b>
+                            New Mortgage Requirements for 2012 and 2013 due to Dodd-Frank and the CFPB</b><br />
+                            <span class="accDate">
+                                Tuesday, July 17th, 2012</span></a></h3>
+                    <div id="descContent">
+                        <a href="/Webinar/Details/1169">
+                            <p>This webinar will cover what the CFPB and other agencies are saying about what their plans are for new regulation. </p>
+                            ...more</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="accordionItem">
+                <div class="oddClass">
+                    <h3>
+                        <a href="#"><b>
+                            CRA Nuts &amp; Bolts - How to Define an Assessment Area, Collect Data, and Pass the Exam</b><br />
+                            <span class="accDate">
+                                Tuesday, July 17th, 2012</span></a></h3>
+                    <div id="descContent">
+                        <a href="/Webinar/Details/1124">
+                            <p>Our topic for the webinar will focus on several simple steps to ensure a successful CRA exam outcome.</p>
+                            ...more</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="accordionItem">
+                <div class="evenClass">
+                    <h3>
+                        <a href="#"><b>
+                            The 8 Keys to Teller Excellence</b><br />
+                            <span class="accDate">
+                                Tuesday, July 24th, 2012</span></a></h3>
+                    <div id="descContent">
+                        <a href="/Webinar/Details/1125">
+                            <p>This webinar is designed to develop alert, capable tellers who can minimize 
+losses, follow explicit instructions and provide quality customer 
+service.</p>
+                            ...more</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="accordionItem">
+                <div class="oddClass">
+                    <h3>
+                        <a href="#"><b>
+                            Compliance Perspectives:  A Monthly Update</b><br />
+                            <span class="accDate">
+                                Tuesday, July 24th, 2012</span></a></h3>
+                    <div id="descContent">
+                        <a href="/Webinar/Details/883">
+                            <p>A monthly webinar series to help you keep up with changes and deadlines in the compliance area. </p>
+                            ...more</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="accordionItem">
+                <div class="evenClass">
+                    <h3>
+                        <a href="#"><b>
+                            Is Your Email Sending the Right Message?</b><br />
+                            <span class="accDate">
+                                Wednesday, July 25th, 2012</span></a></h3>
+                    <div id="descContent">
+                        <a href="/Webinar/Details/1126">
+                            <p>After participating in this engaging two-hour webinar, you will have a strategy for using email strategically in advancing the organization's objectives.</p>
+                            ...more</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="accordionItem">
+                <div class="oddClass">
+                    <h3>
+                        <a href="#"><b>
+                            Get Global: Understanding Global Cash Flow Analysis</b><br />
+                            <span class="accDate">
+                                Tuesday, August 7th, 2012</span></a></h3>
+                    <div id="descContent">
+                        <a href="/Webinar/Details/1128">
+                            <p>This course is designed to assist bankers in calculating cash flow 
+utilizing the Uniform Cash Flow Analysis (UCA) method and to provide 
+guidance in calculating Global Cash Flow Analysis.</p>
+                            ...more</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="holdMiddle">
+        <div id="menuImage">
+            <table width="413" border="0" cellspacing="0" cellpadding="0" bgcolor="#4487c5">
+                <tr>
+                    <td width="144" height="32">
+                        <img src="/content/img/WebinarTopics.jpg" width="144" height="32" />
+                    </td>
+                    <td rowspan="2">
+                        <img src="/content/img/RiskManage.jpg" name="MainImage" width="269" height="309"
+                            id="MainImage" />
+                    </td>
+                </tr>
+                <tr>
+                    <td width="144" height="277" valign="middle">
+                        <table border="0" cellspacing="0" cellpadding="0" style="margin-left: 15px">
+                            <tr>
+                                <td height="22" valign="middle">
+                                    <a href="/Webinar/ListByTopic/15" onmouseover="over1(0)" onmouseout="out1(0)">
+                                        <img src="/content/img/BTN_Compliance1.jpg" name="Compliance" width="78" height="16"
+                                            border="0" id="Compliance" /></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="22" valign="middle">
+                                    <a href="/Webinar/ListByTopic/26" onmouseover="over1(1)" onmouseout="out1(1)">
+                                        <img src="/content/img/BTN_RiskManage1.jpg" name="RiskManage" width="120" height="16"
+                                            border="0" id="RiskManage" /></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="22" valign="middle">
+                                    <a href="/Webinar/ListByTopic/16" onmouseover="over1(2)" onmouseout="out1(2)">
+                                        <img src="/content/img/BTN_IRA1.jpg" name="IRA" width="28" height="12" border="0"
+                                            id="IRA" /></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="22" valign="middle">
+                                    <a href="/Webinar/ListByTopic/17" onmouseover="over1(3)" onmouseout="out1(3)">
+                                        <img src="/content/img/BTN_CustService1.jpg" name="CustService" width="115" height="13"
+                                            border="0" id="CustService" /></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="22" valign="middle">
+                                    <a href="/Webinar/ListByTopic/19" onmouseover="over1(4)" onmouseout="out1(4)">
+                                        <img src="/content/img/BTN_Ops1.jpg" name="Ops" width="74" height="16" border="0"
+                                            id="Ops" /></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="22" valign="middle">
+                                    <a href="/Webinar/ListByTopic/18" onmouseover="over1(5)" onmouseout="out1(5)">
+                                        <img src="/content/img/BTN_Security1.jpg" name="Security" width="55" height="16"
+                                            border="0" id="Security" /></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="22" valign="middle">
+                                    <a href="/Webinar/ListByTopic/20" onmouseover="over1(6)" onmouseout="out1(6)">
+                                        <img src="/content/img/BTN_Auditing1.jpg" name="Auditing" width="58" height="17"
+                                            border="0" id="Auditing" /></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="22" valign="middle">
+                                    <a href="/Webinar/ListByTopic/21" onmouseover="over1(7)" onmouseout="out1(7)">
+                                        <img src="/content/img/BTN_Sales1.jpg" name="Sales" width="32" height="13" border="0"
+                                            id="Sales" /></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="22" valign="middle">
+                                    <a href="/Webinar/ListByTopic/22" onmouseover="over1(8)" onmouseout="out1(8)">
+                                        <img src="/content/img/BTN_Lending1.jpg" name="Lending" width="55" height="16" border="0"
+                                            id="Lending" /></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="22" valign="middle">
+                                    <a href="/Webinar/ListByTopic/23" onmouseover="over1(9)" onmouseout="out1(9)">
+                                        <img src="/content/img/BTN_HR1.jpg" name="HR" width="120" height="12" border="0"
+                                            id="HR" /></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="22" valign="middle">
+                                    <a href="/Webinar/ListByTopic/27" onmouseover="over1(10)" onmouseout="out1(10)">
+                                        <img src="/content/img/BTN_Teller1.jpg" name="Teller" width="40" height="13" border="0"
+                                            id="Teller" /></a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="directorSeries">
+            <h5 style="margin-top: 20px; ">
+                The Directors Education Series </h5>
+            <p style="margin-left: 20px;">
+                We are excited to announce a monthly training module
+                geared to the Bank Director. Each month you'll have access to a new program developed
+                in consultation with leading banking industry experts. Learn more at <a href="http://www.DirectorSeries.com?idaff=2988" target="new">
+                    http://www.DirectorSeries.com</a><br /><br /></p>
+        </div>
+        <div id="CP">
+            <h5>
+                Compliance Perspectives: Monthly Update</h5>
+            <p style="margin-left: 20px;">
+                <a href="http://www.CompliancePerspectives.com">We are pleased to offer a monthly webinar
+                    series to help you keep up with changes and deadlines in the compliance area. Click
+                    for more information!</a><br />
+            </p>
+        </div>
+        <div id="on-demand">
+            <h5>
+                On-Demand Webinars</h5>
+            <p style="margin-left: 20px;">
+                In addition to our live webinars, BankWebinars.com also offers a wide-selection
+                of recorded webinars to fit your schedule.
+                <br />
+            </p>
+            <h3 style="font-size: 10pt; color: #D89304;">
+                BENEFITS</h3>
+            <blockquote>
+                <ul>
+                    <li>The same great information as our live webinars</li>
+                    <li>Unlimited playback for 6-months after the live date</li>
+                    <li>An accompanying CD and handouts for offline viewing </li>
+                </ul>
+            </blockquote>
+            <p align="center">
+                <a href="/Webinar/Recorded">VIEW ON-DEMAND WEBINARS CATALOG</a><br />
+                <b>For more information</b>, call Kyle at (800) 831-0678 x708 or <a href="/Home/ContactUs">
+                    Contact Us</a>
+            </p>
+        </div>
+        <div id="box-subs">
+            <div class="box-header">
+                <h6>
+                    Subscriptions</h6>
+            </div>
+            <div class="box-body">
+                <p>
+                    Save when you join our subscription service! <a href="/Home/ContactUs">Contact Us</a>
+                    to learn more.</p>
+            </div>
+            <br />
+            <br />
+        </div>
+        <div id="box-mailing">
+            <div class="box-header">
+                <h6>
+                    Mailing List</h6>
+            </div>
+            <div class="box-body">
+                <p>
+                    <a href="/Home/Mailing">Join our mailing list</a> and learn about new webinars as
+                    we add them!</p>
+            </div>
+            <br />
+            <br />
+        </div>
+    </div>
+    <div class="holdRight">
+        <div id="Calendar">
+            <p>
+                <span class="upcoming">Webinar Calendar</span></p>
+        </div>
+        <div id="calendaricon">
+            <p align="center">
+                <a href="/Webinar/Calendar/Upcoming">
+                    <img alt="Webinar Calendar" src="http://www.ttstrain.com/images/email/upcomingwebinars.jpg" /></a></p>
+        </div>
+        <div id="testimonials">
+            <h5>
+                Testimonials</h5>
+            <p class="testimonial">
+                I was concerned that a 2 hour compliance webinar was going to be boring and I wouldn't
+                retain anything. I was surprised to find that I was engaged the entire time. Having
+                the handouts before hand was very helpful. Thanks!</p>
+            <p class="test-name">
+                Casidhe Meriwether, Valero FCU</p>
+            <p class="testimonial">
+                Thought this was one of the best [webinars] we have done, and we will now do more
+                through you. We loved the interaction on the screen during the presentation.
+            </p>
+            <p class="test-name">
+                Lynn Hayhurst, The Bank of Georgia
+            </p>
+            <p class="testimonial">
+                Excellent Webinar. I try to sign up&nbsp;for any webinar concerning lending or compliance
+                that you or Carl Pry conduct. Both of you do an excellent job compared to others
+                that I have attended.
+            </p>
+            <p class="test-name">
+                Gary Jordan, Vice President, PeoplesBank
+            </p>
+            <p class="testimonial">
+                I have to say this has to be one of the best webinars I have ever attended!! Usually,
+                I can barely keep my eyes open. I like how it had us interact with the webinar by
+                filling in information. We had a total of 3 that attended this webinar, and they
+                all agreed!<br>
+                Just want to say, GREAT JOB!!!
+            </p>
+            <p class="test-name">
+                Lara E. Peterson, First National Bank Of Picayune
+            </p>
+            
+            <p class="testimonial">
+                The speaker clarified a lot of information for me, I will not have to contact my
+                legal counsel as often now and will be saving money on legal fees for my Credit
+                Union. Thanks.
+            </p>
+            <p class="test-name">
+                Lisa St. Francis, Rocky Mountain Law Enforcement FCU
+            </p>
+        </div>
+    </div>
+    
+
+                </div>
+            </div>
+            <div id="footerCFT">
+                <a href="/Home/PrivacyStatement">Privacy Statement</a>&nbsp <a href="javascript:void( window.open('http://form.jotform.us/form/21224022479143', 'blank','scrollbars=yes,toolbar=no,width=700,height=500'))">
+                    Support</a>
+                <br />
+                Powered by Total Training Solutions Inc. | (800) 831-0678 | www.TTSTrain.com
+                <br />
+                <a href="http://www.facebook.com/home.php#!/pages/Total-Training-Solutions/300546163412"
+                    target="_blank">
+                    <img src="http://www.ttstrain.com/images/tiny_facebook_icon.png" alt="facebook"></a>&nbsp;&nbsp;<a
+                        href="http://twitter.com/#!/ttstrain" target="_blank"><img src="http://www.ttstrain.com/images/tiny_twitter_icon.png"
+                            alt="twitter"></a>&nbsp;&nbsp;<br />
+                For<br />
+                BankWebinars.com
+                <br />
+                | 800.831.0678 | <a href="http://www.BankWebinars.com/">http://www.BankWebinars.com/ </a>
+                |
+</div>
+            19
+            
+<script language="javascript" type="text/javascript">
+    function openLoginCreateUserPopup(URL) {
+        URL = URL + "?USZip=" + $("#USZip").val() + "";
+
+        this.location.href = URL;
+    }
+    function getZip() {
+        $("#getZip").show();
+        $(".loginContainer").hide();
+    }
+
+
+    function nonUS() {
+        $("#USZip").val();
+        openLoginCreateUserPopup('/Account/CreateUser2');
+    }
+
+    $(document).ready(function () {
+        $("#getZip").hide();
+        $("#resetPassword").hide();
+    });
+
+
+
+</script>
+<div id="showLoginBox" class="showLoginBox" title="Login">
+    <div class="loginContainer container">
+        <form method="post" id="loginForm" action="/Account/Login">
+        <div class="formElement">
+            <label>
+                Email</label>
+            <input type="text" value="" class="text size3" id="email" name="email" />
+            <label>
+                Password</label>
+            <input type="password" value="" class="text size3" id="password" name="password" />
+        </div>
+        <div class="submitBut">
+            <span class="small">
+                <input id="rememberMe" name="rememberMe" type="checkbox" value="true" />
+                Remember me</span><br />
+            <br />
+            <br />
+            <input type="submit" value="Login" id="LoginBox_Login" /><br />
+            <a href="/Account/LostPassword" class="lostPasswordButton">(forgot password?)</a>
+        </div>
+        <div class="loginErrors">
+        </div>
+        <div class="clear">
+        </div>
+        <div class="displayText">
+            <br />
+            <input type="button" value="Create Account" onclick="javascript:getZip()" /><br />
+        </div>
+        <div class="separator">
+        </div>
+        </form>
+    </div>
+    <div class="resetPasswordContainer container">
+        <form method="post" id="resetPasswordForm" action="/Account/ResetPassword">
+        <input type="hidden" name="emailDefPass" id="emailDefPass"  />
+        <div class="formElement">
+            <label>
+                Change Password To:</label>
+            <input type="password" value="" class="text size3" id="changeTo" name="changeTo" />
+        </div>
+        <div class="formElement">
+            <label>
+                Confirm:</label>
+            <input type="password" value="" class="text size3" id="changeToConfirm" name="changeToConfirm" />
+        </div>
+        <div class="clear">
+        </div>
+        <div class="submitBut">
+            <input type="submit" value="Reset Passsword" />
+        </div>
+        </form>
+    </div>
+    <div class="lostPasswordContainer container">
+        <form method="post" id="lostPasswordForm" action="/Account/LostPassword">
+        <div class="formElement">
+            <label>
+                Email</label>
+            <input type="text" value="" class="text size3" id="lostPasswordEmail" name="email" />
+        </div>
+        <div class="clear">
+        </div>
+        <div class="submitBut">
+            <input type="submit" value="Recover Passsword" />
+        </div>
+        </form>
+    </div>
+    <div id="getZip">
+        <form method="get" action="/Account/CreateUser2">
+        <p align="center">
+            <br />
+            <br />
+            <input id="USZip" name="USZip" size="8" /><br />
+            <br />
+            <input type="button" value="Please enter your Zip Code" onclick="javascript:openLoginCreateUserPopup('/Account/CreateUser2')" /><br />
+            <br />
+            <br />
+            <a href="javascript:nonUS();">Non US Address?</a>
+        </p>
+        </form>
+    </div>
+    <div class="noAccountFoundContainer container">
+        <div class="displayText">
+            The system was unable to recover your password. You can register a new account or,
+            if you prefer, call 800-831-0678 ext. 7 to ask a human to investigate further. Thank
+            you!
+            <br />
+            <a href="/Account/Register">Register Now</a><br />
+            <a href="/Account/LostPassword" class="lostPasswordButton">Re-enter Email</a>
+        </div>
+    </div>
+    <div class="passwordResetErrorContainer container">
+        <div class="displayText">
+            The system was unable to reset your password. Plese call 800-831-0678 ext. 707 to
+            ask Steve to investigate further. Thank you!
+            <br />
+        </div>
+    </div>
+    <div class="passwordWasResetContainer container">
+        <div class="displayText">
+            Your password has been reset.
+            <br />
+            <div class="submitBut">
+                <input type="button" value="Proceed" class="wasResetButton" />
+            </div>
+        </div>
+    </div>
+    <div class="passwordSentContainer container">
+        <div class="displayText">
+            Your password has been sent to your registered email. Click enter to proceed to
+            the main login screen.
+            <br />
+            <div class="submitBut">
+                <input type="button" value="Proceed to Login" class="loginButton" />
+            </div>
+        </div>
+    </div>
+    <!--login-->
+    <div class="resetPasswordRequestContainer container">
+        <div class="displayText">
+            Your password is still the default value. Though not required, you are highly encouraged
+            to update it to a more secure value.
+            <br />
+            <div class="submitBut">
+                <input type="button" value="Reset Your Password" class="resetPasswordButton" />
+                <input type="button" value="Continue Without Reset" class="continueWithoutResetPasswordButton" />
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+</body>
+</html>

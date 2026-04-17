@@ -1,0 +1,13 @@
+{
+  "timestamp": "20120630194103",
+  "url": "http://www.bankwebinars.com:80/",
+  "digest": "OAONB66OWZCL5E2RCA36TUS25BKFBMLQ",
+  "length": 8177,
+  "statuscode": "200",
+  "captureReason": "substantive",
+  "changeDetails": {
+    "sizeChangePercent": 16.051660516605164,
+    "daysElapsed": 538,
+    "previousDigest": "Q7DBYZR3WBTGGYY5WO55QA2FMTR5GEEQ"
+  }
+}

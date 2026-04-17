@@ -1,0 +1,3213 @@
+{
+  "domain": "bankwebinars.com",
+  "fetchedAt": "2026-01-25T17:36:16.899Z",
+  "totalSnapshots": 458,
+  "snapshots": [
+    {
+      "timestamp": "20080704105703",
+      "url": "http://www.bankwebinars.com/",
+      "digest": "CUFDZO5QLJVDY2TLY6UUQRS3UTNB4ALS",
+      "length": 3960,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20110109020835",
+      "url": "http://www.bankwebinars.com:80/",
+      "digest": "Q7DBYZR3WBTGGYY5WO55QA2FMTR5GEEQ",
+      "length": 7046,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20110128171407",
+      "url": "http://www.bankwebinars.com/",
+      "digest": "RKPTRLF4BHO5OMRJPTKBYZ3UXHNGHCTN",
+      "length": 7113,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20110202090835",
+      "url": "http://bankwebinars.com/",
+      "digest": "4FYLSM7GY3PM3SG2O62O3XNDUSXC5GC4",
+      "length": 7117,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20110224190957",
+      "url": "http://bankwebinars.com/",
+      "digest": "TSWPR6EMXAVHJ4O2EA57DQ7VJRHP4N46",
+      "length": 7307,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20110226092859",
+      "url": "http://bankwebinars.com/",
+      "digest": "YSPP7BHQAQJ2HSM56RKVNSI5BPFTKKHG",
+      "length": 7366,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20120511060439",
+      "url": "http://www.bankwebinars.com:80/",
+      "digest": "RAVWM5RDKWVEUMUKICIIUCUSYXMKXKN4",
+      "length": 7938,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20120630194103",
+      "url": "http://www.bankwebinars.com:80/",
+      "digest": "OAONB66OWZCL5E2RCA36TUS25BKFBMLQ",
+      "length": 8177,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20130506184812",
+      "url": "http://bankwebinars.com/",
+      "digest": "SD6ZO3YARDNGZCQK7KWSLLDQ42JYMZTK",
+      "length": 8458,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20130616191051",
+      "url": "http://interaction.bankwebinars.com",
+      "digest": "U6ABY5WI5A6ESGF5POFMV5UHIXNMLBRM",
+      "length": 8359,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20130628093626",
+      "url": "http://idahobankers.bankwebinars.com/",
+      "digest": "XHODMNXBL5PYVV45YVUBO2LYWRMSM7V4",
+      "length": 8476,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20130724021923",
+      "url": "http://www.bankwebinars.com/",
+      "digest": "V7ZKE5DMRRY44H6KEUSZHFUOWG4RS5TO",
+      "length": 8467,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20140516220816",
+      "url": "http://bankwebinars.com/",
+      "digest": "L622HXDZBFDAJDJNJAGHX7MIR43D3FY7",
+      "length": 8659,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20141216031655",
+      "url": "http://www.bankwebinars.com:80/",
+      "digest": "OOIAITVMJURSYFRPQ2CYOMULJK4ONXNF",
+      "length": 8893,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20141216222408",
+      "url": "http://bankwebinars.com/",
+      "digest": "6QJFUIGRFF6A2NGRX7ORMCKNN2JNRNMC",
+      "length": 9029,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20141219044912",
+      "url": "http://www.bankwebinars.com/",
+      "digest": "Z6A5ZGDG2IBZNBZG7QSOQF7GXVNC2EY7",
+      "length": 8857,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20150101145202",
+      "url": "http://www.bankwebinars.com:80/",
+      "digest": "Z6A5ZGDG2IBZNBZG7QSOQF7GXVNC2EY7",
+      "length": 8700,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20150221141700",
+      "url": "http://www.bankwebinars.com:80/",
+      "digest": "KINDI6ZTQPDGL7UVUOLBYDJ44NAK67UE",
+      "length": 8647,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20150222190304",
+      "url": "http://www.bankwebinars.com:80/",
+      "digest": "KINDI6ZTQPDGL7UVUOLBYDJ44NAK67UE",
+      "length": 8646,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20150325074149",
+      "url": "http://bankwebinars.com:80/",
+      "digest": "62AM7ZT3PDY2KB47IZESI6LVL3DCKJJM",
+      "length": 8605,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20150503172526",
+      "url": "http://bankwebinars.com:80/",
+      "digest": "SEMXWVMOC42QKDRDEDNIYG4ZN45GYC2D",
+      "length": 8840,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20150801010830",
+      "url": "http://bankwebinars.com/",
+      "digest": "272JGG2X4I55KYRREXOYEQDZW4IKEVLY",
+      "length": 8908,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20150803105645",
+      "url": "http://bankwebinars.com:80/",
+      "digest": "272JGG2X4I55KYRREXOYEQDZW4IKEVLY",
+      "length": 8755,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20150904093515",
+      "url": "http://bankwebinars.com:80/",
+      "digest": "PZUM2UUQMFCDRNDBP5JU3CM5V7E5PH2L",
+      "length": 8669,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20150910235531",
+      "url": "http://beta.bankwebinars.com:80/",
+      "digest": "TZO5EEW7M566M2TQ27B3SCF3UOA4L54F",
+      "length": 8558,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20150925113812",
+      "url": "http://v3.bankwebinars.com/",
+      "digest": "IMBVOQ4Z6ZQ2QXCWYQ3O2IQGO55WOGJ6",
+      "length": 8865,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20151007010739",
+      "url": "http://bankwebinars.com:80/",
+      "digest": "IMLA45KHJE77ZP2BPFHJGTBFRVQ5H5AG",
+      "length": 8705,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20151008232337",
+      "url": "http://www.bankwebinars.com/",
+      "digest": "QY4IJPGTV6PM5H2QXBBCDNKWWBGD5LRF",
+      "length": 8704,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20151011120014",
+      "url": "http://bankwebinars.com/",
+      "digest": "QY4IJPGTV6PM5H2QXBBCDNKWWBGD5LRF",
+      "length": 8750,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20151011220448",
+      "url": "http://legacy.bankwebinars.com:80/",
+      "digest": "QY4IJPGTV6PM5H2QXBBCDNKWWBGD5LRF",
+      "length": 8612,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20151022180850",
+      "url": "http://beta.bankwebinars.com:80/",
+      "digest": "H72BGLP7HGHWN7DYOITEOCLLSSFSEHQA",
+      "length": 8626,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20151103161825",
+      "url": "http://v3.bankwebinars.com/",
+      "digest": "WOFL6CD6DGVOGWTASX2FYFLDBNKNENSO",
+      "length": 8874,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20151104095820",
+      "url": "http://bankwebinars.com:80/",
+      "digest": "HYPRJKU7SGRHQ4KQOBGNSCECTKKTQZ2I",
+      "length": 8734,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20151113145826",
+      "url": "http://legacy.bankwebinars.com:80/",
+      "digest": "4YV5HEXDIQZZCENSUMWABBFPBPOSPLJ4",
+      "length": 8618,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20151127213807",
+      "url": "http://beta.bankwebinars.com:80/",
+      "digest": "OVD2TZQH4MUCGIU63QBC3EHCMFHTYSZO",
+      "length": 7034,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20160103185831",
+      "url": "http://beta.bankwebinars.com:80/",
+      "digest": "V6DMDLTIYT46W7FYRP3GSEFL6XOH7AJU",
+      "length": 7152,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20160103210140",
+      "url": "http://legacy.bankwebinars.com:80/",
+      "digest": "4SNDCI25WPVJOZG4FRHX3IOPBYGXJPOG",
+      "length": 8713,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20160103231524",
+      "url": "http://bankwebinars.com:80/",
+      "digest": "TOSO7QISWHSIQI6MRZO3LWUOB6QNGGMA",
+      "length": 7147,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20160109110712",
+      "url": "http://bankwebinars.com/",
+      "digest": "KMSZQTZ7BTRQ55YRGWBSVWXTQZCE5HSW",
+      "length": 7281,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20160114171443",
+      "url": "http://www.bankwebinars.com/",
+      "digest": "EKEUWCRGSHKSPFCUFIOJNGT33K73XHPD",
+      "length": 7263,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20160307233325",
+      "url": "http://legacy.bankwebinars.com:80/",
+      "digest": "XZNTZR4K3J76I524V2FKIVAROYTWC4DO",
+      "length": 8612,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20160313062507",
+      "url": "http://bankwebinars.com/",
+      "digest": "2SMYRKFNWBGGSCNRPNVMLHVFIEE5ZLBS",
+      "length": 7172,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20160404164153",
+      "url": "http://www.bankwebinars.com:80/",
+      "digest": "PGCA4OELPQAGODBVXFRXZECV4AVJAEGV",
+      "length": 7188,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20160507023019",
+      "url": "http://www.bankwebinars.com:80/",
+      "digest": "HL55POA5WT5KVLSX4USYFY7BYK25VTJ2",
+      "length": 7074,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20160508032253",
+      "url": "http://www.bankwebinars.com:80/",
+      "digest": "6MI3YAVEJIK5UB2VROPKKBCJF355FG6U",
+      "length": 7075,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20161012153716",
+      "url": "https://bankwebinars.com/",
+      "digest": "YGE2XFYXMKRS3JD4XO5AHPJNZHVBPGVC",
+      "length": 7429,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20170116175143",
+      "url": "http://www.bankwebinars.com:80/",
+      "digest": "ONZTWHSROKJIPAGW4BCM23AQCWFIXJVE",
+      "length": 7926,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20170605172457",
+      "url": "https://bankwebinars.com/",
+      "digest": "XVQV7DDEUFWT5ECKLZ2H3YP4IANA6TYD",
+      "length": 8430,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20170606002055",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "ZHTHMZOJCVVB4WLQLM55LLBNWB2C7ZXS",
+      "length": 8408,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20170709182355",
+      "url": "https://bankwebinars.com/",
+      "digest": "4QCMBKUFF6PGG5N7P7XTWQMWCF6N7NQ6",
+      "length": 8564,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20170822172651",
+      "url": "https://bankwebinars.com/",
+      "digest": "S3RCU2USKQPVZP7JHZIQ2OW4HKF65CFP",
+      "length": 8625,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20170825012119",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "LI7JZFV5A36I2QYD34WGPWMGGOADH5JR",
+      "length": 8642,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20170825012141",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "LI7JZFV5A36I2QYD34WGPWMGGOADH5JR",
+      "length": 8641,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20171005061946",
+      "url": "https://bankwebinars.com/",
+      "digest": "A3AJAB53IYTDTHSRFY4ANGHKS3UYKCIM",
+      "length": 8531,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20180110170924",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "XM23FAMWWL2MWYWW6XL7ZNJXVOWKRLMP",
+      "length": 8091,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20180308071424",
+      "url": "https://bankwebinars.com/",
+      "digest": "EBPHGCZ7NFZQKB6FWIWSN4CVKPD7CPNK",
+      "length": 8019,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20180820134111",
+      "url": "https://bankwebinars.com/",
+      "digest": "3SFL7JOTZK4VCS35YYTZAI3MQXCLN42P",
+      "length": 8414,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20181125054407",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "XZ5K6H6UDEPDFSOD5DSDIQO4B64ED4ZY",
+      "length": 8416,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20190109031323",
+      "url": "https://bankwebinars.com/",
+      "digest": "43GU7ILNASR5K42ZNUPNBJXD7HZAAQCH",
+      "length": 8324,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20190402073051",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "TPJIAYKIUFKMHPR3ZU5LMBUDX44WMY7P",
+      "length": 7858,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20190818181800",
+      "url": "https://beta.bankwebinars.com/",
+      "digest": "AIGBR3O7MPQG4QZLNYWA5AUESP5KFHFW",
+      "length": 11023,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20190825060220",
+      "url": "https://bankwebinars.com/",
+      "digest": "KDUSS35IZK6XI4T6RV6IEEWXVAP35YNB",
+      "length": 12230,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20190915062912",
+      "url": "https://bankwebinars.com/",
+      "digest": "FBRPU6FBRX35E44GIW6Z4REQ6FOO3KK5",
+      "length": 15078,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20190919091700",
+      "url": "https://beta.bankwebinars.com/",
+      "digest": "VFAEWFHS7YFU4L2HJL5FO34XSB3FQH33",
+      "length": 12708,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20191020174847",
+      "url": "https://beta.bankwebinars.com/",
+      "digest": "CDVE6JJT35SGBVWQPUSMTCPI2HXRCZGS",
+      "length": 12709,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20191023112701",
+      "url": "https://bankwebinars.com/",
+      "digest": "ZTAJ3UG6O7TEFTIIX6KNL4SPDPJ34EOZ",
+      "length": 15062,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20191113185752",
+      "url": "https://bankwebinars.com/",
+      "digest": "YUM4DZCJZW7RR2TYARGLHGYWYYER3LMY",
+      "length": 15067,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20191114071804",
+      "url": "https://bankwebinars.com/",
+      "digest": "KBBEHNGF3L6ZAAJIV4FZG54F3Z6ANCQF",
+      "length": 15255,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20191118050331",
+      "url": "https://beta.bankwebinars.com/",
+      "digest": "TR6WP36NJET7IRSY6ABV4N7HXAHB4WQT",
+      "length": 15336,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20191206140717",
+      "url": "https://beta.bankwebinars.com/",
+      "digest": "SXJ63UAW3HSKPERKMLVJIN4UNOAOIHJT",
+      "length": 12878,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20191210140835",
+      "url": "https://bankwebinars.com/",
+      "digest": "CTASWV466WLASRRYDX57IJMIWQTJTDWV",
+      "length": 15985,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20200412201716",
+      "url": "https://bankwebinars.com/",
+      "digest": "FMBUIP2KMZZNIJXRZMLA4MDWFDLU6SKG",
+      "length": 16263,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20200528232946",
+      "url": "https://bankwebinars.com/",
+      "digest": "LOGDPEKLAU2BFZBLX3PKVGMVXFXEF3KY",
+      "length": 16181,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20200807185812",
+      "url": "https://bankwebinars.com/",
+      "digest": "D6KE5QU72NFN4KH5BOOHTTKQEXR5BQZM",
+      "length": 16302,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20200813171637",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "2BMXWER7ONCNL7M3EW45N354WFSKLN6U",
+      "length": 16244,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20200920025044",
+      "url": "https://bankwebinars.com/",
+      "digest": "Y7GC5OUVHWC3RZAU7DPWOQMY3ARDLWJW",
+      "length": 16546,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20200930224140",
+      "url": "https://beta.bankwebinars.com/",
+      "digest": "2IOHAQSMVTKDGR2JVDAIGHLSHH47BB5Y",
+      "length": 13038,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20201024230726",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "ZFVMWXAEGJA5Z5XA73INZGVZI3EFZPQF",
+      "length": 16580,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20201025143154",
+      "url": "https://bankwebinars.com/",
+      "digest": "4PQWJ6TGDKD5L3IE44IAFH2PMUS547SW",
+      "length": 16576,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20201128023744",
+      "url": "https://beta.bankwebinars.com/",
+      "digest": "B3JDLWM3TFCTM3Z5ANLNDGNLRMQU7RQU",
+      "length": 13161,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20210119155229",
+      "url": "https://bankwebinars.com/",
+      "digest": "6FMQAUA2RJE5VUQCVNIEM2AK444JDG6K",
+      "length": 16778,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20210124022712",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "TNHTF24WWVCSQBRI3TEGPVZU5P2IOJLR",
+      "length": 16759,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20210126114847",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "PCMFFS6M7BTZFARPRKMHXSWK5LBH34NV",
+      "length": 16579,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20210228102432",
+      "url": "https://beta.bankwebinars.com/",
+      "digest": "XZEM5C6I6HJTO73UHCUOEFOTXIPIB6PR",
+      "length": 13196,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20210302010859",
+      "url": "https://bankwebinars.com/",
+      "digest": "6W5E2AFC5L5BEPYMKJYGNQLLCBY2LILF",
+      "length": 16765,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20210406150343",
+      "url": "https://bankwebinars.com/",
+      "digest": "ELWZKQCTHGULZQLNQVYFZ3QDZ4GUPTCP",
+      "length": 11865,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20210406150810",
+      "url": "https://bankwebinars.com/",
+      "digest": "URFJMZWFCFU4TCP2ZLMF2OE4HTBKO27F",
+      "length": 11852,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20210414134225",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "MSE4PHS3KLEET6SRGZUEUW65D5F6AWIP",
+      "length": 16828,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20210419084721",
+      "url": "https://beta.bankwebinars.com/",
+      "digest": "75UHYZFUDYGJQSFDXH5UCKJFEEBM3WDW",
+      "length": 13197,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20210517104659",
+      "url": "https://bankwebinars.com/",
+      "digest": "GBVHXTNYVHMLT2WKBLJDUXRFF26AXGBY",
+      "length": 16856,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20210528163034",
+      "url": "https://bankwebinars.com/",
+      "digest": "F24DQET36RHASCZSUJ3LQUEGQYIVHBSC",
+      "length": 12301,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20210622202939",
+      "url": "https://beta.bankwebinars.com/",
+      "digest": "WQ7OIOCYQQNKK5QYSYX33PXGSMXRRQ5N",
+      "length": 13155,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20210622202939",
+      "url": "https://beta.bankwebinars.com/",
+      "digest": "WQ7OIOCYQQNKK5QYSYX33PXGSMXRRQ5N",
+      "length": 13155,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20210623114224",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "7AW7UPVLTIMRP3CSF7OHZLECTZYBTSJV",
+      "length": 16961,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20210623114224",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "7AW7UPVLTIMRP3CSF7OHZLECTZYBTSJV",
+      "length": 16961,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20210723185322",
+      "url": "https://beta.bankwebinars.com/",
+      "digest": "4O7PMXC4SAGDPT63XTCQH74KOASVDYJL",
+      "length": 13157,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20210725163436",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "VJXF7HUEF27WJE5ITQD73CI25WNGNMXZ",
+      "length": 16979,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20210729111949",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "L2BQOJWI6HO6JIKZFEMHG3ZGEULSUIMT",
+      "length": 16944,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20210801150255",
+      "url": "https://bankwebinars.com/",
+      "digest": "CPHEWUQQZLHQECFLLI3VP2BPKRLCGVSP",
+      "length": 16963,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20210922142118",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "WQHCEYKH2AV7PEATY3BQFD4RZRFIH2LE",
+      "length": 16959,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20210923214934",
+      "url": "https://bankwebinars.com/",
+      "digest": "72LBUQUX4TGMVCPIOHEWJCRQ3JW3N373",
+      "length": 16956,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20211016033910",
+      "url": "https://bankwebinars.com/",
+      "digest": "3IFJ6UPSXQDIF67UPSWOC6D4IGKNRGNH",
+      "length": 17019,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20211018052302",
+      "url": "https://beta.bankwebinars.com/",
+      "digest": "3574E7XBWZCJTLGL57ONJTLPMUDHVO5C",
+      "length": 13126,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20211202214546",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "FMRFXRP76AJIRCVNNYDGQ2GVD2PUYGYZ",
+      "length": 17362,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20211204051003",
+      "url": "https://bankwebinars.com/",
+      "digest": "Z4CD4AJGVQWXLU3AVL5PM6XCQTZJQ4WZ",
+      "length": 17367,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20211216195049",
+      "url": "https://bankwebinars.com/",
+      "digest": "Q65HUG55XB4LYDGD53PTVKRONLY366Q5",
+      "length": 17160,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220119144658",
+      "url": "https://bankwebinars.com/",
+      "digest": "RYXNPD2UBHBHFSCT5DWEE7WBNL6J2QOR",
+      "length": 17323,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220123062852",
+      "url": "https://bankwebinars.com/",
+      "digest": "FMHFGBPUHJFOORRRFUX5YXBMNBR765FP",
+      "length": 12881,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220125234233",
+      "url": "https://beta.bankwebinars.com/",
+      "digest": "YOTKOXWRUUNCIIM6CT4T7A36FCJLQA66",
+      "length": 13132,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220126000707",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "C4SOV3HWZQYHHHO7NPPRSOEOZRLHSEQ4",
+      "length": 12894,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220202200957",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "YRNXEWQIPTHHGJQ2KS5KWLLZT355RF27",
+      "length": 44597,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220204231646",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "45DK3G4PDO6YHJ2YJILY5B55L6X45IEC",
+      "length": 44541,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220204231852",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "BWNDVH4HT2YZBF6QCCMHKG5BA7N5LOIM",
+      "length": 42939,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220216063231",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "QMEXX57C6FF5PTM52M4AQ5RTNJP6SXUR",
+      "length": 44573,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220216065239",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "S3TNPRDJD4A76FRU3VYSOCAS6PDPTZJO",
+      "length": 42898,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220301191110",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "CENPM5OW4QNWZ6BJEO5UBYBPCDLG7QJM",
+      "length": 42960,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220307182703",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "M3B6DNAPHBY6N446OTJD3YICLL633SPX",
+      "length": 42915,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220315195738",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "ULQMTUFFYM5JAPR4EVJ26CKHAHM4PBR3",
+      "length": 46416,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220331055659",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "USPHOXVDR7BDA6B4OIMZHKEP3FMPASUR",
+      "length": 53153,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220412130307",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "NX225ZA6KCH6VM547CULM4UN43DZ5WNH",
+      "length": 43955,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220421010616",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "V5AJGBVM4T5QF5BDHBZ46GZGWT7GVZ54",
+      "length": 43455,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220421030737",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "TXJUCVK7QSAJLF7OMI22HZ3KNGKC4LSF",
+      "length": 43475,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220516161655",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "2PS2FJ6VVW3VOUXGB6K62FWTN5T3FWN4",
+      "length": 52147,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220516214059",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "NL3HAYY5BWXCWSPYQ6IAHWUZCFZPYTJ3",
+      "length": 43646,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220522075300",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "Q27SRJUFTHNKNICVGGKSXRH2DU7VDWJZ",
+      "length": 51844,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220522195850",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "JHPKLVS77YMBLO26WHMYQMMG2PA5USQN",
+      "length": 51864,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220529131610",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "B4E7P7ECCLBO22CQODCYXKZNT7TTFXQR",
+      "length": 51977,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220627133111",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "LACI3K7TCFQFJ7IINA3UFT2ZZH7ZXAP7",
+      "length": 53503,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220701071917",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "XFMOPGJIYMAS5YJJO73GOR3MGD4ZRBAH",
+      "length": 44835,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220705114044",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "7R6DPOQAPH6B3QAFHHVHBVDAX2TR2XS6",
+      "length": 54041,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220707130330",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "Y3NTCEEOMWKBYELHZDNPM5CTASEYFZJH",
+      "length": 54048,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220804202019",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "OHZAM7S5AQL333G3O6YSKDGT2UMNGPKK",
+      "length": 45551,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220805172030",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "HRNKU6VXXY4PBYIKM5VVT4545SXFNUK5",
+      "length": 45406,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220805211130",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "MCVZ7H3MAH2C2LZCHJJDNFIZHMQOJART",
+      "length": 44064,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220808022205",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "5PKDPKJSBPJZMRW2TTJ4L2Y5RI4FHOOH",
+      "length": 45494,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220808024028",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "SFDHAWM7ZPNGDKRT35KWWHJEAVKDP3UX",
+      "length": 45498,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220808054304",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "YYFGF5XOPMOTZ7GZGX7KVDOBVQD63O6P",
+      "length": 45463,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220808072622",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "EGL54J2FXLWQQZKU45HDVZ4VCKGODAPX",
+      "length": 45453,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220808081540",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "DJC55P3RI4AQQBMAY7GNOOHW4YBNXDTO",
+      "length": 43974,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220808095148",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "4UT6HMNZSF4IJ3WPG4O476RAPKZFJUF3",
+      "length": 45455,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220808100415",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "BN2VCCKI4AOKTPX7CYWKLK3P3IXJRJXF",
+      "length": 45538,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220808101000",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "VK6OGCPPZNWUGB6GHUYWHBCWMCQTQH2G",
+      "length": 43950,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220808131153",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "OBBXU3VY6SWX4CNADI3FXV73KTNJQ73J",
+      "length": 44123,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220808134844",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "LXH5S7ERT464HVSPT67MEH45ZXNB3QLA",
+      "length": 45460,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220808144011",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "6CKQ7UH7B3B3TVLCUXKHAFUHD3MC62BK",
+      "length": 43968,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220808184410",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "F2NWA3IEIZDVMILCUDAPCKC2GUL632QL",
+      "length": 45402,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220808190606",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "TWAAM2CA4LLS43M27QHZFO772HQW4IXG",
+      "length": 44030,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220808220708",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "VMECR7LCT3CEXFR4K25NPVGODHXD5YIC",
+      "length": 44112,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220809103045",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "5BRZNCSDJILJEEWFGL274IRMXK6TF4XO",
+      "length": 45425,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220809114503",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "KGYMCWEWSBBQ6KJLR3EWXFBJ2G3EZROF",
+      "length": 45458,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220813194144",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "QPH5HYFUZGSBGRTA4AC5FCQWBROMCU5C",
+      "length": 43955,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220815055055",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "DKUMOTDIQR6RPLCFO5T4EZJ4TKFJSDHN",
+      "length": 50518,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220816160839",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "JQH5PJMMH2TQHJ4KSUI6FJX4V3OHAPPV",
+      "length": 43910,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220817153210",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "XY3FHNOZZMWLL2N2FLTVMN7SCHG7TG7M",
+      "length": 45484,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220817153224",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "XEGHWEL3E36GILHALQH4BRVEP6RMTYDR",
+      "length": 44001,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220817193012",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "6TNZ5KMNDG46UNEC5I2KXBPERZCGN65G",
+      "length": 54974,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220913140149",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "A3AV2RJS7456XX4E2VPTWJGXJMUJIED3",
+      "length": 45559,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220915200418",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "Y3Y5RZSRSYCEBI4FHRVO4IJ5GY5UWRK2",
+      "length": 45587,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220915200445",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "X6JVAM63O6LPRSPYGTK56TKHM2QMHSBS",
+      "length": 45641,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220915200450",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "PHLOXSGQ4H2KHDDAN7MRXYM34K4H2X66",
+      "length": 45559,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220915200456",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "NAAKRHDUEF3XHFF2TLTDJUHAUKQ3DVFZ",
+      "length": 45657,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220921193402",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "W7AUZISEHNRFZ2FLG3NDSVYLRPWP7OGE",
+      "length": 45643,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220925133135",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "3W5QFYO4NITG2RRNOTXAAXE6I6P2P7FG",
+      "length": 55120,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220927120302",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "OKFJYWH3OB3OCJR5YAM6BKNKRSQW2PH3",
+      "length": 55138,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20220929165435",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "RC2XCALSZFCUUK6IGJKDTKQW5MMH2VJW",
+      "length": 55130,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20221010211347",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "3SC4DI42YZ2UCYCIZW3BOYUZSZ7PP2VE",
+      "length": 45709,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20221101234719",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "NSAQZA7NLXYBBOBNSEHHZEMR2BL2QK7B",
+      "length": 44484,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20221102140634",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "OHNILP4L3RNFGRGULPQCRJPK4JHJIWIU",
+      "length": 44584,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20221102140639",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "OHNILP4L3RNFGRGULPQCRJPK4JHJIWIU",
+      "length": 44519,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20221102140806",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "BFNMXB7JFNCHHUWKADEF4YACZIPV2O4B",
+      "length": 44473,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20221103150911",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "EFGXD444BJ3FD2XKA3Y6J2ABGPZS2QHI",
+      "length": 44511,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20221104173140",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "RLDPI5UYTIWPFQSTVP2U2Y3I2DIPXIHR",
+      "length": 44588,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20221107214725",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "6YHGWHVLWW6FYDBDOIBRVA52VTM4IFLK",
+      "length": 44643,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20221110204344",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "YLVD6K4TDXUCHIQGHBSLQI3S7LELXDOG",
+      "length": 43173,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20221122160653",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "ZTHYXRIZZNMOTWZHNNTG42EUP3WF6SK5",
+      "length": 53048,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20221130162907",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "HNLZCS6SFIMWCOYRXUFR4RMQYYUXVTAS",
+      "length": 43086,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20221201164543",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "EOB6K46NJMFJ4QFCZTXM5VZJYAOKYIT3",
+      "length": 49752,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20221202090211",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "WJFRTJB4E4Z4DPW6DHORTSUSI4OVZU4R",
+      "length": 61239,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20221203050338",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "34CUDKYQARBXDYEB3ZEEVCSW3GYCPO3D",
+      "length": 43077,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20221205020921",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "BRMOX34CN6SNJG7UQSKKS45DXTBGHQ34",
+      "length": 61233,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20221207040026",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "JSDDHANGSA3VIX5G4OJDGOEST4U7E6MN",
+      "length": 43012,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20221207061515",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "JSDDHANGSA3VIX5G4OJDGOEST4U7E6MN",
+      "length": 43170,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20221207081218",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "JSDDHANGSA3VIX5G4OJDGOEST4U7E6MN",
+      "length": 43162,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230103160759",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "S64Z47MUKGKQELURSDGOAY5ULDXUSE73",
+      "length": 53452,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230103160805",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "5KJF4LEYJQBJCOFUQVM2HRVE2FQGN56B",
+      "length": 43372,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230103160813",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "5KJF4LEYJQBJCOFUQVM2HRVE2FQGN56B",
+      "length": 43371,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230103161310",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "XUDL2C424XJYQLEJ54APHTFA6M63N7RL",
+      "length": 53330,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230130200125",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "Q7YR2P5SR4AVCH4VLRRU7YYI72YKNHUQ",
+      "length": 43258,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230202103016",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "OVYM6VDWJUM5PN3RABVJZGFIMSVCBX3S",
+      "length": 50127,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230203173803",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "ZTZ42ADZUOOOQ5PKDN2LSMPPWY77PZML",
+      "length": 50121,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230203185352",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "5DLWF5VFIBSNNPWGD5OENVPF23UTOPE2",
+      "length": 54342,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230203201148",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "EGOLBXWEE4J3BRVQ7F5WYY4RIVINWMD5",
+      "length": 43291,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230203211015",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "EGOLBXWEE4J3BRVQ7F5WYY4RIVINWMD5",
+      "length": 43272,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230203214935",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "VLUQKXGFXCSMTLHIA5KYLWAOPSXZCZHU",
+      "length": 54479,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230307222250",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "4AHXDV4M7PJHDD2PDYSSH5BPJ3SZZO2T",
+      "length": 54568,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230308023846",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "YNTVFFEO5YXDJWJNV5ACA7NJ4QF2TSRB",
+      "length": 54629,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230308032141",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "WX75KVVBZAQO46X7RNGCVE7QC2LPLO3W",
+      "length": 54744,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230308044327",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "MOXI7MFKY4BXRX5WXV2S3N4JL2VEJWIA",
+      "length": 54548,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230322055532",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "NANBLZ75PI7SJD6M7QAS2QBQWVQU7XLT",
+      "length": 62201,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230326021307",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "Z2W22AO4LMV6BIC6H5XV2RQDDQTHTVEZ",
+      "length": 62170,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230401095614",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "XVIWWU2TPFIKKB4XHY5WOGOEDXMF57FZ",
+      "length": 62169,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230404220534",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "TG5Z3P4WSE6YILM23HFXREDWBXD6PTP4",
+      "length": 54380,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230405090444",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "UCEVAN2QEDA6TFXCBZUZFSUB363WRHES",
+      "length": 52264,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230405100128",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "PZ32SLZJTKDOHVKCKVJPLKRE5YXSSRAO",
+      "length": 52430,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230419044556",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "SXT2XQ62FQIMTQXG55QOL4BWBZK74AXU",
+      "length": 53266,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230423120405",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "AXE5CLEN5IL2ECSGRJOAOACOAPMGJT5H",
+      "length": 53252,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230507191016",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "Y2QXJZOSO46FCNJWHQYRP5F6L6GZMPRY",
+      "length": 53260,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230507191024",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "QNXLROVYAC7LTFPAVRPASKDBXKTY2B5N",
+      "length": 53368,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230507191029",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "DKJXNCBK4LEVTKLY7UVAERSJ66I6GDZ6",
+      "length": 53308,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230523195320",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "ZC4IRUT3VKO6ZYL2EMNS2L7NHIBWEUVP",
+      "length": 53235,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230601001100",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "YSUB2L7YLYOBC67XYNOSX5LQMGBXJ2TV",
+      "length": 53664,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230602001407",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "ZM6UQSOR5NNUWXUN5RMCDD4E3HMQQLNV",
+      "length": 61151,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230610165349",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "DOG4G5GP75ECV77ADZQFKWL3D35B6B7Y",
+      "length": 60884,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230614051226",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "Y7WRY4Y3Q3WU74WAEPGTDTGO3DLZVVON",
+      "length": 53366,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230614051930",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "L6IFYIGEXGMQ32KODDRYVUCBDCQRC34D",
+      "length": 53368,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230614054518",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "GLZCO4NDNH2AKJO6G7TQ3SM23NOFFNTD",
+      "length": 53280,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230614060622",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "NADV2P2JS4HBZZ2WH3B6ZWUDEJ6BNNET",
+      "length": 53310,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230614071223",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "2ONSUFFZ6DPZ3KKWAVJELUGND4VGHTQZ",
+      "length": 53277,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230614071939",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "C3OXLAMRT6JZMRERUDLLRSH5M2CHITFZ",
+      "length": 53328,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230614072932",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "GLZCO4NDNH2AKJO6G7TQ3SM23NOFFNTD",
+      "length": 53357,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230614093207",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "KMDVKM3F6B2VMSO73IZUYZSALEY34AB3",
+      "length": 53330,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230614113256",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "54YSHWHSRRT5UN5NE54TR3S6K6QFMLBL",
+      "length": 53380,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230614114733",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "NADV2P2JS4HBZZ2WH3B6ZWUDEJ6BNNET",
+      "length": 53344,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230614123113",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "VQTJT6IMP62NRWGEM4VZU2QCMUJYCFRE",
+      "length": 53400,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230614125502",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "GQND7Q5RFKFHIZ7XDLLPH5NFQOE5YDSS",
+      "length": 53346,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230614182616",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "YCH3BZWSMYQI3KBT2TG4I4VADEJK7WTQ",
+      "length": 53289,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230624023818",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "4B6YPEXX336PKF4BJHUZT5DS7P6VSGKO",
+      "length": 53464,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230628181816",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "T6RI3ZRRCZ5C3ULCHJYMOEUWIQUJDBYH",
+      "length": 53446,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230630102420",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "LWFL4TRSP2TGAY2XSB45L3XE3IOQEFWM",
+      "length": 53635,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230714113911",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "TJKSSMYZD2EWDZQMGNJYN2N34OOQKRSG",
+      "length": 53541,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20230927072252",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "BKKHPO5CCIWIHC7M53YTFRODHK6X4S33",
+      "length": 50672,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20231113195757",
+      "url": "https://partners.bankwebinars.com/",
+      "digest": "67ECATSA65D3Q5BIFRLPD5Z5MTRE4X5C",
+      "length": 44513,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20231113195835",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "MIYKPW3B26C2HS2TX3PCSA2LOT3ERQRX",
+      "length": 44471,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20231113195837",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "MIYKPW3B26C2HS2TX3PCSA2LOT3ERQRX",
+      "length": 44495,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20231113195848",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "MIYKPW3B26C2HS2TX3PCSA2LOT3ERQRX",
+      "length": 44474,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20231113195854",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "6Z4NXCXCFNJOAEQZ6FOQKDIS3Z3ZUJ4W",
+      "length": 44526,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20231113195859",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "MIYKPW3B26C2HS2TX3PCSA2LOT3ERQRX",
+      "length": 44499,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20231113195905",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "MIYKPW3B26C2HS2TX3PCSA2LOT3ERQRX",
+      "length": 44477,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20231113195909",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "MIYKPW3B26C2HS2TX3PCSA2LOT3ERQRX",
+      "length": 44464,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20231129043506",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "MBAU2D5HMOHXJ6Z4P6X73E7YWT44QXFL",
+      "length": 50642,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20231205094820",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "VJWDA6TWQ7M2BG32E5TLSKM6NRMHW3ZN",
+      "length": 50635,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240221215433",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "HVYEG52KNAF6EHJHVKRL64RTO6XY6HJY",
+      "length": 50759,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240304203829",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "IA224TDYHNZDILJO62LXZHVF3BVIEXMO",
+      "length": 50769,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240324181718",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "L3GKT5STUW7DZTXSVG5TSWMU63JXZ27K",
+      "length": 71682,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240324182342",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "W4OA5HR6RS7ZRMAHG5XFA7JDQUYB4ZSD",
+      "length": 71685,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240415215309",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "H5RR5L5A4JIRH5X37OQ5WPTTTQUYLRQI",
+      "length": 71044,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240416031730",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "H5RR5L5A4JIRH5X37OQ5WPTTTQUYLRQI",
+      "length": 71039,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240416195057",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "LYTW4YK63BNIXRCK6FMFRTVDT73UFMC6",
+      "length": 71038,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240419151556",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "H5RDUSZ6NWL5USQ22VTHXVEBTGXQU5TD",
+      "length": 71031,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240419232255",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "63KNRE46DY52UINJCX2MFNLGH75BGCL5",
+      "length": 63345,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240425002708",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "STKDERDMB57IKI55XCYPOEMRLYFBIWWM",
+      "length": 71636,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240430103027",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "OTO7SBP27RCXJSPJ7NCUDQ5CMQGROUXU",
+      "length": 63444,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240430103254",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "A4P53GGTF5F4OW5YDMPTTJLV3QZLMU75",
+      "length": 63441,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240507073928",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "IFYBKQ5L7GKVF67S5BA4U2XWX7LK3JQX",
+      "length": 63404,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240510221907",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "U4PYDQPN3OVTC4TIMZZQSWQYTIKIFNOK",
+      "length": 71080,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240510223100",
+      "url": "https://partners.bankwebinars.com/",
+      "digest": "TERVJX2YEKLIRZ27HVPYEURWERRFWDOY",
+      "length": 71155,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240520080557",
+      "url": "https://partners.bankwebinars.com/",
+      "digest": "P5JRBESH333SRCT2CA2OO64OWW5QWHO2",
+      "length": 44848,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240520082356",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "WPWO5J33STAKVXS26KICUU35MIFZVBDU",
+      "length": 44702,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240520090527",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "NNMIAHPQHQSZGFKXIDVD24JCSPROYDFC",
+      "length": 44717,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240520092545",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "NNMIAHPQHQSZGFKXIDVD24JCSPROYDFC",
+      "length": 44715,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240520102319",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "NNMIAHPQHQSZGFKXIDVD24JCSPROYDFC",
+      "length": 70495,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240520103002",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "NNMIAHPQHQSZGFKXIDVD24JCSPROYDFC",
+      "length": 44713,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240520112650",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "NNMIAHPQHQSZGFKXIDVD24JCSPROYDFC",
+      "length": 44721,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240520114852",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "NNMIAHPQHQSZGFKXIDVD24JCSPROYDFC",
+      "length": 44729,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240520122746",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "NNMIAHPQHQSZGFKXIDVD24JCSPROYDFC",
+      "length": 44730,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240520125707",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "WPWO5J33STAKVXS26KICUU35MIFZVBDU",
+      "length": 44718,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240520133919",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "NNMIAHPQHQSZGFKXIDVD24JCSPROYDFC",
+      "length": 44715,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240520140636",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "5IRB72YQTVQNWXKKD7KGGQ6OQYA6KC4U",
+      "length": 44744,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240520223712",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "5IRB72YQTVQNWXKKD7KGGQ6OQYA6KC4U",
+      "length": 44727,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240522164125",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "FX5CKOUU7XH2TEOPO4RIVBGDRSFFINPD",
+      "length": 70502,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240523070933",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "663IA63ORGPXVQ57M72JNQNBUGUYHYAP",
+      "length": 71051,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240528073626",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "DQKG7CH64H4RFF2NQURBKZCQL6CHZZHC",
+      "length": 44804,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240531165130",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "3BZRJSQOREQWAN3BD4Z5XKNDIZKIPKUX",
+      "length": 44848,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240531222059",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "PK3FKEYTVJDLFBZXD7LISKEZXAWF5O24",
+      "length": 44821,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240601083837",
+      "url": "https://partners.bankwebinars.com/",
+      "digest": "AK7F4O34RDHFTH6GCH45CDZ23SO3JIS5",
+      "length": 44870,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240601083938",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "3BZRJSQOREQWAN3BD4Z5XKNDIZKIPKUX",
+      "length": 44830,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240601083957",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "3BZRJSQOREQWAN3BD4Z5XKNDIZKIPKUX",
+      "length": 44830,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240601084000",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "3BZRJSQOREQWAN3BD4Z5XKNDIZKIPKUX",
+      "length": 44829,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240601084010",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "3BZRJSQOREQWAN3BD4Z5XKNDIZKIPKUX",
+      "length": 44819,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240601084016",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "3BZRJSQOREQWAN3BD4Z5XKNDIZKIPKUX",
+      "length": 44818,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240601084022",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "3BZRJSQOREQWAN3BD4Z5XKNDIZKIPKUX",
+      "length": 44810,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240601084024",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "3BZRJSQOREQWAN3BD4Z5XKNDIZKIPKUX",
+      "length": 44804,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240601084026",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "3BZRJSQOREQWAN3BD4Z5XKNDIZKIPKUX",
+      "length": 44807,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240601084027",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "3BZRJSQOREQWAN3BD4Z5XKNDIZKIPKUX",
+      "length": 44815,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240601084108",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "3BZRJSQOREQWAN3BD4Z5XKNDIZKIPKUX",
+      "length": 44844,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240601084126",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "3BZRJSQOREQWAN3BD4Z5XKNDIZKIPKUX",
+      "length": 44811,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240601084218",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "3BZRJSQOREQWAN3BD4Z5XKNDIZKIPKUX",
+      "length": 44831,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240601084219",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "3BZRJSQOREQWAN3BD4Z5XKNDIZKIPKUX",
+      "length": 44808,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240601084221",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "3BZRJSQOREQWAN3BD4Z5XKNDIZKIPKUX",
+      "length": 44817,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240602152745",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "SK3D56J2TFBPJHBGPLBNM3AGSI3BENET",
+      "length": 44801,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240620164138",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "OJO5FBIKS7UPC7SJFZV3QSZZ6GT7O752",
+      "length": 49972,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240705053619",
+      "url": "https://partners.bankwebinars.com/",
+      "digest": "OUCZ2P3ZUCL63RGDYJ2TIJIW5GEKVSGV",
+      "length": 43453,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240705053912",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "XX7JK3C7NDZ5MKHJMGLFCT25F3PDX7BX",
+      "length": 43404,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240705055427",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "XX7JK3C7NDZ5MKHJMGLFCT25F3PDX7BX",
+      "length": 43412,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240705060245",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "XX7JK3C7NDZ5MKHJMGLFCT25F3PDX7BX",
+      "length": 43406,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240705060759",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "XX7JK3C7NDZ5MKHJMGLFCT25F3PDX7BX",
+      "length": 43430,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240705060942",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "XX7JK3C7NDZ5MKHJMGLFCT25F3PDX7BX",
+      "length": 43402,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240705061028",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "XX7JK3C7NDZ5MKHJMGLFCT25F3PDX7BX",
+      "length": 43402,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240705061609",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "XX7JK3C7NDZ5MKHJMGLFCT25F3PDX7BX",
+      "length": 43402,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240705062709",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "XX7JK3C7NDZ5MKHJMGLFCT25F3PDX7BX",
+      "length": 43398,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240705063108",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "XX7JK3C7NDZ5MKHJMGLFCT25F3PDX7BX",
+      "length": 43401,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240705063242",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "XX7JK3C7NDZ5MKHJMGLFCT25F3PDX7BX",
+      "length": 43388,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240705143536",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "XX7JK3C7NDZ5MKHJMGLFCT25F3PDX7BX",
+      "length": 43404,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240705201447",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "27CAJIU7Q57KFXGTAYYG5JGOCT7NOYRN",
+      "length": 43428,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240706021556",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "C7DZOLQNTBJ76R4HBIO6FZHY62XLA3HE",
+      "length": 43416,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240706050347",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "27CAJIU7Q57KFXGTAYYG5JGOCT7NOYRN",
+      "length": 43415,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240717213528",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "B6UZIFAZKRUDTMCM2U6EVV4GNOSQWARR",
+      "length": 49879,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240804104257",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "7W2TPGXGVJGQLWXTC3B3AGO6HVZMW3GA",
+      "length": 49934,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240808155514",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "MHI4BLDLS4TQMBLCIRUJGD7CB3ZRW65A",
+      "length": 49986,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240809152957",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "CTKRL5ZCJDVOFJX7ZIJON7SYRVQ4B3WV",
+      "length": 49947,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240816040151",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "ASI2XLVXVVWO72HVZFPNO2TSKK7QEMPF",
+      "length": 44215,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240820011858",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "4YYOIHUE4DFXGODKBX5PZUTKX2TQFHW3",
+      "length": 49680,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240820011859",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "4YYOIHUE4DFXGODKBX5PZUTKX2TQFHW3",
+      "length": 49683,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240820011900",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "4YYOIHUE4DFXGODKBX5PZUTKX2TQFHW3",
+      "length": 49683,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240820011901",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "4YYOIHUE4DFXGODKBX5PZUTKX2TQFHW3",
+      "length": 49682,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240820011903",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "4YYOIHUE4DFXGODKBX5PZUTKX2TQFHW3",
+      "length": 49679,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240820011904",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "4YYOIHUE4DFXGODKBX5PZUTKX2TQFHW3",
+      "length": 49683,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240820011905",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "4YYOIHUE4DFXGODKBX5PZUTKX2TQFHW3",
+      "length": 49682,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240820011908",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "4YYOIHUE4DFXGODKBX5PZUTKX2TQFHW3",
+      "length": 49686,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240820011909",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "4YYOIHUE4DFXGODKBX5PZUTKX2TQFHW3",
+      "length": 49684,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240820012034",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "4YYOIHUE4DFXGODKBX5PZUTKX2TQFHW3",
+      "length": 49683,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240820012037",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "4YYOIHUE4DFXGODKBX5PZUTKX2TQFHW3",
+      "length": 49682,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240901080328",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "RRYZDVPUJVXYQL7Z23XTBXH34VSK555G",
+      "length": 43925,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240905102631",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "HBXCAQHX3IF75RPW5X3RQWH5IXXR7NX7",
+      "length": 50250,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240907065930",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "PDSHU6IFND5LVABVGYOUVFYH4H6N4RQ6",
+      "length": 50253,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240907235603",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "G6MXADBBRK3JBWYBRYQNBCADUYPYD6DQ",
+      "length": 49819,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240913022404",
+      "url": "https://mcstaging.bankwebinars.com/",
+      "digest": "EX3W2BK4ACFCVLY2NTBDLU5X5TC2YVPW",
+      "length": 69886,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240916001016",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "FOOBGCAJL464435BJ42KTRIAGVP6VMZR",
+      "length": 70640,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240916001111",
+      "url": "https://partners.bankwebinars.com/",
+      "digest": "P2PTBPWDJOYVE5FIPRV2T3AG6SXWLC2R",
+      "length": 70736,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240916001112",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "FOOBGCAJL464435BJ42KTRIAGVP6VMZR",
+      "length": 70642,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240917080413",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "Z6B7E7P3FR4QXR2ETPV3LKJT2LNGP7XL",
+      "length": 70038,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20240917085619",
+      "url": "https://partners.bankwebinars.com/",
+      "digest": "AFVJ5PXOTFJVSBCRIZUMFEESY3TTM6NP",
+      "length": 70120,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20241002044539",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "JTNCOBGA4LRU6KEXZFDT2YMEOBWB2AVH",
+      "length": 44159,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20241003214031",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "7DXYD5VPZN5VHESZTORZL7P6ZRMXDWT3",
+      "length": 44137,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20241011173350",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "AXAOFOZT3R2GAFBAR7NCTMAGCXJFB2RF",
+      "length": 70777,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20241011181837",
+      "url": "https://partners.bankwebinars.com/",
+      "digest": "6A3XXSGF3SQMLNVGJMLZJORJNEA5ZIEB",
+      "length": 70808,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20241104200251",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "XGUMUC55EXRZI5T7DEX4N4WCV4F6TQXX",
+      "length": 70613,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20241104210701",
+      "url": "https://partners.bankwebinars.com/",
+      "digest": "XVI3CC7KZFGIG5VXAT6PHZ6SB2MPFBAV",
+      "length": 70354,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20241109042223",
+      "url": "https://mcstaging.bankwebinars.com/",
+      "digest": "LHAYTLYI46U4BBGZT6NVXYQXM3N7XMWC",
+      "length": 73459,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20241206195329",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "EHNMRBI3CBX6HIAOGPAKCJXDYPTBUQ3G",
+      "length": 48107,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20241206200925",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "EHNMRBI3CBX6HIAOGPAKCJXDYPTBUQ3G",
+      "length": 48104,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20241210195450",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "BCBM3XSGYVWLUBUOBUDCX63SC5XRDQTJ",
+      "length": 70473,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20241218174420",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "HRMLVDYA7KPVGUCNFVSY2TFODSYMWAJ5",
+      "length": 73727,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250108052557",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "ZNDY2FVIZCWJHIV5IV2M4PA34TWY67K2",
+      "length": 73397,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250108093052",
+      "url": "https://partners.bankwebinars.com/",
+      "digest": "RGGKEDF3VVWCCYDZEJLD4NKROYBP6M3N",
+      "length": 73485,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250116105723",
+      "url": "https://partners.bankwebinars.com/",
+      "digest": "TCMV63A7AMCVVBSY6IAPDCJKBCWD5L42",
+      "length": 48201,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250116110731",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "DWH7EHWYABTCXKK4X425YN7JWUEGAB5E",
+      "length": 48115,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250116111233",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "DWH7EHWYABTCXKK4X425YN7JWUEGAB5E",
+      "length": 48142,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250116112418",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "DWH7EHWYABTCXKK4X425YN7JWUEGAB5E",
+      "length": 48126,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250116113400",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "EVHHYKJBU6TAQ2R2CCTFIE3UZZAQHSYF",
+      "length": 48155,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250116115915",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "DWH7EHWYABTCXKK4X425YN7JWUEGAB5E",
+      "length": 48146,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250116120129",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "DWH7EHWYABTCXKK4X425YN7JWUEGAB5E",
+      "length": 48145,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250116120446",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "DWH7EHWYABTCXKK4X425YN7JWUEGAB5E",
+      "length": 48130,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250116120738",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "DWH7EHWYABTCXKK4X425YN7JWUEGAB5E",
+      "length": 48141,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250116130009",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "DWH7EHWYABTCXKK4X425YN7JWUEGAB5E",
+      "length": 48131,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250116133620",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "DWH7EHWYABTCXKK4X425YN7JWUEGAB5E",
+      "length": 48140,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250116165047",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "RIWBLFELLANREIYU2Q4VE24QSEL23B7A",
+      "length": 48120,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250116192646",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "RIWBLFELLANREIYU2Q4VE24QSEL23B7A",
+      "length": 48159,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250116201405",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "RIWBLFELLANREIYU2Q4VE24QSEL23B7A",
+      "length": 48130,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250117021422",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "DWH7EHWYABTCXKK4X425YN7JWUEGAB5E",
+      "length": 48128,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250117054622",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "RIWBLFELLANREIYU2Q4VE24QSEL23B7A",
+      "length": 48159,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250117214626",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "3FYTJVM3Y5DWBFSJKGSBQMTPYKCJZDFX",
+      "length": 69457,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250117232123",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "3FYTJVM3Y5DWBFSJKGSBQMTPYKCJZDFX",
+      "length": 48132,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250118011632",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "3FYTJVM3Y5DWBFSJKGSBQMTPYKCJZDFX",
+      "length": 48151,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250119103518",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "IWDU2VYIEAAXGDJ6MTD3RBXD3FPN6GHU",
+      "length": 48153,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250121173328",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "3HLWKJSKU2GTPH77PBXVKHGXOPNJL7BT",
+      "length": 69456,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250208150931",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "JMLFE7FKFRH4QUMWB3SUA4T4LIKGYROK",
+      "length": 69607,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250209152447",
+      "url": "https://mcstaging.bankwebinars.com/",
+      "digest": "UCOWE3KBZNO6VJI5AMXDYRXPVEPGAOEJ",
+      "length": 73173,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250214101543",
+      "url": "https://mcstaging.bankwebinars.com/",
+      "digest": "PZNM7NXQDRD23FTODSVCS5QN23PD27HN",
+      "length": 73238,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250215090337",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "GWHRKQAV7NM6YSYQTN3PPN5YE4FYZZLJ",
+      "length": 69613,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250219010754",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "N6LFYNLLVWUAJSYZIQAFTJ4WP23KD42V",
+      "length": 48288,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250220202712",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "GZ3OHTGB6GCDT2S5DEBX75O6JF2OJRD7",
+      "length": 73652,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250220215202",
+      "url": "https://partners.bankwebinars.com/",
+      "digest": "ZK5WDK5AKJ6SZZOKETFMDMD25MGQDOFT",
+      "length": 74066,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250305174759",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "IUXDTHZCIR5UPDYZXJ2H5TT734ZAX55J",
+      "length": 73744,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250305175114",
+      "url": "https://partners.bankwebinars.com/",
+      "digest": "TLG6ZZTRY6ZNDAJAZZBF26YRGDXFQTPA",
+      "length": 73863,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250308022455",
+      "url": "https://mcstaging.bankwebinars.com/",
+      "digest": "N6SXQVJ7HBDWUPJN5ICNTISRSJ3A2NGU",
+      "length": 73331,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250314232500",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "NYIGCRP6A6FAYIWTROR2FT6IGS5OFOO3",
+      "length": 64202,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250314234611",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "NYIGCRP6A6FAYIWTROR2FT6IGS5OFOO3",
+      "length": 64140,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250316082830",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "XRSZXT2MLXNWKIWAHKPON3ZX5JQ26AQN",
+      "length": 69863,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250319124655",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "FTMG2UTRSVW2W7UGMX7675RPVO4SJFNW",
+      "length": 69944,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250320081424",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "YUXYIMMY7ZUFM63UUAZBNORZXVNWNJGB",
+      "length": 69582,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250320081426",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "YUXYIMMY7ZUFM63UUAZBNORZXVNWNJGB",
+      "length": 69578,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250320081429",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "YUXYIMMY7ZUFM63UUAZBNORZXVNWNJGB",
+      "length": 69580,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250320081440",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "YUXYIMMY7ZUFM63UUAZBNORZXVNWNJGB",
+      "length": 69581,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250320081444",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "YUXYIMMY7ZUFM63UUAZBNORZXVNWNJGB",
+      "length": 69584,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250320081447",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "YUXYIMMY7ZUFM63UUAZBNORZXVNWNJGB",
+      "length": 69584,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250320081449",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "YUXYIMMY7ZUFM63UUAZBNORZXVNWNJGB",
+      "length": 69585,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250320081456",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "YUXYIMMY7ZUFM63UUAZBNORZXVNWNJGB",
+      "length": 69584,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250320081459",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "YUXYIMMY7ZUFM63UUAZBNORZXVNWNJGB",
+      "length": 69585,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250320081504",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "YUXYIMMY7ZUFM63UUAZBNORZXVNWNJGB",
+      "length": 69580,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250320081507",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "YUXYIMMY7ZUFM63UUAZBNORZXVNWNJGB",
+      "length": 69583,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250320081524",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "YUXYIMMY7ZUFM63UUAZBNORZXVNWNJGB",
+      "length": 69583,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250320081526",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "YUXYIMMY7ZUFM63UUAZBNORZXVNWNJGB",
+      "length": 69584,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250322042101",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "JME62IIANBQYNOOZGW76TFFWWTNFMN7N",
+      "length": 64522,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250322043227",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "JME62IIANBQYNOOZGW76TFFWWTNFMN7N",
+      "length": 64522,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250322043804",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "5NQC6Q6QHLHUF3OB2D2OZ2MSRZRZAEWD",
+      "length": 64519,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250322044027",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "JME62IIANBQYNOOZGW76TFFWWTNFMN7N",
+      "length": 64515,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250322044255",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "5NQC6Q6QHLHUF3OB2D2OZ2MSRZRZAEWD",
+      "length": 64533,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250322044538",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "5NQC6Q6QHLHUF3OB2D2OZ2MSRZRZAEWD",
+      "length": 64519,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250322044850",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "5NQC6Q6QHLHUF3OB2D2OZ2MSRZRZAEWD",
+      "length": 64514,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250322051509",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "JME62IIANBQYNOOZGW76TFFWWTNFMN7N",
+      "length": 64541,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250322053036",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "5NQC6Q6QHLHUF3OB2D2OZ2MSRZRZAEWD",
+      "length": 64508,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250322061116",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "5NQC6Q6QHLHUF3OB2D2OZ2MSRZRZAEWD",
+      "length": 64525,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250322061257",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "5NQC6Q6QHLHUF3OB2D2OZ2MSRZRZAEWD",
+      "length": 64538,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250322062225",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "5NQC6Q6QHLHUF3OB2D2OZ2MSRZRZAEWD",
+      "length": 64556,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250322062703",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "5NQC6Q6QHLHUF3OB2D2OZ2MSRZRZAEWD",
+      "length": 64530,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250322063529",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "5NQC6Q6QHLHUF3OB2D2OZ2MSRZRZAEWD",
+      "length": 64509,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250322072741",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "5NQC6Q6QHLHUF3OB2D2OZ2MSRZRZAEWD",
+      "length": 64528,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250322232102",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "5NQC6Q6QHLHUF3OB2D2OZ2MSRZRZAEWD",
+      "length": 64523,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250323090420",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "5NQC6Q6QHLHUF3OB2D2OZ2MSRZRZAEWD",
+      "length": 64553,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250323152646",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "WY5CPBRRNJKR3557OOISX6LQ7H3LRPO3",
+      "length": 64532,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250323174629",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "WY5CPBRRNJKR3557OOISX6LQ7H3LRPO3",
+      "length": 64555,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250323200246",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "TNJT7X74N4UU36V6MDFTFV4BALE4TELE",
+      "length": 64523,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250323201621",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "TNJT7X74N4UU36V6MDFTFV4BALE4TELE",
+      "length": 64533,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250324001814",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "TNJT7X74N4UU36V6MDFTFV4BALE4TELE",
+      "length": 64540,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250324151747",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "WY5CPBRRNJKR3557OOISX6LQ7H3LRPO3",
+      "length": 64518,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250402092137",
+      "url": "https://staging.bankwebinars.com/",
+      "digest": "F5ASMPJX3I2XMF2322S6BV3PTADLRUIH",
+      "length": 98708,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250403175211",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "IH6XY5UIL34TPTBQJAGKGOLGQWSIPJPQ",
+      "length": 64573,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250405002227",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "V54JVJGHQRMGGAXEHF2F3ROTUAMJKU2I",
+      "length": 64936,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250405021900",
+      "url": "https://partners.bankwebinars.com/",
+      "digest": "OSTM7ZPOKLYIU2CZTCHZYZG3HM3MGGJ7",
+      "length": 64998,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250405022220",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "V54JVJGHQRMGGAXEHF2F3ROTUAMJKU2I",
+      "length": 64957,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250405022744",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "V54JVJGHQRMGGAXEHF2F3ROTUAMJKU2I",
+      "length": 64939,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250405023304",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "Z2TC3D6J3WEALMHW4E2JTVPTKHJUJ5VY",
+      "length": 64971,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250405023413",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "V54JVJGHQRMGGAXEHF2F3ROTUAMJKU2I",
+      "length": 64959,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250405023910",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "Z2TC3D6J3WEALMHW4E2JTVPTKHJUJ5VY",
+      "length": 64997,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250405025257",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "Z2TC3D6J3WEALMHW4E2JTVPTKHJUJ5VY",
+      "length": 64952,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250405025545",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "V54JVJGHQRMGGAXEHF2F3ROTUAMJKU2I",
+      "length": 64948,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250405030141",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "V54JVJGHQRMGGAXEHF2F3ROTUAMJKU2I",
+      "length": 64970,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250405033247",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "Z2TC3D6J3WEALMHW4E2JTVPTKHJUJ5VY",
+      "length": 64959,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250405040624",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "Z2TC3D6J3WEALMHW4E2JTVPTKHJUJ5VY",
+      "length": 64948,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250405050720",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "Z2TC3D6J3WEALMHW4E2JTVPTKHJUJ5VY",
+      "length": 64964,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250405052521",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "Z2TC3D6J3WEALMHW4E2JTVPTKHJUJ5VY",
+      "length": 64996,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250405073456",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "Z2TC3D6J3WEALMHW4E2JTVPTKHJUJ5VY",
+      "length": 64956,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250405075443",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "Z2TC3D6J3WEALMHW4E2JTVPTKHJUJ5VY",
+      "length": 64983,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250405090610",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "Z2TC3D6J3WEALMHW4E2JTVPTKHJUJ5VY",
+      "length": 64995,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250405224140",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "Z2TC3D6J3WEALMHW4E2JTVPTKHJUJ5VY",
+      "length": 64968,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250406073045",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "FW2G3V6ZOI43BTQSVIO74LW6ZBWU5NFL",
+      "length": 64967,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250406214503",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "EM2XKYA3BQPMFWXY4VNAWCM3AGHH2OND",
+      "length": 64966,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250410123043",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "2CVX52VBHECCX23SNOFYPDLS5QQMP6TU",
+      "length": 64987,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250504101039",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "ZY4WMCF44RCDKB63KYNARAIYGBK5MXDM",
+      "length": 71071,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250504144937",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "ZY4WMCF44RCDKB63KYNARAIYGBK5MXDM",
+      "length": 71083,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250505192848",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "7NDLD6F25AKMMF5MWTIUBPF7IXEY3RAZ",
+      "length": 71076,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250520165930",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "CZAZXDDQUATDK3UEBVQCSX2P3QGG2LVN",
+      "length": 77649,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250601043831",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "STPYBAFQVU77DNSGY2SOVOTX2DV632NX",
+      "length": 81509,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250708140847",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "DZDP7TGF3MDZXKG6XWBFALLQTNF3SLDP",
+      "length": 77271,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250812053202",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "IKPU2QJO63BTMJM5YG2GIMN43JUOAFDJ",
+      "length": 77845,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250911034504",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "EYOOF2OV3RCC4SCFDLJDRUUV67OJ2IYB",
+      "length": 78687,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20250914212029",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "VVO4UQEQJ6HSAESXO4OUVAZICJSEVYJN",
+      "length": 78626,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20251013224154",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "TPUDYP3P2GI4NIK4MBWYBXPI37WRK5XF",
+      "length": 79521,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20251018200857",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "YPK3CFL4MOTUZJAXUEMCH2YBC5RI3WXA",
+      "length": 79524,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20251107070736",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "I3U6IRCCDX43JS2A57O3LOVW6KSEJQEX",
+      "length": 79314,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20251115055128",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "NFEZP7Y2OMYIMZPCD5JZXO4UFF7WU7MF",
+      "length": 79323,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20251211030746",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "GHCYOA4QFG6OVFHBEHVD3JKN75QW7PDP",
+      "length": 80679,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20251218002945",
+      "url": "https://partners.bankwebinars.com/",
+      "digest": "OGXKVZD6HIKD6OYFRIJEEGZQN3WX5FSB",
+      "length": 75005,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20251218003051",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "OPSWHEJICHGXE5LJJACSAOY6PS7EM2CT",
+      "length": 74946,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20251218013806",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "OPSWHEJICHGXE5LJJACSAOY6PS7EM2CT",
+      "length": 74962,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20251218132255",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "OPSWHEJICHGXE5LJJACSAOY6PS7EM2CT",
+      "length": 74930,
+      "statuscode": "200"
+    },
+    {
+      "timestamp": "20251219074752",
+      "url": "https://www.bankwebinars.com/",
+      "digest": "MX7RZOH4SEBJJLRPNFXCMIDTXMNRIONJ",
+      "length": 74937,
+      "statuscode": "200"
+    }
+  ]
+}

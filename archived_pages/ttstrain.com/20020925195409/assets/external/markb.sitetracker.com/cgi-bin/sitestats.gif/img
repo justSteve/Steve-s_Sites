@@ -1,0 +1,578 @@
+
+<html>
+<head><script type="text/javascript" src="https://web-static.archive.org/_static/js/bundle-playback.js?v=2N_sDSC0" charset="utf-8"></script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};</script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/ruffle/ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://www.sitetracker.com:80/","20070304022958","https://web.archive.org/","web","https://web-static.archive.org/_static/",
+	      "1172975398");
+</script>
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" />
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" />
+<!-- End Wayback Rewrite JS Include -->
+
+<title>Free Counter and Advanced Web Site Statistics - SiteTracker.com</title>
+<meta name="keywords" content="free counter web hit site stats statistics traffic analysis webcounter page">
+<meta name="description" content="SiteTracker offers the most complete internet statistics solution that replaces the old free counter on your Web page.  Get more reports than any other service!">
+
+<script><!--
+if (navigator.appName.indexOf('scap') > -1)
+	document.write("<LINK REL='STYLESHEET' TYPE='text/css' HREF='/fs_img/sitetracker/netscape.css'>");
+else 
+  document.write("<LINK REL='STYLESHEET' TYPE='text/css' HREF='/fs_img/sitetracker/sitetracker.css'>");
+//--></script>
+
+<body bgcolor="#FFFFFF" link="#669966" alink="#669966" vlink="#669966" text="#000000" marginwidth="10" marginheight="10" topmargin="10" bottommargin="10" rightmargin="10" leftmargin="10">
+<basefont face="Verdana, Arial, Helvetica, Sans-serif">
+<table width="95%" cellpadding="0" cellspacing="0" border="0" align="center">
+	<tr>
+		<td><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/sitetracker/logo.gif" width="220" height="47" alt="Site Tracker - Web site tracking and statistics_files" border="0" hspace="6" vspace="10"></td>
+	</tr>
+</table>
+<table width="95%" cellpadding="0" cellspacing="0" border="0" align="center">
+	<tr>
+		<td width="130" valign="top" bgcolor="#003366">
+			<table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr> 
+          <td bgcolor="#6699CC" colspan="3"><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/spacer.gif" width="130" height="3" alt="Site Tracker - Web site tracking and statistics_files"></td>
+        </tr>
+        <tr> 
+          <td colspan="3" class="indent" style="padding: 1mm 1mm 1mm 0mm;"><font color="#FFFFFF">&nbsp;&nbsp;<b>Sign 
+            Me Up!</b></font></td>
+        </tr>
+        <tr> 
+          <td bgcolor="#003366" width="1" rowspan="4"><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/spacer.gif" width="1" height="1"></td>
+          <td bgcolor="#E3E3CA" align="center" class="smalltxt" style="padding: 1mm;" width="100%"><font color="#003366">Choose a Username</font></td>
+          <td bgcolor="#003366" width="1" rowspan="4"><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/spacer.gif" width="1" height="1" alt="Site Tracker - Web site tracking and statistics_files"></td>
+        </tr>
+        <tr> 
+          <td bgcolor="#E3E3CA" align="center"> 
+            <form method="post" action="/web/20070304022958/http://www.sitetracker.com/cgi-bin/sitestats/signup" name="signup">
+              <input type="hidden" name="my_action" value="get_subdomain">
+              <input type="text" name="subdomain" size="8" style="WIDTH: 30mm;">
+            </form>
+          </td>
+        </tr>
+        <tr> 
+          <td bgcolor="#E3E3CA" align="right"><a href="javascript: document.signup.submit();"><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/sitetracker/homepage/signup_small_khaki.gif" width="76" height="16" alt="" border="0" vspace="4" hspace="4"></a></td>
+        </tr>
+        <tr> 
+          <td bgcolor="#E3E3CA"><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/spacer.gif" width="1" height="8"></td>
+        </tr>
+        <tr> 
+          <td bgcolor="#003366" colspan="3"><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/spacer.gif" width="1" height="1"></td>
+        </tr>
+        <tr> 
+          <td colspan="3" bgcolor="#FFFFFF"><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/spacer.gif" width="1" height="6"></td>
+        </tr>
+        <tr> 
+          <td bgcolor="#6699CC" colspan="3"><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/spacer.gif" width="130" height="3"></td>
+        </tr>
+        <tr> 
+          <td bgcolor="#003366" width="1" rowspan="9"><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/spacer.gif" width="1" height="1"></td>
+          <td bgcolor="#003366" class="indent" width="100%" style="padding: 1mm 1mm 1mm 0mm;">&nbsp;&nbsp;<font color="#FFFFFF"><b>Check Your Stats</b></font></td>
+          <td bgcolor="#003366" width="1" rowspan="9"><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/spacer.gif" width="1" height="1"></td>
+        </tr>
+        <tr> 
+          <td bgcolor="#E3E3CA" class="smalltxt"> 
+            <form method="get" action="/web/20070304022958/http://www.sitetracker.com/cgi-bin/util/sitestats" name="a">
+              <input type="hidden" name="save_password" value="">
+              <input type="hidden" name="avail" value="">
+              <table width="95%" cellpadding="3" cellspacing="0" border="0" align="center">
+                <tr> 
+                  <td class="smalltxt"><font color="#003366"><u>U</u>sername</font></td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#E3E3CA"> 
+                    <input accesskey="U" name="site" type="text" value="" size="8" style="WIDTH: 30mm;">
+                  </td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#E3E3CA" class="smalltxt"><font color="#003366">Password</font></td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#E3E3CA"> 
+                    <input type="password" name="password" value="" size="8" style="WIDTH: 30mm;">
+                  </td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#E3E3CA" align="right"><a href="javascript:encodeUserPass();"><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/sitetracker/homepage/login_khaki.gif" width="76" height="16" alt="" border="0" vspace="4" hspace="4"></a></td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#E3E3CA" class="smalltxt"><font color="#999966">Forgot 
+                    Password?</font> <a href="/web/20070304022958/http://www.sitetracker.com/cgi-bin/forgot"><b>Click Here</b></a></td>
+                </tr>
+              </table>
+            </form>
+          </td>
+        </tr>
+        <tr> 
+          <td bgcolor="#003366" colspan="3"><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/spacer.gif" width="1" height="1"></td>
+        </tr>
+        <tr> 
+          <td bgcolor="#6699CC" colspan="3" align="CENTER">
+            <a href="/web/20070304022958/http://www.sitetracker.com/cgi-bin/redirect?id=ST_BIZHOSTING"><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/50megs2/images/bh_award.gif" border="0" vspace="5" hspace="5"></a>
+          </td>
+        </tr>
+        <tr>
+          <td align="center"><br><br><table width="100%" border="0" cellspacing="0" cellpadding="5">
+	<tr>
+		<td align="center">
+        <iframe width="120" height="60" src="https://web.archive.org/web/20070304022958if_/http://ads.addynamix.com/creative/2-2129972-10i" scrolling="no" hspace="0" vspace="0" frameborder="0" marginheight="0" marginwidth="0">
+  <a href="https://web.archive.org/web/20070304022958/http://ads.addynamix.com/click/2-2129972-10">
+  <img src="https://web.archive.org/web/20070304022958im_/http://ads.addynamix.com/creative/2-2129972-10" border="0"></a></iframe>
+    </td>
+	</tr>
+</table><br><br><br><br><br><br><br><br>
+            <a href="https://web.archive.org/web/20070304022958/http://free-stats.50megs.com/"><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/spacer.gif" height="3" border="0" alt="Free Stats" width="3"></a> 
+            <a href="https://web.archive.org/web/20070304022958/http://site-stats.50megs.com/"><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/spacer.gif" height="3" border="0" alt="Site Stats" width="3"></a> 
+            <a href="https://web.archive.org/web/20070304022958/http://free-counter.i8.com/"><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/spacer.gif" height="3" border="0" alt="Free Counter" width="3"></a> 
+            <a href="https://web.archive.org/web/20070304022958/http://hit-counter.i8.com/"><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/spacer.gif" height="3" border="0" alt="Hit Counter" width="3"></a> 
+            <a href="https://web.archive.org/web/20070304022958/http://web-counter.i8.com/"><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/spacer.gif" height="3" border="0" alt="Web Counter" width="3"></a>
+          </td>
+        </tr>
+      </table>
+    </td>
+		<td width="1" bgcolor="#FFFFFF"><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/spacer.gif" width="5" height="1"></td>
+<!-- END SIDE MENU -->
+<!-- START MAIN CHUNK MENU -->
+		<td width="100%" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td width="100%" bgcolor="#6699CC" colspan="2"><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/spacer.gif" width="1" height="3"></td>
+				</tr>
+				<tr>
+					<td bgcolor="#003366" class="indent" style="padding: 1mm 1mm 1mm 0mm;" colspan="2">&nbsp;&nbsp;<font color="#FFFFFF"><b>
+						<script><!--
+							var eURL = document.URL;
+							if ((eURL.indexOf('learn') < 0) && (eURL.indexOf('sample') < 0) && (eURL.indexOf('contact') < 0)){
+								document.write("<A HREF='/index.html'><FONT COLOR='#FFCC66' CLASS='headselected'>Home</FONT></A> &middot; ");
+								}
+							else document.write("<A HREF='/index.html'><FONT COLOR='#FFFFFF' CLASS='headlinks'>Home</FONT></A> &middot; ");
+							if (eURL.indexOf('learn') > -1){
+								document.write("<A HREF='/learnmore.html'><FONT COLOR='#FFCC66' CLASS='headselected'>Learn More</FONT></A> &middot; ");
+								}
+							else document.write("<A HREF='/learnmore.html'><FONT COLOR='#FFFFFF' CLASS='headlinks'>Learn More</FONT></A> &middot; ");
+							if (eURL.indexOf('sample') > -1){
+								document.write("<A HREF='/cgi-bin/sitestats/sample_stats'><FONT COLOR='#FFCC66' CLASS='headselected'>Sample Stats</FONT></A> &middot; ");
+								}
+							else document.write("<A HREF='/cgi-bin/sitestats/sample_stats'><FONT COLOR='#FFFFFF' CLASS='headlinks'>Sample Stats</FONT></A> &middot; ");
+							if (eURL.indexOf('contact') > -1){
+								document.write("<A HREF='/cgi-bin/support'><FONT COLOR='#FFCC66' CLASS='headselected'>Contact Us</FONT></A>");
+								}
+							else document.write("<A HREF='/cgi-bin/support'><FONT COLOR='#FFFFFF' CLASS='headlinks'>Contact Us</FONT></A>");
+						//--></script>
+						<noscript>
+              <a href="/web/20070304022958/http://www.sitetracker.com/index.html"><font color="#FFFFFF" class="headlinks">Home</font></a> &middot; 
+              <a href="/web/20070304022958/http://www.sitetracker.com/learnmore.html"><font color="#FFFFFF" class="headlinks">Learn More</font></a> &middot;
+  						<a href="/web/20070304022958/http://www.sitetracker.com/cgi-bin/sitestats/sample_stats"><font color="#FFFFFF" class="headlinks">Sample Stats</font></a> &middot;
+	  					<a href="/web/20070304022958/http://www.sitetracker.com/cgi-bin/support"><font color="#FFFFFF" class="headlinks">Contact Us</font></a>
+            </noscript>
+
+            </b></font>
+					</td>
+				</tr>
+				<tr>
+
+<!-- Content Start -->
+<td width="100%" valign="top"><br>
+	<table width="100%" cellpadding="5" cellspacing="5" border="0">
+		<tr>
+      <td><span class="title"><b>FREE COUNTER &amp; WEB SITE STATISTICS</b></span><br>
+        SiteTracker offers the best Web site statistics analysis 
+        of any service around. SiteTracker is much <strong>more 
+        than a free counter</strong> that just tracks your hits; 
+        our service leaves an ordinary, free counter in the 
+        dust! Track your top referrers, most popular pages, 
+        browsers, screen resolution and much, much more!
+
+        <p><strong>Can your free counter do that?</strong> 
+        Didn't think so.</p>
+
+        <p>SiteTracker leaves free counters in the dust and will 
+        take your Web site statistics to the next level. SiteTracker 
+        will track your web site statistics around the clock 
+        and you can check them at any time using a Web browser 
+        from anywhere in the world! </p>
+
+        <p>SiteTracker,<strong> the replacement for that free 
+        counter</strong> with more detailed Web site traffic 
+        stats than you could ever imagine. </p>
+
+        <p>SiteTracker is very easy to use and offers <b>more 
+        valuable reports than any other service... especially 
+        free hit counters.</b></p>
+      </td>
+		</tr>
+		<tr>
+			<td align="right"><a href="https://web.archive.org/web/20070304022958/http://signup.sitetracker.com/cgi-bin/sitestats/signup"><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/sitetracker/signup_white.gif" width="125" height="20" alt="Sign Up Now!" border="0" hspace="4"></a><br>
+				<hr color="#CCCCCC"></td>
+		</tr>
+		<tr>
+      <td><span class="title"><b>HOW IT WORKS</b></span><br>
+        Sign up, insert a snippet of code in your page, and you 
+        are on your way. We provide you a link to your personalized 
+        statistics page, accessible in any Web browser. No free 
+        counter could ever compare! 
+        <a href="https://web.archive.org/web/20070304022958/http://sitetracker.com/learnmore.html"><b>Learn More</b></a><br>
+				<hr color="#CCCCCC"></td>
+		</tr>
+		<tr>
+			<td><span class="title"><b>SITETRACKER TRACKS:</b></span><br>
+				<table width="100%" border="0">
+					<tr valign="top">
+            <td>
+              <a href="/web/20070304022958/http://www.sitetracker.com/cgi-bin/sitestats/sample_stats"><b>Traffic Reports</b></a><br>
+              See your site's traffic patterns over time. You 
+              can view reports on hits and page views, unique 
+              visitors, popular pages, current visitor counter 
+              and raw logs.<br><br>
+              <a href="/web/20070304022958/http://www.sitetracker.com/cgi-bin/sitestats/sample_stats"><b>Marketing Reports</b></a><br>
+              Analyze your marketing performance. Reports include, 
+              top referrering sites, search engines, keywords, 
+              time on site and return frequency.
+            </td>
+            <td>
+              <a href="/web/20070304022958/http://www.sitetracker.com/cgi-bin/sitestats/sample_stats"><b>Path Reports</b></a><br>
+              Monitor where visitors entered your site, which 
+              paths they took and where they exited with detailed 
+              path and page analysis reports... a free counter 
+              can't do that!<br><br>
+              <a href="/web/20070304022958/http://www.sitetracker.com/cgi-bin/sitestats/sample_stats"><b>Visitor Profile Reports</b></a><br>
+              Learn extensive information about your visitors, 
+              including physical location, language, operating 
+              system, preferences, and more. You will be surprised 
+              what is revealed in these reports! There's no 
+              way a free counter can do that!
+            </td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table><br>
+</td>
+<td width="200" valign="top"><br>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td bgcolor="#6699CC" colspan="3"><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/spacer.gif" width="200" height="3"></td>
+		</tr>
+		<tr>
+			<td bgcolor="#003366" width="1" rowspan="8"><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/spacer.gif" width="1" height="1"></td>
+	    <td bgcolor="#003366" class="indent" style="padding: 1mm 1mm 1mm 0mm;" width="100%" nowrap align="left"><font color="#FFFFFF"><b>Packages Available </b></font></td>
+			<td bgcolor="#003366" width="1" rowspan="8"><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/spacer.gif" width="1" height="1"></td>
+		</tr>
+		<tr bgcolor="#F3F3E9">
+		  <td>
+<!-- start: free chunk -->
+<table cellpadding="0" cellspacing="0" border="0" width="95%" style="margin-top: 2mm; margin-bottom: 1mm;" align="center">
+  <tr> 
+    <td width="1" rowspan="2" valign="bottom"><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/sitetracker/homepage/arrow_tan.gif" width="14" height="14" alt="" border="0"></td>
+    <td class="chunktitle" width="100%">&nbsp;<b>FREE</b></td>
+    <td width="1" rowspan="2"><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/spacer.gif" width="5" height="1"></td>
+  </tr>
+  <tr> 
+    <td bgcolor="#999966"><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/spacer.gif" width="1" height="1"></td>
+  </tr>
+  <tr> 
+    <td><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/spacer.gif" width="1" height="5"></td>
+  </tr>
+  <tr> 
+    <td class="bluetext" colspan="3">
+      Page views, unique visitor counter, popular pages and top referrers
+    </td>
+  </tr>
+  <tr> 
+    <td class="khakitext" colspan="3" style="padding-top: 1mm;">7 days of detailed reporting</td>
+  </tr>
+  <tr> 
+    <td align="right" colspan="3" class="smalltxt"><a href="/web/20070304022958/http://www.sitetracker.com/learnmore.html"><b>Learn More</b></a></td>
+  </tr>
+</table>
+<!-- end: free chunk -->
+		  </td>
+		</tr>
+		<tr bgcolor="#E3E3CA">
+			<td>
+<!-- start: advantage chunk -->
+<table cellpadding="0" cellspacing="0" border="0" width="95%" style="margin-top: 2mm; margin-bottom: 1mm;" align="center">
+	<tr>
+		<td width="1" rowspan="2" valign="bottom"><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/sitetracker/homepage/arrow_khaki.gif" width="14" height="14" alt="" border="0"></td>
+		<td class="chunktitle" width="100%">&nbsp;<b>ADVANTAGE</b></td>
+		<td width="1" rowspan="2"><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/spacer.gif" width="5" height="1"></td>
+	</tr>
+	<tr>
+		<td bgcolor="#999966"><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/spacer.gif" width="1" height="1"></td>
+	</tr>
+	<tr>
+		<td colspan="3"><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/spacer.gif" width="1" height="5"></td>
+	</tr>
+	<tr>
+		<td class="bluetext" colspan="3">
+      Page view counter, unique visitors, popular pages, top referrers, 
+      top search engines, top keywords, top paths and raw logs.
+    <br></td>
+	</tr>
+	<tr>
+		<td class="khakitext" colspan="3" style="padding-top: 1mm;">15 days of detailed reporting</td>
+	</tr>
+	<tr>
+		<td align="right" colspan="3" class="smalltxt"><a href="/web/20070304022958/http://www.sitetracker.com/learnmore.html"><b>Learn More</b></a></td>
+	</tr>
+</table>
+<!-- end: advantage chunk -->
+			</td>
+		</tr>
+		<tr bgcolor="#F3F3E9">
+			<td>
+<!-- start: professional chunk -->
+<table cellpadding="0" cellspacing="0" border="0" width="95%" style="margin-top: 2mm; margin-bottom: 1mm;" align="center">
+	<tr>
+		<td width="1" rowspan="2" valign="bottom"><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/sitetracker/homepage/arrow_tan.gif" width="14" height="14" alt="" border="0"></td>
+		<td class="chunktitle" width="100%">&nbsp;<b>PROFESSIONAL</b></td>
+		<td width="1" rowspan="2"><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/spacer.gif" width="5" height="1"></td>
+	</tr>
+	<tr>
+		<td bgcolor="#999966"><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/spacer.gif" width="1" height="1"></td>
+	</tr>
+	<tr>
+		<td><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/spacer.gif" width="1" height="5"></td>
+	</tr>
+	<tr>
+		<td class="bluetext" colspan="3">
+      Same reports as Advantage, plus: current visitor counter, return frequency, 
+      top entry pages, top exit pages, page analysis.
+    </td>
+	</tr>
+	<tr>
+		<td class="khakitext" colspan="3" style="padding-top: 1mm;">Forever detailed reporting</td>
+	</tr>
+	<tr>
+		<td align="right" colspan="3" class="smalltxt"><a href="/web/20070304022958/http://www.sitetracker.com/learnmore.html"><b>Learn More</b></a></td>
+	</tr>
+</table>
+<!-- end: professional chunk -->
+			</td>
+		</tr>
+		<tr bgcolor="#E3E3CA">
+			<td>
+<!-- start: premier chunk -->
+<table cellpadding="0" cellspacing="0" border="0" width="95%" style="margin-top: 2mm; margin-bottom: 1mm;" align="center">
+	<tr>
+		<td width="1" rowspan="2" valign="bottom"><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/sitetracker/homepage/arrow_khaki.gif" width="14" height="14" alt="" border="0"></td>
+		<td class="chunktitle" width="100%">&nbsp;<b>PREMIER</b></td>
+		<td width="1" rowspan="2"><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/spacer.gif" width="5" height="1"></td>
+	</tr>
+	<tr>
+		<td bgcolor="#999966"><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/spacer.gif" width="1" height="1"></td>
+	</tr>
+	<tr>
+		<td><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/spacer.gif" width="1" height="5"></td>
+	</tr>
+	<tr>
+		<td class="bluetext" colspan="3">
+      Same reports as Professional plus: Last 100 Visitors, Latest Visitor Detail, 
+      Window Size, Browser Type, Monitor Resolution, Monitor Color Depth, Operating 
+      System counter, Languages, Countries, Javascript, Cookies and Timezone.
+    <br></td>
+	</tr>
+	<tr>
+		<td class="khakitext" colspan="3" style="padding-top: 1mm;">Forever detailed reporting</td>
+	</tr>
+	<tr>
+		<td align="right" colspan="3" class="smalltxt"><a href="/web/20070304022958/http://www.sitetracker.com/learnmore.html"><b>Learn More</b></a></td>
+	</tr>
+</table>
+<!-- end: premier chunk -->
+			</td>
+		</tr>
+		<tr>
+			<td bgcolor="#003399"><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/spacer.gif" width="1" height="1"></td>
+		</tr>
+	</table><br>
+	<table cellpadding="0" cellspacing="0" border="0" align="center">
+		<tr>
+			<td align="center"><a href="/web/20070304022958/http://www.sitetracker.com/cgi-bin/sitestats/sample_stats"><img src="/web/20070304022958im_/http://www.sitetracker.com/fs_img/freestats/homepage/stats_screenshot.gif" width="155" height="106" border="1"></a><br><a href="/web/20070304022958/http://www.sitetracker.com/cgi-bin/sitestats/sample_stats"><b>Sample Stats</b></a></td>
+		</tr>
+	</table>
+</td>
+</tr>
+<tr>
+  <td colspan="2" align="center">
+      <p style="font-size:7pt;margin:5px;">
+      <a href="/web/20070304022958/http://www.sitetracker.com/index.html"><font class="footer">Home</font></a>  
+    | <a href="/web/20070304022958/http://www.sitetracker.com/cgi-bin/signup"><font class="footer">Signup</font></a> 
+    | <a href="/web/20070304022958/http://www.sitetracker.com/policies/acceptable_use.html"><font class="footer">Acceptable Use Policy</font></a> 
+    | <a href="/web/20070304022958/http://www.sitetracker.com/cgi-bin/show_me?page=privacy"><font class="footer">Privacy Policy</font></a> 
+    | <a href="/web/20070304022958/http://www.sitetracker.com/cgi-bin/support"><font class="footer">Contact Us</font></a> 
+    | <a href="/web/20070304022958/http://www.sitetracker.com/cgi-bin/show_me?wrap=1&amp;page=advertising_info"><font class="footer">Advertise/Partner With Us</font></a>
+    | <a class="footer" href="https://web.archive.org/web/20070304022958/http://www.globalservers.com/">Web Hosting</a>
+    | <a class="footer" href="/web/20070304022958/http://www.sitetracker.com/cgi-bin/show_me?page=united_online_announcement" target="_blank">Special Announcement</a>
+      </p>
+
+  </td>
+
+
+<!-- Content End -->
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<div style="font-family:arial,helvetica,sans-serif;font-size:10px; color:black;margin:10px;" align="center">SiteTracker is owned by <a href="https://web.archive.org/web/20070304022958/http://www.untd.com/" target="_blank" style="margin:0px;">United Online</a> Web Services, Inc.</div>
+<form method="get" action="/web/20070304022958/http://www.sitetracker.com/cgi-bin/util/sitestats" name="b">
+<input type="hidden" name="site" value="default.partner">
+<input type="hidden" name="verify" value="">
+<input type="hidden" name="save_password" value="">
+<input type="hidden" name="userpass" value="">
+</form>
+
+<script language="javascript" src="/web/20070304022958js_/http://www.sitetracker.com/fs_img/js/md5.js"></script>
+<script language="javascript">
+
+var redi = location.search;
+var i = redi.indexOf('?redirect=');
+if( i > -1 ){
+  redi = unescape(redi.substring(i+10));
+  document.b.redirect.value = redi;
+}
+
+function encodeUserPass(){
+  var pass = document.a.password.value;
+  var save = 1; //document.a.save_password.checked ? 1 : 0;
+  var time = new Date();
+  var real_time = time.getTime();
+  real_time = Math.floor(real_time/1000);
+
+  // do a little verification of the password
+  if (document.aws_md5_test && document.aws_md5_test()) {
+    pass = 'md5/'+real_time+'/'+save+'/'
+         + document.aws_md5(document.aws_md5(pass).substring(0,20) + real_time + save).substring(0,20);
+  }
+  document.b.userpass.value=base64(''+document.a.site.value+':'+pass);
+  document.b.site.value=document.a.site.value;
+  if(document.a.save_password.checked) document.b.save_password.value='true';
+  document.b.submit();
+}
+
+function base64(str){
+  var x=0;
+  var Alph='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+  var asciiD=new Array();
+  var ret='';
+  while (x<str.length) {
+    var n;
+    asciiD[0]=asciiD[1]=asciiD[2]=0;
+    for(n=0; n<3; n++){
+      if(x++ >= str.length) break;
+      asciiD[n]=ascii(str.charAt(x-1));
+    }
+    if(n > 0){
+      ret+=Alph.charAt( asciiD[0] >> 2 );
+      ret+=Alph.charAt( ((asciiD[0] & 3) << 4) | (asciiD[1] >> 4) );
+      var dig1=Alph.charAt( ((asciiD[1] & 0xF) << 2) | (asciiD[2] >> 6) );
+      var dig2=Alph.charAt( asciiD[2] & 0x3F );
+      if(n < 3){
+        dig2 = '=';
+	if (n < 2) dig1 = '=';
+      }
+      ret+=dig1+dig2;
+    }
+  }
+  return ret;
+}
+
+function ascii(Char){
+  var i=' !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~'.indexOf(Char);
+  if(i>-1) return i+32;
+  else{
+    i='\t\n \r'.indexOf(Char);
+    if(i>-1) return i+9;
+  }
+  return 32;
+}
+</script>
+<script type="text/javascript" language="javascript"><!--
+ 		if (!document.refcd) { // If refcd has already been set, don't bother.
+ 			document.refcd="";
+		
+				
+					if (document.referrer.match(/google\..*\/search/)) {
+						document.refcd="ORGANIC_SEARCH_GOOGLE";
+					} else if (document.referrer.match(/search\.msn\.com\/results/)) {
+						document.refcd="ORGANIC_SEARCH_MSN";
+					} else if (document.referrer.match(/search\.yahoo/)) {
+						document.refcd="ORGANIC_SEARCH_YAHOO";
+					} else if (document.referrer.match(/dir\.yahoo/)) {
+						document.refcd="ORGANIC_SEARCH_YAHOO_DIR";
+					} else if (document.referrer.match(/web\.ask\.com/)) {
+						document.refcd="ORGANIC_SEARCH_ASK.COM";
+					} else if (document.referrer.match(/dogpile\.com/)) {
+						document.refcd="ORGANIC_SEARCH_DOGPILE";
+					} else if (document.referrer.match(/aolsearch\.aol\.com/)) {
+						document.refcd="ORGANIC_SEARCH_AOL";
+					} 
+				
+			
+		}
+	//--></script>
+	<!-- SiteCatalyst code version: G.9.
+	Copyright 1997-2004 Omniture, Inc. More info available at
+	http://www.omniture.com --><script type="text/javascript" language="JavaScript"><!--
+	/* You may give each page an identifying name, server, and channel on
+	the next lines. */
+	var s_pageName="www.sitetracker.com/index.html"
+	var s_server="sitetracker.com"
+	var s_channel="htmlparser"
+	var s_pageType=""
+	var s_prop1=""
+	var s_prop2="www.sitetracker.com/index.html"
+	var s_prop3="www.sitetracker.com/index.html_sitetracker.com"
+	var s_prop4="SiteTracker"
+	var s_prop5=""
+	/* E-commerce Variables */
+	var s_campaign=document.refcd
+	var s_state=""
+	var s_zip=""
+	var s_events=""
+	var s_products=""
+	var s_purchaseID=""
+	var s_eVar1="SiteTracker"
+	var s_eVar2=""
+	var s_eVar3=s_purchaseID
+	var s_eVar4=""
+	var s_eVar5="www.sitetracker.com/index.html"
+	/********* INSERT THE DOMAIN AND PATH TO YOUR CODE BELOW ************/
+	//--></script><script type="text/javascript" language="JavaScript" src="/web/20070304022958js_/http://www.sitetracker.com/fs_img/tracking/s_code_remote.js"></script>
+	<!-- End SiteCatalyst code version: G.9. -->
+	
+</body>
+</html>
+<script><!--
+function SiteStats_183(){
+var t=new Date();
+var u='https://web.archive.org/web/20070304022958/http://www.sitetracker.com/cgi-bin/sitestats.gif?p='+escape(location.href)+';r='+escape(document.referrer)+';t='+t.getTime();
+document.writeln('<img src='+u+' width=1 height=1>');
+ }
+ SiteStats_183();
+//--></script><noscript><img src="https://web.archive.org/web/20070304022958im_/http://www.sitetracker.com/cgi-bin/sitestats.gif?p=http%3A%2F%2Fwww.sitetracker.com%2Findex.html;r=NONE;t=183;" width="1" height="1"></noscript>
+<!--
+     FILE ARCHIVED ON 02:29:58 Mar 04, 2007 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:26:09 Feb 08, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.796
+  exclusion.robots: 0.055
+  exclusion.robots.policy: 0.041
+  esindex: 0.012
+  cdx.remote: 12.933
+  LoadShardBlock: 260.177 (3)
+  PetaboxLoader3.datanode: 1136.082 (5)
+  PetaboxLoader3.resolve: 98.61 (2)
+  load_resource: 984.261 (2)
+-->

@@ -1,0 +1,104 @@
+#custom { 
+    background-image:url(/web/20110128171519im_/http://www.bankwebinars.com/Content/images/loginFormBackground.png); 
+    width:512px; 
+    height:531px; 
+    padding:0px; 
+} 
+ 
+#custom div.close { 
+    right:-15px; 
+    top:-10px; 
+} 
+
+/* the modal element */
+div.showInProcess {
+	
+	/* growing background image */
+	background-image:url(/web/20110128171519im_/http://www.bankwebinars.com/Content/images/inProcess.png);
+	
+	/* dimensions after the growing animation finishes  */
+	width:320px;
+	height:200px;		
+	
+	/* initially overlay is hidden */
+	display:none;
+	
+	/* some padding to layout nested elements nicely  */
+	padding:55px;
+}
+
+/* the overlayed element */
+div.showLoginBox {
+	
+	/* growing background image */
+	background-image:url(/web/20110128171519im_/http://www.bankwebinars.com/Content/images/loginFormBackground.png);
+	
+	/* dimensions after the growing animation finishes  */
+	width:320px;
+	height:200px;		
+	
+	/* initially overlay is hidden */
+	display:none;
+	
+	/* some padding to layout nested elements nicely  */
+	padding:55px;
+}
+
+/* default close button positioned on upper right corner */
+div.showLoginBox div.close {
+	/*background-image:url(/web/20110128171519im_/http://www.bankwebinars.com/Content/img/overlay/close.png);*/
+	position:absolute;
+	right:5px;
+	top:5px;
+	cursor:pointer;
+	height:35px;
+	width:35px;
+}
+
+/* the overlayed element */
+div.supportBox {
+	
+	/* growing background image */
+	background-image:url(/web/20110128171519im_/http://www.bankwebinars.com/Content/images/supportFormBackground.png);
+	
+	/* dimensions after the growing animation finishes  */
+	width:320px;
+	height:400px;		
+	
+	/* initially overlay is hidden */
+	display:none;
+	
+	/* some padding to layout nested elements nicely  */
+	padding:55px;
+}
+
+/* default close button positioned on upper right corner */
+div.supportBox div.close {
+	/*background-image:url(/web/20110128171519im_/http://www.bankwebinars.com/Content/img/overlay/close.png);*/
+	position:absolute;
+	right:5px;
+	top:5px;
+	cursor:pointer;
+	height:35px;
+	width:35px;
+}
+/*
+     FILE ARCHIVED ON 17:15:19 Jan 28, 2011 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 13:59:26 Mar 22, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 1.175
+  exclusion.robots: 0.112
+  exclusion.robots.policy: 0.095
+  esindex: 0.013
+  cdx.remote: 28.2
+  LoadShardBlock: 397.895 (3)
+  PetaboxLoader3.datanode: 409.635 (4)
+  load_resource: 91.564
+  PetaboxLoader3.resolve: 41.955
+*/

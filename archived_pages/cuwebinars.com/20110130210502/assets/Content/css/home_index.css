@@ -1,0 +1,150 @@
+table, th, td
+{
+	margin:0px;
+	padding:0px;
+
+}
+
+#upcoming-header {
+    background:#1F5B93 none repeat scroll 0 0;
+    height:33px;
+    width:350px;
+    color:White;
+}
+.upcoming-text {
+    color:#FFFFFF;
+    font-family:Georgia;
+    padding:5px;
+}
+
+#upcoming-header a {
+    border-bottom:2px solid #5D90BF;
+    color:#FFFFFF;
+    text-decoration:none;
+}
+#upcoming-header a:hover {
+    border-bottom:2px solid #D89304;
+    color:#FFFFFF;
+}
+#upcoming-sub {
+    background:#EAD09B none repeat scroll 0 0;
+    height:30px;
+    width:350px;
+    padding-top:7px;
+}
+.upcoming-sub {
+    margin:3px;
+ }
+
+.upcoming {
+    font-size:15pt;
+    margin-top:10px;
+}
+
+h5 {
+    color:#000000;
+    font-family:Georgia;
+    font-size:14pt;
+    font-weight:500;
+    margin:0 0 0 10px;
+    padding:0;
+}
+.box_header {
+	font-weight: bold;
+}
+
+#box-calendar {
+	float: left;
+	width: 120px;
+}
+
+#box-subs {
+	float: left;
+	width: 123px;
+	margin-left: 65px;
+}
+
+#box-mailing {
+	margin-left: 5px;
+	float: left;
+	width: 123px;
+}
+
+#box-header {
+	width: 133px;
+	height: 28px;
+	background:#E7F1FA none repeat scroll 0 0;
+}
+
+.box-body {
+	width: 133px;
+	height: 73px;
+	background: #d4e6f6;
+}
+
+.box-body a {
+	color: #000;
+	text-decoration: none;
+	border-bottom: 1px solid #7f7f7f;
+}
+
+.box-body p {
+	padding: 0;
+	padding-top: 6px;
+	padding-left: 8px;
+	margin: 0;
+	font-size: 8pt;
+	font-family: Verdana;
+}
+
+.box-body a:hover {
+	color: #3f83c1;
+	border-bottom: 1px solid #d89304;
+}
+
+
+.welcome {
+    color:#000000;
+    font-family:Georgia;
+    font-size:11pt;
+    font-weight:bold;
+    text-align:center;
+}
+.welcome-text {
+    color:#1C568B;
+    font-family:Georgia;
+    margin-bottom:10px;
+    text-align:center;
+    width:960px;
+}
+#on-demand {
+    border-bottom:1px dotted #1D578C;
+    border-top:1px dotted #1D578C;
+    float:left;
+    margin-bottom:10px;
+    margin-top:10px;
+}
+
+
+
+
+/*
+     FILE ARCHIVED ON 21:06:23 Jan 30, 2011 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:11:26 Mar 22, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.708
+  exclusion.robots: 0.072
+  exclusion.robots.policy: 0.059
+  esindex: 0.013
+  cdx.remote: 64.704
+  LoadShardBlock: 248.54 (3)
+  PetaboxLoader3.datanode: 246.382 (4)
+  PetaboxLoader3.resolve: 197.105 (2)
+  load_resource: 197.449
+*/

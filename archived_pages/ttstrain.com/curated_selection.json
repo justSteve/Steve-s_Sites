@@ -1,0 +1,143 @@
+{
+  "domain": "ttstrain.com",
+  "totalAvailableSnapshots": 170,
+  "selectedSnapshots": 27,
+  "selectionMethod": "Manual CDX size-change analysis",
+  "snapshots": [
+    {
+      "timestamp": "19981201090815",
+      "url": "http://www.ttstrain.com:80/",
+      "rationale": "Original launch. CD-ROM nav, diamond background, logo.gif, imt_an.gif header"
+    },
+    {
+      "timestamp": "19990125092426",
+      "url": "http://ttstrain.com:80/",
+      "rationale": "First content update (2586->2706 bytes). Slight changes to announcement area"
+    },
+    {
+      "timestamp": "19990422055654",
+      "url": "http://ttstrain.com:80/",
+      "rationale": "BIG change (2706->3609). Compliance Series demo added, indexComptitl.gif"
+    },
+    {
+      "timestamp": "19991012213510",
+      "url": "http://ttstrain.com:80/",
+      "rationale": "Mid-1999 revision (3609->3161). Content tightened"
+    },
+    {
+      "timestamp": "20000305203019",
+      "url": "http://ttstrain.com:80/",
+      "rationale": "Y2K update (3161->2907). Copyright 2000, demo link added"
+    },
+    {
+      "timestamp": "20010301182549",
+      "url": "http://www.ttstrain.com:80/",
+      "rationale": "Early 2001 (2942). Stable but minor nav tweaks"
+    },
+    {
+      "timestamp": "20010923033608",
+      "url": "http://ttstrain.com:80/",
+      "rationale": "Late 2001 (3071). Content grew \u2014 new products?"
+    },
+    {
+      "timestamp": "20020402121459",
+      "url": "http://www.ttstrain.com:80/",
+      "rationale": "MAJOR REDESIGN (2517). Blue/gray scheme, external CSS, JS menus, ASP backend. New logos: logo_an.gif, tts.gif, name.gif, slogan.gif. Waunakee address."
+    },
+    {
+      "timestamp": "20020925195409",
+      "url": "http://ttstrain.com:80/",
+      "rationale": "Settled redesign (2558). Minor content adjustments"
+    },
+    {
+      "timestamp": "20030531165659",
+      "url": "http://ttstrain.com:80/",
+      "rationale": "Mid-2003 (2612). Webinar emphasis growing"
+    },
+    {
+      "timestamp": "20031028022412",
+      "url": "http://ttstrain.com:80/",
+      "rationale": "Oct 2003 SPIKE (3548). Significantly more content \u2014 product launch?"
+    },
+    {
+      "timestamp": "20031216160134",
+      "url": "http://www.ttstrain.com:80/",
+      "rationale": "Dec 2003 (2626). Back to normal size \u2014 spike was temporary promo?"
+    },
+    {
+      "timestamp": "20040607154304",
+      "url": "http://www.ttstrain.com:80/",
+      "rationale": "Mid-2004 (2630). Stable period representative"
+    },
+    {
+      "timestamp": "20050208012815",
+      "url": "http://www.ttstrain.com:80/",
+      "rationale": "Early 2005 (2629). Still stable"
+    },
+    {
+      "timestamp": "20051109230924",
+      "url": "http://www.ttstrain.com:80/",
+      "rationale": "Nov 2005 JUMP (3584). New version \u2014 Flash rotating logo era begins. tts_logo_rotate.swf referenced in 2004+ pages"
+    },
+    {
+      "timestamp": "20060621213634",
+      "url": "http://www.ttstrain.com:80/",
+      "rationale": "Mid-2006 (3584). Stable in this phase"
+    },
+    {
+      "timestamp": "20070509133814",
+      "url": "http://www.ttstrain.com:80/",
+      "rationale": "Early 2007 (3589). Last good version before collapse"
+    },
+    {
+      "timestamp": "20070614182828",
+      "url": "http://www.ttstrain.com:80/",
+      "rationale": "BROKEN (543 bytes). Site broke mid-2007 \u2014 minimal content"
+    },
+    {
+      "timestamp": "20110110021729",
+      "url": "http://www.ttstrain.com:80/",
+      "rationale": "Brief return (1093). Minimal page \u2014 transitional?"
+    },
+    {
+      "timestamp": "20130204083919",
+      "url": "http://www.ttstrain.com:80/",
+      "rationale": "WordPress launch (3760). New CMS, ttslogo.png, modern layout"
+    },
+    {
+      "timestamp": "20130720021736",
+      "url": "http://ttstrain.com/",
+      "rationale": "WordPress mature (3961). Content filled in"
+    },
+    {
+      "timestamp": "20150315000645",
+      "url": "http://www.ttstrain.com:80/",
+      "rationale": "2015 (3805). WordPress stable era"
+    },
+    {
+      "timestamp": "20160516025438",
+      "url": "http://ttstrain.com:80/",
+      "rationale": "HUGE redesign (12671 bytes!). Much more content, new theme"
+    },
+    {
+      "timestamp": "20161005155657",
+      "url": "http://ttstrain.com/",
+      "rationale": "Stable v2 (13600). Mature version of 2016 redesign"
+    },
+    {
+      "timestamp": "20171002182600",
+      "url": "https://ttstrain.com/",
+      "rationale": "HTTPS transition (12092). SSL era begins"
+    },
+    {
+      "timestamp": "20190825060814",
+      "url": "https://ttstrain.com/",
+      "rationale": "Late era (13414). Final active content period"
+    },
+    {
+      "timestamp": "20200403152151",
+      "url": "https://ttstrain.com/",
+      "rationale": "Last real content (13242). COVID era \u2014 last capture before domain dies"
+    }
+  ]
+}

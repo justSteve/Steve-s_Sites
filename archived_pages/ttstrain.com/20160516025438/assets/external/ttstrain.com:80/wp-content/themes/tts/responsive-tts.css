@@ -1,0 +1,97 @@
+/* =Responsive (Mobile) Design
+-------------------------------------------------------------- */
+
+@media screen and (max-width: 980px) {
+
+  /* Inner Pages */
+  #content {
+   width: 92%!important;
+    margin: 0 2%!important;
+    padding: 0 2%!important;
+  }
+  #content, .callouts {
+   width: 92%!important;
+    margin: 0 2%!important;
+    padding: 40px 2% 0 2%!important;
+  }
+  .flex-direction-nav {
+     display: none; 
+  }
+  #megaMenuToggle {
+   padding: 30px 20px!important; 
+    text-align: right!important;
+  }
+  .megaMenuToggle-icon {
+     margin-left: 10px!important;
+    }
+   #megaMenu #megaUber {
+    max-width: 100%!important;
+  }
+   #megaMenu #megaUber ul,    #megaMenu #megaUber ul li {
+    max-width: 100%!important;
+    width: 100%!important;
+  }
+}
+@media screen and (max-width: 767px) {
+  #testimonials {
+     display: none; 
+  }
+  #staff-pod {
+     width: 95%;
+     margin: 20px 2.5%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .button-left, .button-right {
+    margin-bottom: 20px;
+    float: none;
+  }
+   .home h1 {
+    padding-top: 100px!important;
+  }
+      .anchor {
+      padding-top: 50px!important;
+        }
+}
+@media screen and (max-width: 600px) {
+
+  /* Inner Pages */
+  #wrapper #widgets {
+   width: 96%!important;
+    margin: 20px 2%!important;
+  }
+  .sign-up {
+     display: none;   
+   }
+   #featured h1 {
+     padding-top: 180px;
+     text-align: center;
+  }
+}
+@media screen and (max-width: 500px) {
+
+ #logo img {
+     max-width: 240px; 
+     padding-top: 5px;
+  }
+}
+/*
+     FILE ARCHIVED ON 12:07:20 Nov 01, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:35:14 Feb 08, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.468
+  exclusion.robots: 0.044
+  exclusion.robots.policy: 0.036
+  esindex: 0.008
+  cdx.remote: 103.42
+  LoadShardBlock: 1105.94 (3)
+  PetaboxLoader3.datanode: 1201.648 (4)
+  load_resource: 646.979
+  PetaboxLoader3.resolve: 530.09
+*/

@@ -1,0 +1,13 @@
+{
+  "timestamp": "20000305203019",
+  "url": "http://ttstrain.com:80/",
+  "digest": "JZAKGVK3VY6DEZI3WYV5ZO4LSPAZJKUC",
+  "length": 2907,
+  "statuscode": "200",
+  "captureReason": "substantive",
+  "changeDetails": {
+    "sizeChangePercent": 19.45137157107232,
+    "daysElapsed": 318,
+    "previousDigest": "DIL2ZNLCJKKVPPUOMCFI4BSS3BYXDUQL"
+  }
+}

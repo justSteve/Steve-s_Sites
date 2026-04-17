@@ -1,0 +1,13 @@
+{
+  "timestamp": "20190818181800",
+  "url": "https://beta.bankwebinars.com/",
+  "digest": "AIGBR3O7MPQG4QZLNYWA5AUESP5KFHFW",
+  "length": 11023,
+  "statuscode": "200",
+  "captureReason": "substantive",
+  "changeDetails": {
+    "sizeChangePercent": 34.80494068729363,
+    "daysElapsed": 2604,
+    "previousDigest": "OAONB66OWZCL5E2RCA36TUS25BKFBMLQ"
+  }
+}

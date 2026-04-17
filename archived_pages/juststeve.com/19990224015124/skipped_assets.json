@@ -1,0 +1,12 @@
+{
+  "domain": "juststeve.com",
+  "timestamp": "19990224015124",
+  "skipped": [
+    {
+      "url": "http://www.juststeve.com/web/19990224015124cs_/http://www.juststeve.com/stevestyle.css",
+      "reason": "fetch_error",
+      "waybackUrl": "https://web.archive.org/web/19990224015124/http://www.juststeve.com/web/19990224015124cs_/http://www.juststeve.com/stevestyle.css",
+      "error": "404 Not Found in Wayback Machine"
+    }
+  ]
+}

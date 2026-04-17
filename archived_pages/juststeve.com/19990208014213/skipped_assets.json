@@ -1,0 +1,36 @@
+{
+  "domain": "juststeve.com",
+  "timestamp": "19990208014213",
+  "skipped": [
+    {
+      "url": "http://www.juststeve.com/web/19990208014213cs_/http://www.juststeve.com/stevestyle.css",
+      "reason": "fetch_error",
+      "waybackUrl": "https://web.archive.org/web/19990208014213/http://www.juststeve.com/web/19990208014213cs_/http://www.juststeve.com/stevestyle.css",
+      "error": "404 Not Found in Wayback Machine"
+    },
+    {
+      "url": "https://web-static.archive.org/_static/js/ruffle/ruffle.js",
+      "reason": "fetch_error",
+      "waybackUrl": "https://web.archive.org/web/19990208014213/https://web-static.archive.org/_static/js/ruffle/ruffle.js",
+      "error": "404 Not Found in Wayback Machine"
+    },
+    {
+      "url": "http://www.juststeve.com/web/19990208014213im_/http://www.juststeve.com/images/globalmenu.jpg",
+      "reason": "fetch_error",
+      "waybackUrl": "https://web.archive.org/web/19990208014213/http://www.juststeve.com/web/19990208014213im_/http://www.juststeve.com/images/globalmenu.jpg",
+      "error": "404 Not Found in Wayback Machine"
+    },
+    {
+      "url": "http://www.juststeve.com/web/19990208014213im_/http://www.juststeve.com/images/logo.jpg",
+      "reason": "fetch_error",
+      "waybackUrl": "https://web.archive.org/web/19990208014213/http://www.juststeve.com/web/19990208014213im_/http://www.juststeve.com/images/logo.jpg",
+      "error": "404 Not Found in Wayback Machine"
+    },
+    {
+      "url": "https://web.archive.org/web/19990208014213im_/http://38.152.102.2/images/acmeicon.gif",
+      "reason": "fetch_error",
+      "waybackUrl": "https://web.archive.org/web/19990208014213/https://web.archive.org/web/19990208014213im_/http://38.152.102.2/images/acmeicon.gif",
+      "error": "404 Not Found in Wayback Machine"
+    }
+  ]
+}
