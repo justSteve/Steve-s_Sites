@@ -19,26 +19,31 @@ bd update <id> --status in_progress
 
 **This is not optional.** No bead = no substantive work. Minor housekeeping (typo fixes, status field updates) is exempt.
 
-## STOP — tmux Gate
+## tmux — when it helps, not as a gate
 
-Before running ANY command that targets this zgent's runtime environment — installs, builds, test suites, service starts, scripts — route it through tmux, NOT Claude Code's Bash tool.
+Claude Code's Bash is the default. Reach for tmux when it genuinely adds value:
+interactive programs, long-running services that must outlive the session,
+live-watch scenarios, or when Steve asks for it. For diagnostics, one-shot
+builds, file inspection and anything whose output you need to reason over,
+use Bash.
 
-Check for tmux sessions:
+This replaced a hard "STOP — tmux Gate" on 2026-07-29. COO retired the
+tmux-first gate enterprise-wide on **2026-04-08** — Steve's finding was that it
+cost more overhead than it returned, and sessions were stopping mid-task to ask
+for a tmux session before running a three-second check. This repo kept enforcing
+the retired gate in its strongest form.
+
+The old text also taught a pattern COO has documented as broken: it showed
+`tmux send-keys -t <target> '<command>' Enter` as one call. Combining the
+content and the Enter intermittently corrupts the message or drops the Enter.
+When you do use send-keys, always make **two** calls:
+
 ```bash
-tmux list-sessions
+tmux send-keys -t "$PANE" 'the command'
+tmux send-keys -t "$PANE" Enter
 ```
 
-Run commands in tmux:
-```bash
-tmux send-keys -t <session>:<window> '<command>' Enter
-```
-
-Capture output:
-```bash
-tmux capture-pane -t <session>:<window> -p
-```
-
-**This is not optional.** Claude Code's Bash hides friction Steve would hit. tmux surfaces it.
+Capture is unaffected: `tmux capture-pane -t <target> -p`.
 
 Functions as  the history of justSteve's Online Services.
 
